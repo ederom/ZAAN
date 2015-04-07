@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B47BA5AA-9C95-4FEC-9E65-041D7E300D79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>ZAAN</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Resources\ZaanCubeIconWin7all.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>66E3331ADACD28B78A5480018350BBF38B73AB2B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ZAAN_5_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\ZAAN development\ZAAN\ZAAN\Publish v1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.zaan.com/download/</InstallUrl>
+    <UpdateUrl>http://www.zaan.com/download/</UpdateUrl>
+    <SupportUrl>http://www.zaan.com</SupportUrl>
+    <ProductName>ZAAN</ProductName>
+    <PublisherName>Emmanuel DEROME</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>3.7.364.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ZAAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ZAAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing.Imaging" />
+    <Import Include="System.IO" />
+    <Import Include="System.IO.Compression" />
+    <Import Include="System.IO.Packaging" />
+    <Import Include="System.Management" />
+    <Import Include="System.Net" />
+    <Import Include="System.Net.Mail" />
+    <Import Include="System.Net.NetworkInformation" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Runtime.InteropServices" />
+    <Import Include="System.Runtime.InteropServices.ComTypes" />
+    <Import Include="System.Security" />
+    <Import Include="System.Security.Cryptography" />
+    <Import Include="System.Security.Permissions" />
+    <Import Include="System.Text" />
+    <Import Include="System.Web" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="frmAboutBox.Designer.vb">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExport.Designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZaan.Designer.vb">
+      <DependentUpon>frmZaan.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlZaan.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZaan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmZaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\zDemo\new_doc.doc" />
+    <None Include="Resources\zDemo\new_docx.docx" />
+    <None Include="Resources\zDemo\new_ppt.ppt" />
+    <None Include="Resources\zDemo\new_pptx.pptx" />
+    <None Include="Resources\zDemo\new_xls.xls" />
+    <None Include="Resources\zDemo\new_xlsx.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.txt" />
+    <None Include="Resources\zDemo\ZAAN pitch EN 2015-02.pdf" />
+    <None Include="Resources\zDemo\ZAAN pitch FR 2015-02.pdf" />
+    <None Include="ZAAN_5_TemporaryKey.pfx" />
+    <Content Include="Resources\add.ico" />
+    <Content Include="Resources\buttons\add_lg.bmp" />
+    <Content Include="Resources\buttons\copy_lg.bmp" />
+    <Content Include="Resources\buttons\cube_black.bmp" />
+    <Content Include="Resources\buttons\cube_left_end_0b.bmp" />
+    <Content Include="Resources\buttons\cube_left_end_1b.bmp" />
+    <Content Include="Resources\buttons\delete_lg.bmp" />
+    <Content Include="Resources\buttons\down_lg.bmp" />
+    <Content Include="Resources\buttons\go_0.bmp" />
+    <Content Include="Resources\buttons\go_1.bmp" />
+    <Content Include="Resources\buttons\grey_empty800.bmp" />
+    <Content Include="Resources\buttons\help_book_48.bmp" />
+    <Content Include="Resources\buttons\mail_lg.bmp" />
+    <Content Include="Resources\buttons\matrix_0.bmp" />
+    <Content Include="Resources\buttons\matrix_1.bmp" />
+    <Content Include="Resources\buttons\next_0.bmp" />
+    <Content Include="Resources\buttons\next_1.bmp" />
+    <Content Include="Resources\buttons\pnl_bottom_0.bmp" />
+    <Content Include="Resources\buttons\pnl_bottom_1.bmp" />
+    <Content Include="Resources\buttons\pnl_cube_0.bmp" />
+    <Content Include="Resources\buttons\pnl_cube_1.bmp" />
+    <Content Include="Resources\buttons\pnl_import_0.bmp" />
+    <Content Include="Resources\buttons\pnl_import_1.bmp" />
+    <Content Include="Resources\buttons\pnl_left_0.bmp" />
+    <Content Include="Resources\buttons\pnl_left_1.bmp" />
+    <Content Include="Resources\buttons\pnl_right_0.bmp" />
+    <Content Include="Resources\buttons\pnl_right_1.bmp" />
+    <Content Include="Resources\buttons\pnl_top_0.bmp" />
+    <Content Include="Resources\buttons\pnl_top_1.bmp" />
+    <Content Include="Resources\buttons\pnl_tree_0.bmp" />
+    <Content Include="Resources\buttons\pnl_tree_1.bmp" />
+    <Content Include="Resources\buttons\pnl_view_0.bmp" />
+    <Content Include="Resources\buttons\pnl_view_1.bmp" />
+    <Content Include="Resources\buttons\prev_0.bmp" />
+    <Content Include="Resources\buttons\prev_1.bmp" />
+    <Content Include="Resources\buttons\question.bmp" />
+    <Content Include="Resources\buttons\reset.bmp" />
+    <Content Include="Resources\buttons\search_down.bmp" />
+    <Content Include="Resources\buttons\search_right.bmp" />
+    <Content Include="Resources\buttons\up_lg.bmp" />
+    <Content Include="Resources\buttons\view_cube_0.bmp" />
+    <Content Include="Resources\buttons\view_cube_1.bmp" />
+    <Content Include="Resources\buttons\view_details_0.bmp" />
+    <Content Include="Resources\buttons\view_details_1.bmp" />
+    <Content Include="Resources\buttons\view_icons_0.bmp" />
+    <Content Include="Resources\buttons\view_icons_1.bmp" />
+    <Content Include="Resources\buttons\view_tube_0.bmp" />
+    <Content Include="Resources\buttons\view_tube_1.bmp" />
+    <Content Include="Resources\buttons\zaan_42_btn.bmp" />
+    <Content Include="Resources\buttons\zaan_cube20_0.bmp" />
+    <Content Include="Resources\buttons\zaan_cube20_1.bmp" />
+    <Content Include="Resources\buttons\zaan_cube20_qm_0.bmp" />
+    <Content Include="Resources\buttons\zaan_cube20_qm_1.bmp" />
+    <None Include="Resources\delete.ico" />
+    <None Include="Resources\database.ico" />
+    <None Include="Resources\zaan.ico" />
+    <None Include="Resources\zaan1.ico" />
+    <None Include="Resources\left.ico" />
+    <Content Include="Resources\buttons\_a_3b.bmp" />
+    <Content Include="Resources\buttons\_a_5w400.bmp" />
+    <Content Include="Resources\buttons\_b_3b.bmp" />
+    <Content Include="Resources\buttons\_b_5w400.bmp" />
+    <Content Include="Resources\buttons\_c_3b.bmp" />
+    <Content Include="Resources\buttons\_c_5w400.bmp" />
+    <Content Include="Resources\buttons\_e_3b.bmp" />
+    <Content Include="Resources\buttons\_e_5w400.bmp" />
+    <Content Include="Resources\buttons\_o_3b.bmp" />
+    <Content Include="Resources\buttons\_o_5w400.bmp" />
+    <Content Include="Resources\buttons\_t_3b.bmp" />
+    <Content Include="Resources\buttons\_t_5w400.bmp" />
+    <Content Include="Resources\buttons\_u_3b.bmp" />
+    <Content Include="Resources\buttons\_u_5w400.bmp" />
+    <Content Include="Resources\buttons\_w_5w24.bmp" />
+    <Content Include="Resources\buttons\_w_5w400.bmp" />
+    <Content Include="Resources\buttons\_x_3b.bmp" />
+    <Content Include="Resources\icons\help_book_48i.ico" />
+    <Content Include="Resources\icons\next_f13.ico" />
+    <Content Include="Resources\icons\next_f3.ico" />
+    <Content Include="Resources\icons\prev_f13.ico" />
+    <Content Include="Resources\icons\prev_f3.ico" />
+    <Content Include="Resources\icons\zaan_cube_16.ico" />
+    <Content Include="Resources\icons\zaan_cube_16b.ico" />
+    <Content Include="Resources\icons\zaan_cube_20.ico" />
+    <Content Include="Resources\icons\zaan_cube_50i.ico" />
+    <Content Include="Resources\icons\zaan_cube_qm.ico" />
+    <Content Include="Resources\icons\_ah13.ico" />
+    <Content Include="Resources\icons\_ah3.ico" />
+    <Content Include="Resources\icons\_a_13.ico" />
+    <Content Include="Resources\icons\_a_3.ico" />
+    <Content Include="Resources\icons\_bh13.ico" />
+    <Content Include="Resources\icons\_bh3.ico" />
+    <Content Include="Resources\icons\_b_13.ico" />
+    <Content Include="Resources\icons\_b_3.ico" />
+    <Content Include="Resources\icons\_ch13.ico" />
+    <Content Include="Resources\icons\_ch3.ico" />
+    <Content Include="Resources\icons\_c_13.ico" />
+    <Content Include="Resources\icons\_c_3.ico" />
+    <Content Include="Resources\icons\_eh13.ico" />
+    <Content Include="Resources\icons\_eh3.ico" />
+    <Content Include="Resources\icons\_e_13.ico" />
+    <Content Include="Resources\icons\_e_3.ico" />
+    <Content Include="Resources\icons\_oh13.ico" />
+    <Content Include="Resources\icons\_oh3.ico" />
+    <Content Include="Resources\icons\_o_13.ico" />
+    <Content Include="Resources\icons\_o_3.ico" />
+    <Content Include="Resources\icons\_th13.ico" />
+    <Content Include="Resources\icons\_th3.ico" />
+    <Content Include="Resources\icons\_t_13.ico" />
+    <Content Include="Resources\icons\_t_3.ico" />
+    <Content Include="Resources\icons\_uh13.ico" />
+    <Content Include="Resources\icons\_uh3.ico" />
+    <Content Include="Resources\icons\_u_13.ico" />
+    <Content Include="Resources\icons\_u_3.ico" />
+    <Content Include="Resources\icons\_x_13.ico" />
+    <Content Include="Resources\icons\_x_13d.ico" />
+    <Content Include="Resources\icons\_x_3.ico" />
+    <None Include="Resources\zaan.com.ico" />
+    <None Include="Resources\zaan_cube_16.ico" />
+    <None Include="Resources\zaan_cube_16b.ico" />
+    <None Include="Resources\reset_black.bmp" />
+    <Content Include="Resources\icons\_x_3d.ico" />
+    <Content Include="Resources\info\gnu-gpl-v3.txt" />
+    <Content Include="Resources\ZaanCubeIcon.ico" />
+    <Content Include="Resources\ZaanCubeIconWin7all.ico" />
+    <Content Include="Resources\zDemo\demo_tree_1.txt" />
+    <Content Include="Resources\icons\.zqm.ico" />
+    <None Include="Resources\pause.ico" />
+    <Content Include="Resources\next_z.ico" />
+    <Content Include="Resources\picture_black_90x90.bmp" />
+    <None Include="Resources\previous.ico" />
+    <None Include="Resources\play.ico" />
+    <None Include="Resources\turn_left.ico" />
+    <None Include="Resources\turn_right.ico" />
+    <Content Include="Resources\stop_z.ico" />
+    <Content Include="Resources\zDemo\demo_tree_2.txt" />
+    <Content Include="Resources\zDemo\EDE_0017.jpg" />
+    <Content Include="Resources\zDemo\EDE_0047.jpg" />
+    <Content Include="Resources\zDemo\EDE_0048.jpg" />
+    <Content Include="Resources\zDemo\EDE_0082.jpg" />
+    <Content Include="Resources\zDemo\EDE_0085.jpg" />
+    <Content Include="Resources\zDemo\EDE_0150.jpg" />
+    <Content Include="Resources\zDemo\EDE_0530.jpg" />
+    <Content Include="Resources\zDemo\EDE_0531.jpg" />
+    <Content Include="Resources\zDemo\EDE_0541.jpg" />
+    <Content Include="Resources\zDemo\EDE_0545.jpg" />
+    <Content Include="Resources\zDemo\EDE_0546.jpg" />
+    <Content Include="Resources\zDemo\EDE_0547.jpg" />
+    <Content Include="Resources\zDemo\EDE_0578.jpg" />
+    <Content Include="Resources\zDemo\EDE_0583.jpg" />
+    <Content Include="Resources\zDemo\EDE_0587.jpg" />
+    <Content Include="Resources\zDemo\EDE_0591.jpg" />
+    <Content Include="Resources\zDemo\zaan_test_1.txt" />
+    <Content Include="Resources\zDemo\zaan_test_2.TXT" />
+    <Content Include="Resources\zDemo\_z000000000000__new.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".zaan">
+      <Visible>False</Visible>
+      <Description>Document cube manager</Description>
+      <Progid>ZAAN</Progid>
+      <DefaultIcon>Resources\ZaanCubeIconWin7all.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,225 @@
+﻿Index	EN	FR
+1	When	Quand
+2	Who	Qui
+3	What	Quoi
+4	Where	Où
+5	Status	Etat
+6	Action for	Action pour
+7	Access control	Accès contrôlé
+8	found in : 	trouvés en : 
+9	Select in tree view	Sélectionner dans l'arborescence
+10	Search folder	Rechercher dossier
+11	Search document	Rechercher document
+12	New document	Nouveau document
+13	Note	Note
+14	Texte	Texte
+15	Presentation	Présentation
+16	Spreadsheet	Feuille de calcul
+17	...	...
+18	Previous selection	Sélection précédente
+19	Next selection	Sélection suivante
+20	Add	Ajouter
+21	Delete	Supprimer
+22	Move in documents	Entrer documents
+23	Move out documents	Sortir documents
+24	Open/close tree view panel	Ouvrir/fermer le volet arborescence
+25	Copy to ZAAN\copy	Copier dans ZAAN\copy
+26	Select all	Tout sélectionner
+27	Rename	Renommer
+28	New mail	Nouveau courrier
+29	Do you confirm the deletion of selected documents from ZAAN database ?	Confirmez-vous la suppression des documents sélectionnés de la base de données ZAAN ?
+30	Quick start guide	Guide de démarrage rapide
+31	Open/close viewer panel	Ouvrir/fermer le volet visionneuse
+32	Tree view panel visible	Volet arborescence visible
+33	Viewer panel visible	Volet visionneuse visible
+34	Import panel visible	Volet import visible
+35	Reset selector	Réinitialiser le sélecteur
+36	Add as external folder	Ajouter en dossier externe
+37	No folder found !	Dossier introuvable !
+38	End of folder search !	Fin de la recherche de dossier !
+39	No document found !	Document introuvable !
+40	End of document search !	Fin de la recherche de document !
+41	Do you confirm the deletion of selected documents from ZAAN\import folder ?	Confirmez-vous la suppression des documents sélectionnés du dossier ZAAN\import ?
+42	Do you confirm the deletion of selected documents from ZAAN\copy folder ?	Confirmez-vous la suppression des documents sélectionnés du dossier ZAAN\copy ?
+43	Multi dimensional document management	Gestion documentaire multi-dimensionnelle
+44	Document	Document
+45	Size (Kb)	Taille (Ko)
+46	Modification date	Date de modification
+47	About ZAAN	A propos de ZAAN
+48	ZAAN.com authorized reseller	Revendeur agréé ZAAN.com
+49	Sorry, ZAAN application will be closed because no license key has been found !	Désolé, l'application ZAAN va être fermée car aucune clé de licence n'a été trouvée !
+50	Type	Type
+51	This folder move is not allowed !	Ce déplacement de dossier n'est pas autorisé !
+52	Please enter your Email and get a license key by clicking on button "Get a license key"	Veuillez entrer votre Email et obtenir une clé de licence en cliquant sur le bouton "Obtenir une clé de licence"
+53	Please enter your Email !	Veuillez entrer votre Email !
+54	Your Email :	Votre Email :
+55	License type :	Type de licence :
+56	Valid until end of :	Valide jusqu'à fin :
+57	Get a license key	Obtenir une clé de licence
+58	EN : English	FR : Français
+59	Select today's date	Sélectionner la date d'aujourd'hui
+60	Please check ZAAN start-up procedure on www.zaan.com or contact us at info@zaan.com	Veuillez vérifier la procédure de démarrage de ZAAN sur www.zaan.com ou nous contacter à info@zaan.com
+61	It is not possible to modify a tree root name !	Il n'est pas possible de modifier le nom d'une racine d'arborescence
+62	This folder is empty : do you want to create a new ZAAN database ?	Ce dossier est vide : voulez-vous créer une nouvelle base de données ZAAN ?
+63	Select or create a ZAAN database	Sélectionner ou créer une base de données ZAAN
+64	Export ZAAN cube	Exporter cube ZAAN
+65	Language :	Langue :
+66	Refresh	Actualiser
+67	Selected folder is not a ZAAN database and is not empty for creating one !	Le dossier sélectionné n'est pas une base de données ZAAN et n'est pas vide pour en créer une !
+68	Creation of ZAAN folder in (My)Documents failed ! ZAAN application will be closed !	Echec de la création du dossier ZAAN dans (Mes)Documents ! l'application ZAAN va être fermée !
+69	Check your license key	Vérifier votre clé de licence
+70	Select a destination folder	Sélectionnez un dossier de destination
+71	Change folder	Changer de dossier
+72	doc. to file	doc. à classer
+73	doc. to delete	doc. à supprimer
+74	new	nouveau
+75	Sorry, you cannot store more than 1 000 documents with ZAAN Basic (free limited license) !	Désolé, vous ne pouvez pas enregistrer plus de 1 000 documents avec ZAAN Basic (licence gratuite limitée) !
+76	Cut	Couper
+77	Copy	Copier
+78	Paste	Coller
+79	Entry not allowed !	Entrée non valide !
+80	Open/close import panel	Ouvrir/fermer le volet d'import
+81	folders	dossiers
+82	documents	documents
+83	Documents	Documents
+84	Show/hide matrix	Afficher/masquer la matrice
+85	Show/hide tree view	Afficher/masquer l'arborescence
+86	Show/hide favorite cubes	Afficher/masquer les cubes favoris
+87	Image mode	Mode image
+88	Night mode	Mode nuit
+89	Add this cube to favorites	Ajouter ce cube aux favoris
+90	Delete this favorite	Supprimer ce favori
+91	ZAAN user manual will be downloaded. Once open, you may save it in :	Le manuel utilisateur ZAAN va être téléchargé. Une fois ouvert, vous pouvez l'enregistrer dans :
+92	Do you confirm the automatic renaming of selected documents from ZAAN database ?	Confirmez-vous le renommage automatique des documents sélectionnés de la base de données ZAAN ?
+93	Rename automatically	Renommer automatiquement
+94	This folder does not exist anymore !	Ce dossier n'existe plus !
+95	Multiple folders addition terminated ! Next addition is locked during :	L'ajout multiple de dossiers est terminée ! Le prochain ajout est verrouillé pendant :
+96	Do you confirm ZAAN application closing ?	Confirmez-vous la fermeture de l'application ZAAN ?
+97	Resize pictures (in %)	Redimensionner les photos (en %)
+98	Do you confirm the resizing of selected (.jpg) pictures in ZAAN\copy folder ?	Confirmez-vous le redimensionnement des photos (.jpg) sélectionnées dans le dossier ZAAN\copy ?
+99	No folder added : the 99 indexes have been used !	Aucun dossier ajouté : les 99 index ont été utilisés !
+100	Export database to Windows	Exporter la base de données vers Windows
+101	January	Janvier
+102	February	Février
+103	March	Mars
+104	April	Avril
+105	May	Mai
+106	June	Juin
+107	July	Juillet
+108	August	Août
+109	September	Septembre
+110	October	Octobre
+111	November	Novembre
+112	December	Décembre
+113	Do you confirm the export of current ZAAN database to a simple Windows tree organization and the copy of all documents ?	Confirmez-vous l'export de la base de donnée courante ZAAN vers une simple arborescence Windows et la copie de tous les documents ?
+114	Current ZAAN database has been successfully exported to :	La base de données a été exportée avec succès à : 
+115	Select a favorite cube	Sélectionner un cube favori
+116	ZAAN cubes automatic import	Import automatique de cubes ZAAN
+117	Do you accept following document path creation	Acceptez-vous la création du chemin d'accès suivant
+118	Automatic ZAAN cube import :	Import automatique de cube ZAAN :
+119	already exists ! Do you want to overwrite it ?	existe déjà ! Voulez-vous l'écraser ?
+120	No more index available for automatic folder creation !	Plus d'index disponible pour la création automatique de dossier !
+121	Do you want to continue ?	Voulez-vous continuer ?
+122	Sorry, this ZAAN database is not more accessible !	Désolé, cette base de données ZAAN n'est plus accessible !
+123	Mb	Mo
+124	Folders tree visible	Arborescence de dossiers visible
+125	File automatically	Classer automatiquement
+126	Select a folder	Sélectionner un dossier
+127	Change root folder	Changer de dossier racine
+128	This folder is already linked in ZAAN ! This link may be changed or deleted in related ZAAN database !	Ce dossier est déjà lié à ZAAN ! Ce lien peut être déplacé ou supprimé dans la base de données ZAAN correspondante.
+129	Create/move in shortcut	Créer/entrer un raccourci
+130	Please connect your computer to Internet for checking your license key !	Merci de connecter votre ordinateur à Internet pour vérifier votre clé de licence !
+131	Get online before :	Se connecter d'ici :
+132	About ZAAN / Help	A propos de ZAAN / Aide
+133	This ZAAN database format is not valid !	Le format de cette base de données ZAAN n'est pas valide !
+134	Undo move	Annuler déplacer
+135	Slide show	Diaporama
+136	Interval (sec.) :	Intervalle (sec.) :
+137	Do you confirm this image rotation ?	Confirmez-vous cette rotation d'image ?
+138	Do you confirm the deletion of this picture ?	Confirmez-vous la suppression de cette photo ?
+139	Do you want to launch slide show of current selection, if any image available ?	Voulez-vous lancer le diaporama de la sélection courante, si des images sont disponibles ?
+140	No image available in current selection !	Aucune image disponible dans la sélection courante !
+141	Do you want to start with a business example (picture example if not) ?	Voulez-vous démarrer avec un exemple d'entreprise (exemple de photos sinon) ?
+142	Multiple references	Multiples références
+143	Delete reference :	Supprimer référence :
+144	has multiple Who/What references : do you want keep them ?	a de multiple références Qui/Quoi : voulez-vous les conserver ?
+145	This reference is already defined !	Cette référence est déjà définie !
+146	successfully imported !	importé(s) avec succès !
+147	You may add now multiple Who/What references by dropping selected documents on appropriate tree folders	Vous pouvez ajouter maintenant de multiple références Qui/Quoi en glissant les documents sélectionnés sur les dossiers appropriés de l'arborescence
+148	Creation of ZAAN_demos folder in (My)Documents failed ! ZAAN application will be closed !	Echec de la création du dossier ZAAN_demos dans (Mes)Documents ! l'application ZAAN va être fermée !
+149	No reference found in existing dimensions !	Aucune référence trouvée dans les dimensions existantes !
+150	Do you want to delete this last dimension ?	Voulez-vous supprimer cette dernière dimension ?
+151	It is not possible to rename a year or a month !	Il n'est pas possible de renommer une année ou un mois !
+152	Do you want to create a year to come (past year if not) ?	Voulez-vous créer une année future (passée sinon) ?
+153	Number of created months :	Nombre de mois créés :
+154	The 12 months of selected year have been already created !	Les 12 mois de l'année sélectionnée ont déjà été créés !
+155	has been created with its 12 months !	a été créée avec ses 12 mois !
+156	cannot be created (only years after 2001 may be created) !	ne peut être créée (seules les années postérieures à 2001 peuvent être créées) !
+157	This folder name already exists !	Ce nom de dossier existe déjà !
+158	This ZAAN database coding is an old one (v1) : do you want to convert it (WARNING : nobody else shoud be connected to it) ?	Cette base de données ZAAN est d'un format ancien (v1) : voulez-vous la convertir (ATTENTION : personne d'autre ne doit être connecté à cette base) ?
+159	Do you want to save (make a copy of) this ZAAN database before launching its conversion ?	Voulez-vous sauvegarder (faire une copie de) cette base de données ZAAN courante avant de lancer sa conversion ?
+160	This ZAAN database conversion is terminated !	La conversion de cette base de données ZAAN est terminée !
+161	Sorry, importing this ZAAN cube is not possible, its XML descriptor beeing invalid !	Désolé, l'import de ce cube ZAAN n'est pas possible, son descripteur XML n'étant pas valide !
+162	Sorry, this folder is an exported ZAAN database !	Désolé, ce dossier est une base de données ZAAN exportée !
+163	Extend selection	Elargir la sélection
+164	documents per page	documents par page
+165	This bookmark already exists !	Ce signet existe déjà !
+166	Refresh this favorite	Actualiser ce favori
+167	This ZAAN database coding is an old one (v2) : do you want to convert it (WARNING : nobody else shoud be connected to it) ?	Cette base de données ZAAN est d'un format ancien (v2) : voulez-vous la convertir (ATTENTION : personne d'autre ne doit être connecté à cette base) ?
+168	Export reference table	Exporter table de références
+169	Import tree view...	Importer arborescence...
+170	ZAAN import : select a tree view table	ZAAN import : sélectionner une table d'arborescence
+171	Export tree view...	Exporter arborescence...
+172	<separated tree views>	<arborescences séparées>
+173	Import database from Windows...	Importer base de données depuis Windows...
+174	Do you want to create a year to come (past year if not) ?	Voulez-vous créer une année future (ou passée sinon) ?
+175	has been created !	a été créée !
+176	Do you confirm this folder move (database administration operation) ?	Confirmez-vous le déplacement de ce dossier (fonction d'administration de la base de données) ?
+177	ZAAN database conversion should last few minutes. Please click OK and wait until termination message is displayed !	La conversion de la base de données ZAAN devrait durer plusierus minutes. Merci de cliquer sur OK et d'attendre le message de fin d'opération !
+178	Cancel selection	Annuler la sélection
+179	new item(s) imported from tree view table :	élément(s) nouveaux importé(s) de la table d'arborescence :
+180	Tree view table successfully created !	Creation de la table d'arborescence terminée avec succès !
+181	Tree view locked	Arborescence verrouillée
+182	Set matrix X/Y axis	Définir l'axe X/Y de la matrice
+183	year is out of range	est une année hors limite
+184	Copy location	Copier emplacement
+185	Open folder	Ouvrir dossier
+186	Check database	Vérifier la base de données
+187	Do you confirm current database check (database administration operation : please check that no one else is connected) ?	Confirmez-vous la vérification de la base de données courante (fonction d'administration de la base de données : merci de vérifier que personne d'autre n'est connecté) ?
+188	ZAAN database check is terminated (no issue detected) !	La vérification de la base de données ZAAN est terminée (aucun problème détecté) !
+189	Database correction report :	Rapport de correction de la base de données :
+190	Undefined folder index : 	Index de dossier non défini : 
+191	Index not found in tree view backup file	Index introuvable dans le fichier de sauvegarde de l'arborescence
+192	Folder restored in tree view :	Dossier restauré dans l'arborescence : 
+193	Move :	Déplacement : 
+194	Defective data index :	Index de données défectueux : 
+195	Export name table	Exporter table des noms
+196	Import ZAAN cubes	Importer cubes ZAAN
+197	Do you confirm import of selected ZAAN cube(s) ?	Confirmez-vous l'import du/des cube(s) ZAAN sélectionnés ?
+198	For adding a (new or existing) ZAAN database, right click on database list (contains 1 item C:\Users\...\zDemo\) and select Add !	Pour ajouter une base de données ZAAN (nouvelle ou existante), faire un clic droit sur la liste des bases de données (contient 1 élément C:\Users\...\zDemo\) et sélectionner Ajouter !
+199	Change database image	Changer l'image de la base de données
+200	Select/create a database	Sélectionner/créer une base de données
+201	ZAAN database : select an image	Base de données ZAAN : sélectionner une image
+202	Only the first	Seulement les
+203	documents have been displayed !	premiers documents ont été affichés !
+204	(Date passed !)	(Date passée !)
+205	Previous page	Page précédente
+206	Next page	Page suivante
+207	This cube has not been exported by ZAAN : do you confirm its import ?	Ce cube n'a pas été exporté par ZAAN : confirmez-vous son import ?
+208	Starts/stops slide show	Démarrer/arrêter le diaporama
+209	Show/hide viewer panel	Afficher/masquer le volet visionneuse
+210	Show/hide import panel	Afficher/masquer le volet import
+211	Only once	Une seule fois
+212	Every day	Tous les jours
+213	Every week	Toutes les sem.
+214	Every month	Tous les mois
+215	Destination folder :	Dossier de destination :
+216	Dimensions order :	Ordre des dimensions :
+217	Now	Maintenant
+218	OK	OK
+219	Cancel	Annuler
+220	Next database export is scheduled at :	Le prochain export de la base de données est prévu le :
+221	Default cube	Cube par défaut
+222	Close database	Fermer la base de données
+223	Sorry, ZAAN application will be closed !	Désolé, l'application ZAAN va être fermée !
+224	(Folder like : ZAAN-MyBase)	(Dossier comme : ZAAN-MaBase)

@@ -1,0 +1,166 @@
+﻿NodeKey	ParentKey	EN	FR
+==================== Who =======================================================
+ozzzp	ozzzy	Partenaires
+ozzzq	ozzzy	Investisseurs
+ozzzr	ozzzs	ZAAN.com
+ozzzs	ozzzy	Fournisseurs
+ozzzt	ozzzy	Concurrents
+ozzzu	ozzzy	Clients
+ozzzv	ozzzy	Banques
+ozzzw	ozzzy	Assureurs
+ozzzx	ozzzy	Administration
+==================== What ======================================================
+azzyq	azzyu	Projets
+azzyr	azzyu	Infrastructure
+azzys	azzyu	Assistance utilisateur
+azzyt	azzyu	Applications
+azzyu	azzzy	Système d'information
+azzyv	azzyz	Support
+azzyw	azzyz	Intégration
+azzyx	azzyz	Formation
+azzyy	azzyz	Conseil
+azzyz	azzzy	Services fournis
+azzz0	azzz3	Sous-traitants
+azzz1	azzz3	Employés
+azzz2	azzz3	Candidats
+azzz3	azzzy	Ressources humaines
+azzz4	azzz6	Recherche
+azzz5	azzz6	Développement
+azzz6	azzzy	Recherche et Dév
+azzz7	azzz9	Certifications
+azzz8	azzz9	Audits qualité
+azzz9	azzzy	Qualité
+azzza	azzzf	Références
+azzzb	azzzf	Propositions
+azzzc	azzzf	Prix
+azzzd	azzzf	Conditions de vente
+azzze	azzzf	Commandes
+azzzf	azzzl	Ventes
+azzzg	azzzi	Services
+azzzh	azzzi	Produits
+azzzi	azzzk	Produits et Services
+azzzj	azzzk	Evénements marketing
+azzzk	azzzl	Marketing
+azzzl	azzzy	Marketing et Ventes
+azzzm	azzzo	Réglementation
+azzzn	azzzo	Contrats
+azzzo	azzzy	Juridique
+azzzp	azzzs	Destinations
+azzzq	azzzs	Communication interne
+azzzr	azzzs	Communication externe
+azzzs	azzzy	Communication
+azzzt	azzzx	Finances
+azzzu	azzzx	Comptabilité
+azzzv	azzzx	Administration
+azzzw	azzzx	Achats
+azzzx	azzzy	Admin et Finance
+==================== Where =====================================================
+ezzwx	ezzx2	New Caledonia	Nouvelle-Calédonie
+ezzwy	ezzx2	New Zealand	Nouvelle-(Zélande
+ezzwz	ezzx1	Sydney	Syndey
+ezzx0	ezzx1	Canberra	Canberra
+ezzx1	ezzx2	Australia	Australie
+ezzx2	ezzzy	Oceania	Océanie
+ezzx3	ezzx4	Ankara	Ankara
+ezzx4	ezzym	Turkey	Turquie
+ezzx5	ezzx6	Bern	Berne
+ezzx6	ezzym	Switzerland	Suisse
+ezzx7	ezzx8	Stockholm	Stockholm
+ezzx8	ezzym	Sweden	Suède
+ezzx9	ezzym	Slovenia	Slovénie
+ezzxa	ezzym	Slovakia	Slovaquie
+ezzxb	ezzxc	London	Londres
+ezzxc	ezzym	United Kingdom	Royaume-Uni
+ezzxd	ezzym	Romania	Roumanie
+ezzxe	ezzxf	Prague	Prague
+ezzxf	ezzym	Czech Republic	République Tchèque
+ezzxg	ezzxh	Lisbon	Lisbonne
+ezzxh	ezzym	Portugal	Portugal
+ezzxi	ezzxj	Warsaw	Varsovie
+ezzxj	ezzym	Poland	Pologne
+ezzxk	ezzxl	Amsterdam	Amsterdam
+ezzxl	ezzym	The Netherlands	Pays-Bas
+ezzxm	ezzxn	Oslo	Oslo
+ezzxn	ezzym	Norway	Norvège
+ezzxo	ezzym	Malta	Malte
+ezzxp	ezzym	Luxembourg	Luxembourg
+ezzxq	ezzym	Lithuania	Lituanie
+ezzxr	ezzym	Latvia	Lettonie
+ezzxs	ezzxt	Rome	Rome
+ezzxt	ezzym	Italy	Italie
+ezzxu	ezzym	Iceland	Islande
+ezzxv	ezzxw	Dublin	Bublin
+ezzxw	ezzym	Ireland	Irlande
+ezzxx	ezzym	Hungary	Hongrie
+ezzxy	ezzxz	Athens	Athènes
+ezzxz	ezzym	Greece	Grèce
+ezzy0	ezzy1	La Défense	La Défense
+ezzy1	ezzy2	Paris	Paris
+ezzy2	ezzy6	Ile-de-France	Ile-de-France
+ezzy3	ezzy4	Port Navalo	Port-Navalo
+ezzy4	ezzy5	Morbihan	Morbihan
+ezzy5	ezzy6	Bretagne	Bretagne
+ezzy6	ezzym	France	France
+ezzy7	ezzy8	Helsinki	Helsinki
+ezzy8	ezzym	Finland	Finlande
+ezzy9	ezzym	Estonia	Estonie
+ezzya	ezzyb	Madrid	Madrid
+ezzyb	ezzym	Spain	Espagne
+ezzyc	ezzyd	Copenhagen	Copenhague
+ezzyd	ezzym	Denmark	Danemark
+ezzye	ezzym	Croatia	Croatie
+ezzyf	ezzym	Cyprus	Chypre
+ezzyg	ezzyh	Brussels	Bruxelles
+ezzyh	ezzym	Belgium	Belgique
+ezzyi	ezzyj	Vienna	Vienne
+ezzyj	ezzym	Austria	Autriche
+ezzyk	ezzyl	Berlin	Berlin
+ezzyl	ezzym	Germany	Allemagne
+ezzym	ezzzy	Europe	Europe
+ezzyn	ezzys	Vietnam	Vietnam
+ezzyo	ezzys	Singapore	Singapore
+ezzyp	ezzys	India	Inde
+ezzyq	ezzys	United Arab Emirates	Emirats Arabes
+ezzyr	ezzys	China	Chine
+ezzys	ezzzy	Asia	Asie
+ezzyt	ezzyu	Lima	Lima
+ezzyu	ezzz5	Peru	Pérou
+ezzyv	ezzyw	Mexico city	Mexico
+ezzyw	ezzz5	Mexico	Mexique
+ezzyx	ezzyy	Bogota	Bogota
+ezzyy	ezzz5	Colombia	Colombie
+ezzyz	ezzz0	Santiago	Santiago
+ezzz0	ezzz5	Chile	Chili
+ezzz1	ezzz2	Brazilia	Brasilia
+ezzz2	ezzz5	Brazil	Brésil
+ezzz3	ezzz4	Buenos Aires	Buenos Aires
+ezzz4	ezzz5	Argentina	Argentine
+ezzz5	ezzzy	Latin America	Amérique Latine
+ezzz6	ezzz8	Columbus	Columbus
+ezzz7	ezzz8	Cleveland	Cleveland
+ezzz8	ezzzj	Ohio	Ohio
+ezzz9	ezzzb	New York city	New York city
+ezzza	ezzzb	Albany	Albany
+ezzzb	ezzzj	New York	New York
+ezzzc	ezzzd	Chicago	Chicago
+ezzzd	ezzzj	Illinois	Illinois
+ezzze	ezzzi	San Francisco	San Francisco
+ezzzf	ezzzi	San Diego	San Diego
+ezzzg	ezzzi	Sacramento	Sacramento
+ezzzh	ezzzi	Los Angeles	Los Angeles
+ezzzi	ezzzj	California	Californie
+ezzzj	ezzzq	USA	Etats-Unis
+ezzzk	ezzzp	Vancouver	Vancouver
+ezzzl	ezzzp	Toronto	Toronto
+ezzzm	ezzzp	Quebec	Québec (ville)
+ezzzn	ezzzp	Ottawa	Ottawa
+ezzzo	ezzzp	Montreal	Montréal
+ezzzp	ezzzq	Canada	Canada
+ezzzq	ezzzy	Northern America	Amérique du Nord
+ezzzr	ezzzx	Tunisia	Tunisie
+ezzzs	ezzzx	Morocco	Maroc
+ezzzt	ezzzx	Libya	Libye
+ezzzu	ezzzx	Egypt	Egypte
+ezzzv	ezzzx	Algeria	Algérie
+ezzzw	ezzzx	South-Africa	Afrique du Sud
+ezzzx	ezzzy	Africa	Afrique

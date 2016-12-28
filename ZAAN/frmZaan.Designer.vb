@@ -350,7 +350,8 @@ Partial Class frmZaan
         Me.SplitContainer1.BackColor = System.Drawing.SystemColors.ControlDark
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.SplitContainer1.Location = New System.Drawing.Point(5, 5)
+        Me.SplitContainer1.Location = New System.Drawing.Point(10, 10)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.SplitContainer1.Name = "SplitContainer1"
         Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
@@ -362,8 +363,9 @@ Partial Class frmZaan
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.tcFolders)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1166, 532)
+        Me.SplitContainer1.Size = New System.Drawing.Size(2332, 1022)
         Me.SplitContainer1.SplitterDistance = 387
+        Me.SplitContainer1.SplitterWidth = 8
         Me.SplitContainer1.TabIndex = 0
         '
         'tcCubes
@@ -373,19 +375,21 @@ Partial Class frmZaan
         Me.tcCubes.Font = New System.Drawing.Font("Franklin Gothic Book", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tcCubes.ImageList = Me.imgFileTypes
         Me.tcCubes.Location = New System.Drawing.Point(0, 0)
+        Me.tcCubes.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tcCubes.Name = "tcCubes"
         Me.tcCubes.SelectedIndex = 0
         Me.tcCubes.ShowToolTips = True
-        Me.tcCubes.Size = New System.Drawing.Size(1166, 387)
+        Me.tcCubes.Size = New System.Drawing.Size(2332, 387)
         Me.tcCubes.TabIndex = 19
         '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.pnlCube)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage4.Location = New System.Drawing.Point(8, 52)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1158, 354)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.TabPage4.Size = New System.Drawing.Size(2316, 327)
         Me.TabPage4.TabIndex = 0
         Me.TabPage4.Text = "..."
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -395,16 +399,18 @@ Partial Class frmZaan
         Me.pnlCube.Controls.Add(Me.SplitContainer2)
         Me.pnlCube.Controls.Add(Me.pnlListTop)
         Me.pnlCube.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlCube.Location = New System.Drawing.Point(3, 3)
+        Me.pnlCube.Location = New System.Drawing.Point(6, 6)
+        Me.pnlCube.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlCube.Name = "pnlCube"
-        Me.pnlCube.Size = New System.Drawing.Size(1152, 348)
+        Me.pnlCube.Size = New System.Drawing.Size(2304, 315)
         Me.pnlCube.TabIndex = 20
         '
         'SplitContainer2
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
-        Me.SplitContainer2.Location = New System.Drawing.Point(0, 71)
+        Me.SplitContainer2.Location = New System.Drawing.Point(0, 137)
+        Me.SplitContainer2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.SplitContainer2.Name = "SplitContainer2"
         '
         'SplitContainer2.Panel1
@@ -415,8 +421,9 @@ Partial Class frmZaan
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.SplitContainer3)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1152, 277)
+        Me.SplitContainer2.Size = New System.Drawing.Size(2304, 178)
         Me.SplitContainer2.SplitterDistance = 274
+        Me.SplitContainer2.SplitterWidth = 8
         Me.SplitContainer2.TabIndex = 1
         '
         'trvW
@@ -435,53 +442,55 @@ Partial Class frmZaan
         Me.trvW.ItemHeight = 18
         Me.trvW.LabelEdit = True
         Me.trvW.Location = New System.Drawing.Point(0, 0)
+        Me.trvW.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.trvW.Name = "trvW"
         Me.trvW.SelectedImageIndex = 0
         Me.trvW.ShowNodeToolTips = True
-        Me.trvW.Size = New System.Drawing.Size(274, 277)
+        Me.trvW.Size = New System.Drawing.Size(274, 178)
         Me.trvW.TabIndex = 6
         '
         'cmsTrvW
         '
         Me.cmsTrvW.BackColor = System.Drawing.SystemColors.Menu
+        Me.cmsTrvW.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsTrvW.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiTrvWAdd, Me.tsmiTrvWAddExternal, Me.tssTrvW1, Me.tsmiTrvWRefresh, Me.tssTrvW2, Me.tsmiTrvWRename, Me.tsmiTrvWDelete, Me.tssTrvW3, Me.tsmiTrvWImport, Me.tsmiTrvWExport})
         Me.cmsTrvW.Name = "cmsTrvW"
-        Me.cmsTrvW.Size = New System.Drawing.Size(189, 176)
+        Me.cmsTrvW.Size = New System.Drawing.Size(341, 288)
         '
         'tsmiTrvWAdd
         '
         Me.tsmiTrvWAdd.Image = Global.WindowsApplication1.My.Resources.Resources.add_lg
         Me.tsmiTrvWAdd.Name = "tsmiTrvWAdd"
-        Me.tsmiTrvWAdd.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWAdd.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWAdd.Text = "Add"
         '
         'tsmiTrvWAddExternal
         '
         Me.tsmiTrvWAddExternal.Image = Global.WindowsApplication1.My.Resources.Resources.add_lg
         Me.tsmiTrvWAddExternal.Name = "tsmiTrvWAddExternal"
-        Me.tsmiTrvWAddExternal.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWAddExternal.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWAddExternal.Text = "Add as external folder"
         '
         'tssTrvW1
         '
         Me.tssTrvW1.Name = "tssTrvW1"
-        Me.tssTrvW1.Size = New System.Drawing.Size(185, 6)
+        Me.tssTrvW1.Size = New System.Drawing.Size(337, 6)
         '
         'tsmiTrvWRefresh
         '
         Me.tsmiTrvWRefresh.Name = "tsmiTrvWRefresh"
-        Me.tsmiTrvWRefresh.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWRefresh.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWRefresh.Text = "Refresh"
         '
         'tssTrvW2
         '
         Me.tssTrvW2.Name = "tssTrvW2"
-        Me.tssTrvW2.Size = New System.Drawing.Size(185, 6)
+        Me.tssTrvW2.Size = New System.Drawing.Size(337, 6)
         '
         'tsmiTrvWRename
         '
         Me.tsmiTrvWRename.Name = "tsmiTrvWRename"
-        Me.tsmiTrvWRename.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWRename.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWRename.Text = "Rename"
         '
         'tsmiTrvWDelete
@@ -489,24 +498,24 @@ Partial Class frmZaan
         Me.tsmiTrvWDelete.Enabled = False
         Me.tsmiTrvWDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiTrvWDelete.Name = "tsmiTrvWDelete"
-        Me.tsmiTrvWDelete.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWDelete.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWDelete.Text = "Delete"
         '
         'tssTrvW3
         '
         Me.tssTrvW3.Name = "tssTrvW3"
-        Me.tssTrvW3.Size = New System.Drawing.Size(185, 6)
+        Me.tssTrvW3.Size = New System.Drawing.Size(337, 6)
         '
         'tsmiTrvWImport
         '
         Me.tsmiTrvWImport.Name = "tsmiTrvWImport"
-        Me.tsmiTrvWImport.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWImport.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWImport.Text = "Import tree view..."
         '
         'tsmiTrvWExport
         '
         Me.tsmiTrvWExport.Name = "tsmiTrvWExport"
-        Me.tsmiTrvWExport.Size = New System.Drawing.Size(188, 22)
+        Me.tsmiTrvWExport.Size = New System.Drawing.Size(340, 38)
         Me.tsmiTrvWExport.Text = "Export tree view"
         '
         'imgFileTypes
@@ -525,10 +534,11 @@ Partial Class frmZaan
         Me.lvBookmark.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvBookmark.ForeColor = System.Drawing.Color.MidnightBlue
         Me.lvBookmark.Location = New System.Drawing.Point(0, 0)
+        Me.lvBookmark.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvBookmark.MultiSelect = False
         Me.lvBookmark.Name = "lvBookmark"
         Me.lvBookmark.Scrollable = False
-        Me.lvBookmark.Size = New System.Drawing.Size(274, 277)
+        Me.lvBookmark.Size = New System.Drawing.Size(274, 178)
         Me.lvBookmark.SmallImageList = Me.imgFileTypes
         Me.lvBookmark.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.lvBookmark.TabIndex = 0
@@ -538,22 +548,23 @@ Partial Class frmZaan
         '
         'cmsBookmark
         '
+        Me.cmsBookmark.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsBookmark.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiSelTabsAdd, Me.tsmiSelTabsRefresh, Me.tsmiSelTabsDelete, Me.tssSelTabs1, Me.tsmiSelTabsDefault})
         Me.cmsBookmark.Name = "cmsSelTabs"
-        Me.cmsBookmark.Size = New System.Drawing.Size(171, 98)
+        Me.cmsBookmark.Size = New System.Drawing.Size(309, 162)
         '
         'tsmiSelTabsAdd
         '
         Me.tsmiSelTabsAdd.Image = Global.WindowsApplication1.My.Resources.Resources.add_lg
         Me.tsmiSelTabsAdd.Name = "tsmiSelTabsAdd"
-        Me.tsmiSelTabsAdd.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiSelTabsAdd.Size = New System.Drawing.Size(308, 38)
         Me.tsmiSelTabsAdd.Text = "Add bookmark"
         '
         'tsmiSelTabsRefresh
         '
         Me.tsmiSelTabsRefresh.Enabled = False
         Me.tsmiSelTabsRefresh.Name = "tsmiSelTabsRefresh"
-        Me.tsmiSelTabsRefresh.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiSelTabsRefresh.Size = New System.Drawing.Size(308, 38)
         Me.tsmiSelTabsRefresh.Text = "Refresh bookmark"
         '
         'tsmiSelTabsDelete
@@ -561,18 +572,18 @@ Partial Class frmZaan
         Me.tsmiSelTabsDelete.Enabled = False
         Me.tsmiSelTabsDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiSelTabsDelete.Name = "tsmiSelTabsDelete"
-        Me.tsmiSelTabsDelete.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiSelTabsDelete.Size = New System.Drawing.Size(308, 38)
         Me.tsmiSelTabsDelete.Text = "Delete bookmark"
         '
         'tssSelTabs1
         '
         Me.tssSelTabs1.Name = "tssSelTabs1"
-        Me.tssSelTabs1.Size = New System.Drawing.Size(167, 6)
+        Me.tssSelTabs1.Size = New System.Drawing.Size(305, 6)
         '
         'tsmiSelTabsDefault
         '
         Me.tsmiSelTabsDefault.Name = "tsmiSelTabsDefault"
-        Me.tsmiSelTabsDefault.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiSelTabsDefault.Size = New System.Drawing.Size(308, 38)
         Me.tsmiSelTabsDefault.Text = "Default bookmark"
         '
         'SplitContainer3
@@ -580,6 +591,7 @@ Partial Class frmZaan
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
         'SplitContainer3.Panel1
@@ -595,8 +607,9 @@ Partial Class frmZaan
         Me.SplitContainer3.Panel2.Controls.Add(Me.pnlZoomVideo)
         Me.SplitContainer3.Panel2.Controls.Add(Me.wbDoc)
         Me.SplitContainer3.Panel2.Controls.Add(Me.pnlZoom)
-        Me.SplitContainer3.Size = New System.Drawing.Size(874, 277)
+        Me.SplitContainer3.Size = New System.Drawing.Size(2022, 178)
         Me.SplitContainer3.SplitterDistance = 265
+        Me.SplitContainer3.SplitterWidth = 8
         Me.SplitContainer3.TabIndex = 0
         '
         'pnlList
@@ -606,16 +619,18 @@ Partial Class frmZaan
         Me.pnlList.Controls.Add(Me.lvMatrix)
         Me.pnlList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlList.Location = New System.Drawing.Point(0, 0)
+        Me.pnlList.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlList.Name = "pnlList"
-        Me.pnlList.Size = New System.Drawing.Size(265, 277)
+        Me.pnlList.Size = New System.Drawing.Size(265, 178)
         Me.pnlList.TabIndex = 1
         '
         'pgbZaan
         '
         Me.pgbZaan.Dock = System.Windows.Forms.DockStyle.Top
         Me.pgbZaan.Location = New System.Drawing.Point(0, 0)
+        Me.pgbZaan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pgbZaan.Name = "pgbZaan"
-        Me.pgbZaan.Size = New System.Drawing.Size(265, 20)
+        Me.pgbZaan.Size = New System.Drawing.Size(265, 38)
         Me.pgbZaan.TabIndex = 11
         Me.pgbZaan.Visible = False
         '
@@ -632,8 +647,9 @@ Partial Class frmZaan
         Me.lvIn.LabelEdit = True
         Me.lvIn.LargeImageList = Me.imgLargeIcons
         Me.lvIn.Location = New System.Drawing.Point(0, 0)
+        Me.lvIn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvIn.Name = "lvIn"
-        Me.lvIn.Size = New System.Drawing.Size(265, 277)
+        Me.lvIn.Size = New System.Drawing.Size(265, 178)
         Me.lvIn.SmallImageList = Me.imgFileTypes
         Me.lvIn.TabIndex = 8
         Me.lvIn.UseCompatibleStateImageBehavior = False
@@ -642,81 +658,82 @@ Partial Class frmZaan
         'cmsLvIn
         '
         Me.cmsLvIn.BackColor = System.Drawing.SystemColors.Menu
+        Me.cmsLvIn.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsLvIn.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvInDocPerPage, Me.tsmiLvInImageMode, Me.tssLvIn1, Me.tsmiLvInRefresh, Me.tsmiLvInSelAll, Me.tsmiLvInUndoMove, Me.tssLvIn2, Me.tsmiLvInCut, Me.tsmiLvInCopy, Me.tsmiLvInPaste, Me.tssLvIn3, Me.tsmiLvInCopyPath, Me.tsmiLvInOpenFolder, Me.tssLvIn4, Me.tsmiLvInAutoRename, Me.tsmiLvInRename, Me.tsmiLvInDelete, Me.tssLvIn5, Me.tsmiLvInNew, Me.tssLvIn6, Me.tsmiLvInCopyToZC, Me.tsmiLvInMoveOut, Me.tssLvIn7, Me.tsmiLvInExport, Me.tsmiLvInExpNameTable, Me.tsmiLvInExpRefTable})
         Me.cmsLvIn.Name = "cmsLvIn"
-        Me.cmsLvIn.Size = New System.Drawing.Size(211, 464)
+        Me.cmsLvIn.Size = New System.Drawing.Size(396, 768)
         '
         'tsmiLvInDocPerPage
         '
         Me.tsmiLvInDocPerPage.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvInDpp10, Me.tsmiLvInDpp25, Me.tsmiLvInDpp50, Me.tsmiLvInDpp100, Me.tsmiLvInDpp250, Me.tsmiLvInDpp500, Me.tsmiLvInDpp1000})
         Me.tsmiLvInDocPerPage.Name = "tsmiLvInDocPerPage"
-        Me.tsmiLvInDocPerPage.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInDocPerPage.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInDocPerPage.Text = "1000 documents per page"
         '
         'tsmiLvInDpp10
         '
         Me.tsmiLvInDpp10.Name = "tsmiLvInDpp10"
-        Me.tsmiLvInDpp10.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp10.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp10.Text = "10"
         '
         'tsmiLvInDpp25
         '
         Me.tsmiLvInDpp25.Name = "tsmiLvInDpp25"
-        Me.tsmiLvInDpp25.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp25.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp25.Text = "25"
         '
         'tsmiLvInDpp50
         '
         Me.tsmiLvInDpp50.Name = "tsmiLvInDpp50"
-        Me.tsmiLvInDpp50.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp50.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp50.Text = "50"
         '
         'tsmiLvInDpp100
         '
         Me.tsmiLvInDpp100.Name = "tsmiLvInDpp100"
-        Me.tsmiLvInDpp100.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp100.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp100.Text = "100"
         '
         'tsmiLvInDpp250
         '
         Me.tsmiLvInDpp250.Name = "tsmiLvInDpp250"
-        Me.tsmiLvInDpp250.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp250.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp250.Text = "250"
         '
         'tsmiLvInDpp500
         '
         Me.tsmiLvInDpp500.Name = "tsmiLvInDpp500"
-        Me.tsmiLvInDpp500.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp500.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp500.Text = "500"
         '
         'tsmiLvInDpp1000
         '
         Me.tsmiLvInDpp1000.Name = "tsmiLvInDpp1000"
-        Me.tsmiLvInDpp1000.Size = New System.Drawing.Size(98, 22)
+        Me.tsmiLvInDpp1000.Size = New System.Drawing.Size(167, 38)
         Me.tsmiLvInDpp1000.Text = "1000"
         '
         'tsmiLvInImageMode
         '
         Me.tsmiLvInImageMode.Name = "tsmiLvInImageMode"
-        Me.tsmiLvInImageMode.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInImageMode.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInImageMode.Text = "Image mode"
         '
         'tssLvIn1
         '
         Me.tssLvIn1.Name = "tssLvIn1"
-        Me.tssLvIn1.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn1.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInRefresh
         '
         Me.tsmiLvInRefresh.Name = "tsmiLvInRefresh"
-        Me.tsmiLvInRefresh.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInRefresh.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInRefresh.Text = "Refresh"
         '
         'tsmiLvInSelAll
         '
         Me.tsmiLvInSelAll.Name = "tsmiLvInSelAll"
         Me.tsmiLvInSelAll.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.tsmiLvInSelAll.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInSelAll.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInSelAll.Text = "Select all"
         '
         'tsmiLvInUndoMove
@@ -724,20 +741,20 @@ Partial Class frmZaan
         Me.tsmiLvInUndoMove.Enabled = False
         Me.tsmiLvInUndoMove.Name = "tsmiLvInUndoMove"
         Me.tsmiLvInUndoMove.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.tsmiLvInUndoMove.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInUndoMove.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInUndoMove.Text = "Undo move"
         '
         'tssLvIn2
         '
         Me.tssLvIn2.Name = "tssLvIn2"
-        Me.tssLvIn2.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn2.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInCut
         '
         Me.tsmiLvInCut.Enabled = False
         Me.tsmiLvInCut.Name = "tsmiLvInCut"
         Me.tsmiLvInCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.tsmiLvInCut.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInCut.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInCut.Text = "Cut"
         '
         'tsmiLvInCopy
@@ -745,7 +762,7 @@ Partial Class frmZaan
         Me.tsmiLvInCopy.Enabled = False
         Me.tsmiLvInCopy.Name = "tsmiLvInCopy"
         Me.tsmiLvInCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.tsmiLvInCopy.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInCopy.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInCopy.Text = "Copy"
         '
         'tsmiLvInPaste
@@ -753,45 +770,45 @@ Partial Class frmZaan
         Me.tsmiLvInPaste.Enabled = False
         Me.tsmiLvInPaste.Name = "tsmiLvInPaste"
         Me.tsmiLvInPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.tsmiLvInPaste.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInPaste.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInPaste.Text = "Paste"
         '
         'tssLvIn3
         '
         Me.tssLvIn3.Name = "tssLvIn3"
-        Me.tssLvIn3.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn3.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInCopyPath
         '
         Me.tsmiLvInCopyPath.Enabled = False
         Me.tsmiLvInCopyPath.Name = "tsmiLvInCopyPath"
-        Me.tsmiLvInCopyPath.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInCopyPath.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInCopyPath.Text = "Copy location"
         '
         'tsmiLvInOpenFolder
         '
         Me.tsmiLvInOpenFolder.Enabled = False
         Me.tsmiLvInOpenFolder.Name = "tsmiLvInOpenFolder"
-        Me.tsmiLvInOpenFolder.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInOpenFolder.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInOpenFolder.Text = "Open folder"
         '
         'tssLvIn4
         '
         Me.tssLvIn4.Name = "tssLvIn4"
-        Me.tssLvIn4.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn4.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInAutoRename
         '
         Me.tsmiLvInAutoRename.Enabled = False
         Me.tsmiLvInAutoRename.Name = "tsmiLvInAutoRename"
-        Me.tsmiLvInAutoRename.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInAutoRename.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInAutoRename.Text = "Rename automatically"
         '
         'tsmiLvInRename
         '
         Me.tsmiLvInRename.Enabled = False
         Me.tsmiLvInRename.Name = "tsmiLvInRename"
-        Me.tsmiLvInRename.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInRename.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInRename.Text = "Rename"
         '
         'tsmiLvInDelete
@@ -799,58 +816,58 @@ Partial Class frmZaan
         Me.tsmiLvInDelete.Enabled = False
         Me.tsmiLvInDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiLvInDelete.Name = "tsmiLvInDelete"
-        Me.tsmiLvInDelete.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInDelete.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInDelete.Text = "Delete"
         '
         'tssLvIn5
         '
         Me.tssLvIn5.Name = "tssLvIn5"
-        Me.tssLvIn5.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn5.Size = New System.Drawing.Size(392, 6)
         Me.tssLvIn5.Visible = False
         '
         'tsmiLvInNew
         '
         Me.tsmiLvInNew.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvInNewNote, Me.tsmiLvInNewText, Me.tsmiLvInNewPres, Me.tsmiLvInNewSpSh})
         Me.tsmiLvInNew.Name = "tsmiLvInNew"
-        Me.tsmiLvInNew.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInNew.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInNew.Text = "New document"
         Me.tsmiLvInNew.Visible = False
         '
         'tsmiLvInNewNote
         '
         Me.tsmiLvInNewNote.Name = "tsmiLvInNewNote"
-        Me.tsmiLvInNewNote.Size = New System.Drawing.Size(140, 22)
+        Me.tsmiLvInNewNote.Size = New System.Drawing.Size(248, 38)
         Me.tsmiLvInNewNote.Text = "Note"
         '
         'tsmiLvInNewText
         '
         Me.tsmiLvInNewText.Name = "tsmiLvInNewText"
-        Me.tsmiLvInNewText.Size = New System.Drawing.Size(140, 22)
+        Me.tsmiLvInNewText.Size = New System.Drawing.Size(248, 38)
         Me.tsmiLvInNewText.Text = "Text"
         '
         'tsmiLvInNewPres
         '
         Me.tsmiLvInNewPres.Name = "tsmiLvInNewPres"
-        Me.tsmiLvInNewPres.Size = New System.Drawing.Size(140, 22)
+        Me.tsmiLvInNewPres.Size = New System.Drawing.Size(248, 38)
         Me.tsmiLvInNewPres.Text = "Presentation"
         '
         'tsmiLvInNewSpSh
         '
         Me.tsmiLvInNewSpSh.Name = "tsmiLvInNewSpSh"
-        Me.tsmiLvInNewSpSh.Size = New System.Drawing.Size(140, 22)
+        Me.tsmiLvInNewSpSh.Size = New System.Drawing.Size(248, 38)
         Me.tsmiLvInNewSpSh.Text = "Spreadsheet"
         '
         'tssLvIn6
         '
         Me.tssLvIn6.Name = "tssLvIn6"
-        Me.tssLvIn6.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn6.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInCopyToZC
         '
         Me.tsmiLvInCopyToZC.Enabled = False
         Me.tsmiLvInCopyToZC.Image = Global.WindowsApplication1.My.Resources.Resources.copy_lg
         Me.tsmiLvInCopyToZC.Name = "tsmiLvInCopyToZC"
-        Me.tsmiLvInCopyToZC.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInCopyToZC.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInCopyToZC.Text = "Copy to ZAAN\copy"
         '
         'tsmiLvInMoveOut
@@ -858,33 +875,33 @@ Partial Class frmZaan
         Me.tsmiLvInMoveOut.Enabled = False
         Me.tsmiLvInMoveOut.Image = Global.WindowsApplication1.My.Resources.Resources.down_lg
         Me.tsmiLvInMoveOut.Name = "tsmiLvInMoveOut"
-        Me.tsmiLvInMoveOut.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInMoveOut.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInMoveOut.Text = "Move out"
         '
         'tssLvIn7
         '
         Me.tssLvIn7.Name = "tssLvIn7"
-        Me.tssLvIn7.Size = New System.Drawing.Size(207, 6)
+        Me.tssLvIn7.Size = New System.Drawing.Size(392, 6)
         '
         'tsmiLvInExport
         '
         Me.tsmiLvInExport.Enabled = False
         Me.tsmiLvInExport.Name = "tsmiLvInExport"
-        Me.tsmiLvInExport.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInExport.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInExport.Text = "Export ZAAN cube"
         '
         'tsmiLvInExpNameTable
         '
         Me.tsmiLvInExpNameTable.Enabled = False
         Me.tsmiLvInExpNameTable.Name = "tsmiLvInExpNameTable"
-        Me.tsmiLvInExpNameTable.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInExpNameTable.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInExpNameTable.Text = "Export name table"
         '
         'tsmiLvInExpRefTable
         '
         Me.tsmiLvInExpRefTable.Enabled = False
         Me.tsmiLvInExpRefTable.Name = "tsmiLvInExpRefTable"
-        Me.tsmiLvInExpRefTable.Size = New System.Drawing.Size(210, 22)
+        Me.tsmiLvInExpRefTable.Size = New System.Drawing.Size(395, 38)
         Me.tsmiLvInExpRefTable.Text = "Export reference table"
         '
         'imgLargeIcons
@@ -900,8 +917,9 @@ Partial Class frmZaan
         Me.lvMatrix.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvMatrix.GridLines = True
         Me.lvMatrix.Location = New System.Drawing.Point(0, 0)
+        Me.lvMatrix.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvMatrix.Name = "lvMatrix"
-        Me.lvMatrix.Size = New System.Drawing.Size(265, 277)
+        Me.lvMatrix.Size = New System.Drawing.Size(265, 178)
         Me.lvMatrix.SmallImageList = Me.imgFileTypes
         Me.lvMatrix.TabIndex = 12
         Me.lvMatrix.UseCompatibleStateImageBehavior = False
@@ -914,9 +932,10 @@ Partial Class frmZaan
         Me.lblDocName.Cursor = System.Windows.Forms.Cursors.Default
         Me.lblDocName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDocName.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblDocName.Location = New System.Drawing.Point(66, 4)
+        Me.lblDocName.Location = New System.Drawing.Point(132, 8)
+        Me.lblDocName.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblDocName.Name = "lblDocName"
-        Me.lblDocName.Size = New System.Drawing.Size(108, 16)
+        Me.lblDocName.Size = New System.Drawing.Size(216, 31)
         Me.lblDocName.TabIndex = 13
         Me.lblDocName.Tag = ""
         Me.lblDocName.Text = "lblDocName"
@@ -927,10 +946,11 @@ Partial Class frmZaan
         '
         Me.lstPage.BackColor = System.Drawing.SystemColors.Control
         Me.lstPage.FormattingEnabled = True
-        Me.lstPage.ItemHeight = 20
-        Me.lstPage.Location = New System.Drawing.Point(125, 203)
+        Me.lstPage.ItemHeight = 38
+        Me.lstPage.Location = New System.Drawing.Point(250, 390)
+        Me.lstPage.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lstPage.Name = "lstPage"
-        Me.lstPage.Size = New System.Drawing.Size(58, 44)
+        Me.lstPage.Size = New System.Drawing.Size(112, 80)
         Me.lstPage.TabIndex = 16
         Me.lstPage.Visible = False
         '
@@ -938,19 +958,21 @@ Partial Class frmZaan
         '
         Me.lstInDir.BackColor = System.Drawing.SystemColors.Control
         Me.lstInDir.FormattingEnabled = True
-        Me.lstInDir.ItemHeight = 20
-        Me.lstInDir.Location = New System.Drawing.Point(61, 202)
+        Me.lstInDir.ItemHeight = 38
+        Me.lstInDir.Location = New System.Drawing.Point(122, 388)
+        Me.lstInDir.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lstInDir.Name = "lstInDir"
-        Me.lstInDir.Size = New System.Drawing.Size(58, 44)
+        Me.lstInDir.Size = New System.Drawing.Size(112, 80)
         Me.lstInDir.TabIndex = 15
         Me.lstInDir.Visible = False
         '
         'pctLvIn
         '
         Me.pctLvIn.BackColor = System.Drawing.SystemColors.Control
-        Me.pctLvIn.Location = New System.Drawing.Point(257, 156)
+        Me.pctLvIn.Location = New System.Drawing.Point(514, 300)
+        Me.pctLvIn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pctLvIn.Name = "pctLvIn"
-        Me.pctLvIn.Size = New System.Drawing.Size(90, 90)
+        Me.pctLvIn.Size = New System.Drawing.Size(180, 173)
         Me.pctLvIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctLvIn.TabIndex = 10
         Me.pctLvIn.TabStop = False
@@ -960,9 +982,10 @@ Partial Class frmZaan
         '
         Me.pnlZoomVideo.BackColor = System.Drawing.SystemColors.ControlLight
         Me.pnlZoomVideo.Controls.Add(Me.pnlVideoControl)
-        Me.pnlZoomVideo.Location = New System.Drawing.Point(446, 33)
+        Me.pnlZoomVideo.Location = New System.Drawing.Point(892, 63)
+        Me.pnlZoomVideo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlZoomVideo.Name = "pnlZoomVideo"
-        Me.pnlZoomVideo.Size = New System.Drawing.Size(107, 89)
+        Me.pnlZoomVideo.Size = New System.Drawing.Size(214, 171)
         Me.pnlZoomVideo.TabIndex = 14
         Me.pnlZoomVideo.Visible = False
         '
@@ -976,16 +999,18 @@ Partial Class frmZaan
         Me.pnlVideoControl.Controls.Add(Me.btnVideoStop)
         Me.pnlVideoControl.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlVideoControl.Location = New System.Drawing.Point(0, 0)
+        Me.pnlVideoControl.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlVideoControl.Name = "pnlVideoControl"
-        Me.pnlVideoControl.Size = New System.Drawing.Size(107, 26)
+        Me.pnlVideoControl.Size = New System.Drawing.Size(214, 50)
         Me.pnlVideoControl.TabIndex = 0
         '
         'pgbVideo
         '
         Me.pgbVideo.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pgbVideo.Location = New System.Drawing.Point(0, 18)
+        Me.pgbVideo.Location = New System.Drawing.Point(0, 35)
+        Me.pgbVideo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pgbVideo.Name = "pgbVideo"
-        Me.pgbVideo.Size = New System.Drawing.Size(19, 8)
+        Me.pgbVideo.Size = New System.Drawing.Size(38, 15)
         Me.pgbVideo.TabIndex = 17
         '
         'btnVideoBegin
@@ -993,9 +1018,10 @@ Partial Class frmZaan
         Me.btnVideoBegin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVideoBegin.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnVideoBegin.Image = Global.WindowsApplication1.My.Resources.Resources.previous
-        Me.btnVideoBegin.Location = New System.Drawing.Point(19, 0)
+        Me.btnVideoBegin.Location = New System.Drawing.Point(38, 0)
+        Me.btnVideoBegin.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnVideoBegin.Name = "btnVideoBegin"
-        Me.btnVideoBegin.Size = New System.Drawing.Size(22, 26)
+        Me.btnVideoBegin.Size = New System.Drawing.Size(44, 50)
         Me.btnVideoBegin.TabIndex = 13
         Me.btnVideoBegin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnVideoBegin.UseVisualStyleBackColor = True
@@ -1005,9 +1031,10 @@ Partial Class frmZaan
         Me.btnVideoEnd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVideoEnd.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnVideoEnd.Image = Global.WindowsApplication1.My.Resources.Resources.next_z
-        Me.btnVideoEnd.Location = New System.Drawing.Point(41, 0)
+        Me.btnVideoEnd.Location = New System.Drawing.Point(82, 0)
+        Me.btnVideoEnd.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnVideoEnd.Name = "btnVideoEnd"
-        Me.btnVideoEnd.Size = New System.Drawing.Size(22, 26)
+        Me.btnVideoEnd.Size = New System.Drawing.Size(44, 50)
         Me.btnVideoEnd.TabIndex = 15
         Me.btnVideoEnd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnVideoEnd.UseVisualStyleBackColor = True
@@ -1017,9 +1044,10 @@ Partial Class frmZaan
         Me.btnVideoPlayPause.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVideoPlayPause.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnVideoPlayPause.Image = Global.WindowsApplication1.My.Resources.Resources.pause
-        Me.btnVideoPlayPause.Location = New System.Drawing.Point(63, 0)
+        Me.btnVideoPlayPause.Location = New System.Drawing.Point(126, 0)
+        Me.btnVideoPlayPause.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnVideoPlayPause.Name = "btnVideoPlayPause"
-        Me.btnVideoPlayPause.Size = New System.Drawing.Size(22, 26)
+        Me.btnVideoPlayPause.Size = New System.Drawing.Size(44, 50)
         Me.btnVideoPlayPause.TabIndex = 14
         Me.btnVideoPlayPause.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnVideoPlayPause.UseVisualStyleBackColor = True
@@ -1029,9 +1057,10 @@ Partial Class frmZaan
         Me.btnVideoStop.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnVideoStop.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnVideoStop.Image = Global.WindowsApplication1.My.Resources.Resources.stop_z
-        Me.btnVideoStop.Location = New System.Drawing.Point(85, 0)
+        Me.btnVideoStop.Location = New System.Drawing.Point(170, 0)
+        Me.btnVideoStop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnVideoStop.Name = "btnVideoStop"
-        Me.btnVideoStop.Size = New System.Drawing.Size(22, 26)
+        Me.btnVideoStop.Size = New System.Drawing.Size(44, 50)
         Me.btnVideoStop.TabIndex = 16
         Me.btnVideoStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnVideoStop.UseVisualStyleBackColor = True
@@ -1040,9 +1069,10 @@ Partial Class frmZaan
         '
         Me.wbDoc.Dock = System.Windows.Forms.DockStyle.Left
         Me.wbDoc.Location = New System.Drawing.Point(0, 0)
-        Me.wbDoc.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wbDoc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.wbDoc.MinimumSize = New System.Drawing.Size(40, 38)
         Me.wbDoc.Name = "wbDoc"
-        Me.wbDoc.Size = New System.Drawing.Size(54, 277)
+        Me.wbDoc.Size = New System.Drawing.Size(108, 178)
         Me.wbDoc.TabIndex = 8
         Me.wbDoc.Visible = False
         '
@@ -1052,9 +1082,10 @@ Partial Class frmZaan
         Me.pnlZoom.Controls.Add(Me.pctZoom)
         Me.pnlZoom.Controls.Add(Me.pnlSlideControl)
         Me.pnlZoom.Controls.Add(Me.pctZoom2)
-        Me.pnlZoom.Location = New System.Drawing.Point(60, 33)
+        Me.pnlZoom.Location = New System.Drawing.Point(120, 63)
+        Me.pnlZoom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlZoom.Name = "pnlZoom"
-        Me.pnlZoom.Size = New System.Drawing.Size(366, 91)
+        Me.pnlZoom.Size = New System.Drawing.Size(732, 175)
         Me.pnlZoom.TabIndex = 12
         Me.pnlZoom.Visible = False
         '
@@ -1064,42 +1095,44 @@ Partial Class frmZaan
         Me.pctZoom.ContextMenuStrip = Me.cmsPctZoom
         Me.pctZoom.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pctZoom.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pctZoom.Location = New System.Drawing.Point(0, 26)
+        Me.pctZoom.Location = New System.Drawing.Point(0, 50)
+        Me.pctZoom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pctZoom.Name = "pctZoom"
-        Me.pctZoom.Size = New System.Drawing.Size(366, 65)
+        Me.pctZoom.Size = New System.Drawing.Size(732, 125)
         Me.pctZoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctZoom.TabIndex = 9
         Me.pctZoom.TabStop = False
         '
         'cmsPctZoom
         '
+        Me.cmsPctZoom.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsPctZoom.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiPctZoomSlideShow, Me.tssPctZoom1, Me.tsmiPctZoomInterval, Me.tstbPctZoom})
         Me.cmsPctZoom.Name = "cmsPctZoom"
-        Me.cmsPctZoom.Size = New System.Drawing.Size(171, 79)
+        Me.cmsPctZoom.Size = New System.Drawing.Size(311, 127)
         '
         'tsmiPctZoomSlideShow
         '
         Me.tsmiPctZoomSlideShow.CheckOnClick = True
         Me.tsmiPctZoomSlideShow.Name = "tsmiPctZoomSlideShow"
         Me.tsmiPctZoomSlideShow.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.tsmiPctZoomSlideShow.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiPctZoomSlideShow.Size = New System.Drawing.Size(310, 38)
         Me.tsmiPctZoomSlideShow.Text = "Slide show"
         '
         'tssPctZoom1
         '
         Me.tssPctZoom1.Name = "tssPctZoom1"
-        Me.tssPctZoom1.Size = New System.Drawing.Size(167, 6)
+        Me.tssPctZoom1.Size = New System.Drawing.Size(307, 6)
         '
         'tsmiPctZoomInterval
         '
         Me.tsmiPctZoomInterval.Name = "tsmiPctZoomInterval"
-        Me.tsmiPctZoomInterval.Size = New System.Drawing.Size(170, 22)
+        Me.tsmiPctZoomInterval.Size = New System.Drawing.Size(310, 38)
         Me.tsmiPctZoomInterval.Text = "Interval (sec.) :"
         '
         'tstbPctZoom
         '
         Me.tstbPctZoom.Name = "tstbPctZoom"
-        Me.tstbPctZoom.Size = New System.Drawing.Size(100, 23)
+        Me.tstbPctZoom.Size = New System.Drawing.Size(100, 39)
         Me.tstbPctZoom.Text = "3"
         '
         'pnlSlideControl
@@ -1116,9 +1149,10 @@ Partial Class frmZaan
         Me.pnlSlideControl.Controls.Add(Me.btnSlideStop)
         Me.pnlSlideControl.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlSlideControl.Location = New System.Drawing.Point(0, 0)
+        Me.pnlSlideControl.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSlideControl.Name = "pnlSlideControl"
-        Me.pnlSlideControl.Padding = New System.Windows.Forms.Padding(2)
-        Me.pnlSlideControl.Size = New System.Drawing.Size(366, 26)
+        Me.pnlSlideControl.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlSlideControl.Size = New System.Drawing.Size(732, 50)
         Me.pnlSlideControl.TabIndex = 11
         Me.pnlSlideControl.Visible = False
         '
@@ -1127,9 +1161,10 @@ Partial Class frmZaan
         Me.lblZoomName.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblZoomName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblZoomName.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblZoomName.Location = New System.Drawing.Point(2, 2)
+        Me.lblZoomName.Location = New System.Drawing.Point(4, 4)
+        Me.lblZoomName.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblZoomName.Name = "lblZoomName"
-        Me.lblZoomName.Size = New System.Drawing.Size(68, 22)
+        Me.lblZoomName.Size = New System.Drawing.Size(136, 42)
         Me.lblZoomName.TabIndex = 13
         Me.lblZoomName.Text = "Name"
         Me.lblZoomName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1139,9 +1174,10 @@ Partial Class frmZaan
         Me.btnSlideRotateLeft.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlideRotateLeft.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlideRotateLeft.Image = Global.WindowsApplication1.My.Resources.Resources.turn_left
-        Me.btnSlideRotateLeft.Location = New System.Drawing.Point(70, 2)
+        Me.btnSlideRotateLeft.Location = New System.Drawing.Point(140, 4)
+        Me.btnSlideRotateLeft.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlideRotateLeft.Name = "btnSlideRotateLeft"
-        Me.btnSlideRotateLeft.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlideRotateLeft.Size = New System.Drawing.Size(44, 42)
         Me.btnSlideRotateLeft.TabIndex = 16
         Me.btnSlideRotateLeft.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlideRotateLeft.UseVisualStyleBackColor = True
@@ -1151,9 +1187,10 @@ Partial Class frmZaan
         Me.btnSlideRotateRight.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlideRotateRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlideRotateRight.Image = Global.WindowsApplication1.My.Resources.Resources.turn_right
-        Me.btnSlideRotateRight.Location = New System.Drawing.Point(92, 2)
+        Me.btnSlideRotateRight.Location = New System.Drawing.Point(184, 4)
+        Me.btnSlideRotateRight.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlideRotateRight.Name = "btnSlideRotateRight"
-        Me.btnSlideRotateRight.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlideRotateRight.Size = New System.Drawing.Size(44, 42)
         Me.btnSlideRotateRight.TabIndex = 15
         Me.btnSlideRotateRight.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlideRotateRight.UseVisualStyleBackColor = True
@@ -1163,9 +1200,10 @@ Partial Class frmZaan
         Me.btnSlideDelete.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlideDelete.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlideDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete
-        Me.btnSlideDelete.Location = New System.Drawing.Point(114, 2)
+        Me.btnSlideDelete.Location = New System.Drawing.Point(228, 4)
+        Me.btnSlideDelete.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlideDelete.Name = "btnSlideDelete"
-        Me.btnSlideDelete.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlideDelete.Size = New System.Drawing.Size(44, 42)
         Me.btnSlideDelete.TabIndex = 14
         Me.btnSlideDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlideDelete.UseVisualStyleBackColor = True
@@ -1177,9 +1215,10 @@ Partial Class frmZaan
         Me.lblSlideNb.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblSlideNb.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSlideNb.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblSlideNb.Location = New System.Drawing.Point(136, 2)
+        Me.lblSlideNb.Location = New System.Drawing.Point(272, 4)
+        Me.lblSlideNb.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSlideNb.Name = "lblSlideNb"
-        Me.lblSlideNb.Size = New System.Drawing.Size(140, 22)
+        Me.lblSlideNb.Size = New System.Drawing.Size(280, 42)
         Me.lblSlideNb.TabIndex = 11
         Me.lblSlideNb.Text = "100 000 / 100 000"
         Me.lblSlideNb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1189,9 +1228,10 @@ Partial Class frmZaan
         Me.btnSlidePrevious.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlidePrevious.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlidePrevious.Image = Global.WindowsApplication1.My.Resources.Resources.previous
-        Me.btnSlidePrevious.Location = New System.Drawing.Point(276, 2)
+        Me.btnSlidePrevious.Location = New System.Drawing.Point(552, 4)
+        Me.btnSlidePrevious.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlidePrevious.Name = "btnSlidePrevious"
-        Me.btnSlidePrevious.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlidePrevious.Size = New System.Drawing.Size(44, 42)
         Me.btnSlidePrevious.TabIndex = 8
         Me.btnSlidePrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlidePrevious.UseVisualStyleBackColor = True
@@ -1201,9 +1241,10 @@ Partial Class frmZaan
         Me.btnSlideNext.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlideNext.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlideNext.Image = Global.WindowsApplication1.My.Resources.Resources.next_z
-        Me.btnSlideNext.Location = New System.Drawing.Point(298, 2)
+        Me.btnSlideNext.Location = New System.Drawing.Point(596, 4)
+        Me.btnSlideNext.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlideNext.Name = "btnSlideNext"
-        Me.btnSlideNext.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlideNext.Size = New System.Drawing.Size(44, 42)
         Me.btnSlideNext.TabIndex = 10
         Me.btnSlideNext.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlideNext.UseVisualStyleBackColor = True
@@ -1213,9 +1254,10 @@ Partial Class frmZaan
         Me.btnSlidePlayPause.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlidePlayPause.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlidePlayPause.Image = Global.WindowsApplication1.My.Resources.Resources.pause
-        Me.btnSlidePlayPause.Location = New System.Drawing.Point(320, 2)
+        Me.btnSlidePlayPause.Location = New System.Drawing.Point(640, 4)
+        Me.btnSlidePlayPause.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlidePlayPause.Name = "btnSlidePlayPause"
-        Me.btnSlidePlayPause.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlidePlayPause.Size = New System.Drawing.Size(44, 42)
         Me.btnSlidePlayPause.TabIndex = 9
         Me.btnSlidePlayPause.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlidePlayPause.UseVisualStyleBackColor = True
@@ -1225,9 +1267,10 @@ Partial Class frmZaan
         Me.btnSlideStop.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSlideStop.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSlideStop.Image = Global.WindowsApplication1.My.Resources.Resources.stop_z
-        Me.btnSlideStop.Location = New System.Drawing.Point(342, 2)
+        Me.btnSlideStop.Location = New System.Drawing.Point(684, 4)
+        Me.btnSlideStop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnSlideStop.Name = "btnSlideStop"
-        Me.btnSlideStop.Size = New System.Drawing.Size(22, 22)
+        Me.btnSlideStop.Size = New System.Drawing.Size(44, 42)
         Me.btnSlideStop.TabIndex = 12
         Me.btnSlideStop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSlideStop.UseVisualStyleBackColor = True
@@ -1235,9 +1278,10 @@ Partial Class frmZaan
         'pctZoom2
         '
         Me.pctZoom2.BackColor = System.Drawing.Color.Black
-        Me.pctZoom2.Location = New System.Drawing.Point(148, 52)
+        Me.pctZoom2.Location = New System.Drawing.Point(296, 100)
+        Me.pctZoom2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pctZoom2.Name = "pctZoom2"
-        Me.pctZoom2.Size = New System.Drawing.Size(31, 29)
+        Me.pctZoom2.Size = New System.Drawing.Size(62, 56)
         Me.pctZoom2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pctZoom2.TabIndex = 10
         Me.pctZoom2.TabStop = False
@@ -1251,8 +1295,9 @@ Partial Class frmZaan
         Me.pnlListTop.Controls.Add(Me.pnlDatabase)
         Me.pnlListTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlListTop.Location = New System.Drawing.Point(0, 0)
+        Me.pnlListTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlListTop.Name = "pnlListTop"
-        Me.pnlListTop.Size = New System.Drawing.Size(1152, 71)
+        Me.pnlListTop.Size = New System.Drawing.Size(2304, 137)
         Me.pnlListTop.TabIndex = 0
         '
         'pnlSelectorNav
@@ -1262,10 +1307,11 @@ Partial Class frmZaan
         Me.pnlSelectorNav.Controls.Add(Me.pnlSelectorHeader)
         Me.pnlSelectorNav.Controls.Add(Me.lvSelector)
         Me.pnlSelectorNav.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlSelectorNav.Location = New System.Drawing.Point(349, 0)
+        Me.pnlSelectorNav.Location = New System.Drawing.Point(698, 0)
+        Me.pnlSelectorNav.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorNav.Name = "pnlSelectorNav"
-        Me.pnlSelectorNav.Padding = New System.Windows.Forms.Padding(0, 0, 5, 0)
-        Me.pnlSelectorNav.Size = New System.Drawing.Size(803, 71)
+        Me.pnlSelectorNav.Padding = New System.Windows.Forms.Padding(0, 0, 10, 0)
+        Me.pnlSelectorNav.Size = New System.Drawing.Size(1606, 137)
         Me.pnlSelectorNav.TabIndex = 17
         '
         'pnlSelectorHeaderBottom
@@ -1281,10 +1327,11 @@ Partial Class frmZaan
         Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnDataAccessBlank)
         Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnDataAccessAxis)
         Me.pnlSelectorHeaderBottom.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlSelectorHeaderBottom.Location = New System.Drawing.Point(0, 47)
+        Me.pnlSelectorHeaderBottom.Location = New System.Drawing.Point(0, 90)
+        Me.pnlSelectorHeaderBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorHeaderBottom.Name = "pnlSelectorHeaderBottom"
-        Me.pnlSelectorHeaderBottom.Padding = New System.Windows.Forms.Padding(0, 0, 1, 0)
-        Me.pnlSelectorHeaderBottom.Size = New System.Drawing.Size(798, 24)
+        Me.pnlSelectorHeaderBottom.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
+        Me.pnlSelectorHeaderBottom.Size = New System.Drawing.Size(1596, 47)
         Me.pnlSelectorHeaderBottom.TabIndex = 20
         '
         'btnWho2Axis
@@ -1295,9 +1342,10 @@ Partial Class frmZaan
         Me.btnWho2Axis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWho2Axis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWho2Axis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWho2Axis.Location = New System.Drawing.Point(560, 0)
+        Me.btnWho2Axis.Location = New System.Drawing.Point(1120, 0)
+        Me.btnWho2Axis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWho2Axis.Name = "btnWho2Axis"
-        Me.btnWho2Axis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWho2Axis.Size = New System.Drawing.Size(140, 47)
         Me.btnWho2Axis.TabIndex = 40
         Me.btnWho2Axis.Text = "+"
         Me.btnWho2Axis.UseVisualStyleBackColor = True
@@ -1310,9 +1358,10 @@ Partial Class frmZaan
         Me.btnWhat2Axis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWhat2Axis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhat2Axis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhat2Axis.Location = New System.Drawing.Point(490, 0)
+        Me.btnWhat2Axis.Location = New System.Drawing.Point(980, 0)
+        Me.btnWhat2Axis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhat2Axis.Name = "btnWhat2Axis"
-        Me.btnWhat2Axis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWhat2Axis.Size = New System.Drawing.Size(140, 47)
         Me.btnWhat2Axis.TabIndex = 39
         Me.btnWhat2Axis.Text = "+"
         Me.btnWhat2Axis.UseVisualStyleBackColor = True
@@ -1325,9 +1374,10 @@ Partial Class frmZaan
         Me.btnWhereAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWhereAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhereAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhereAxis.Location = New System.Drawing.Point(420, 0)
+        Me.btnWhereAxis.Location = New System.Drawing.Point(840, 0)
+        Me.btnWhereAxis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhereAxis.Name = "btnWhereAxis"
-        Me.btnWhereAxis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWhereAxis.Size = New System.Drawing.Size(140, 47)
         Me.btnWhereAxis.TabIndex = 38
         Me.btnWhereAxis.Text = "+"
         Me.btnWhereAxis.UseVisualStyleBackColor = True
@@ -1340,9 +1390,10 @@ Partial Class frmZaan
         Me.btnWhatAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWhatAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhatAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhatAxis.Location = New System.Drawing.Point(350, 0)
+        Me.btnWhatAxis.Location = New System.Drawing.Point(700, 0)
+        Me.btnWhatAxis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhatAxis.Name = "btnWhatAxis"
-        Me.btnWhatAxis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWhatAxis.Size = New System.Drawing.Size(140, 47)
         Me.btnWhatAxis.TabIndex = 37
         Me.btnWhatAxis.Text = "+"
         Me.btnWhatAxis.UseVisualStyleBackColor = True
@@ -1354,10 +1405,11 @@ Partial Class frmZaan
         Me.btnPanelView.FlatAppearance.BorderSize = 0
         Me.btnPanelView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPanelView.Image = Global.WindowsApplication1.My.Resources.Resources.pnl_view_1
-        Me.btnPanelView.Location = New System.Drawing.Point(773, 0)
+        Me.btnPanelView.Location = New System.Drawing.Point(1546, 0)
+        Me.btnPanelView.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPanelView.Name = "btnPanelView"
-        Me.btnPanelView.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.btnPanelView.Size = New System.Drawing.Size(24, 24)
+        Me.btnPanelView.Padding = New System.Windows.Forms.Padding(0, 0, 0, 2)
+        Me.btnPanelView.Size = New System.Drawing.Size(48, 47)
         Me.btnPanelView.TabIndex = 28
         Me.btnPanelView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelView.UseVisualStyleBackColor = False
@@ -1370,9 +1422,10 @@ Partial Class frmZaan
         Me.btnWhoAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWhoAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhoAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhoAxis.Location = New System.Drawing.Point(280, 0)
+        Me.btnWhoAxis.Location = New System.Drawing.Point(560, 0)
+        Me.btnWhoAxis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhoAxis.Name = "btnWhoAxis"
-        Me.btnWhoAxis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWhoAxis.Size = New System.Drawing.Size(140, 47)
         Me.btnWhoAxis.TabIndex = 36
         Me.btnWhoAxis.Text = "+"
         Me.btnWhoAxis.UseVisualStyleBackColor = True
@@ -1385,9 +1438,10 @@ Partial Class frmZaan
         Me.btnWhenAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWhenAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhenAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhenAxis.Location = New System.Drawing.Point(210, 0)
+        Me.btnWhenAxis.Location = New System.Drawing.Point(420, 0)
+        Me.btnWhenAxis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhenAxis.Name = "btnWhenAxis"
-        Me.btnWhenAxis.Size = New System.Drawing.Size(70, 24)
+        Me.btnWhenAxis.Size = New System.Drawing.Size(140, 47)
         Me.btnWhenAxis.TabIndex = 35
         Me.btnWhenAxis.Text = "+"
         Me.btnWhenAxis.UseVisualStyleBackColor = True
@@ -1400,9 +1454,10 @@ Partial Class frmZaan
         Me.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnToday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnToday.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnToday.Location = New System.Drawing.Point(140, 0)
+        Me.btnToday.Location = New System.Drawing.Point(280, 0)
+        Me.btnToday.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnToday.Name = "btnToday"
-        Me.btnToday.Size = New System.Drawing.Size(70, 24)
+        Me.btnToday.Size = New System.Drawing.Size(140, 47)
         Me.btnToday.TabIndex = 41
         Me.btnToday.Text = "2010-09-01"
         Me.btnToday.UseVisualStyleBackColor = True
@@ -1415,9 +1470,10 @@ Partial Class frmZaan
         Me.btnDataAccessBlank.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDataAccessBlank.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDataAccessBlank.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDataAccessBlank.Location = New System.Drawing.Point(70, 0)
+        Me.btnDataAccessBlank.Location = New System.Drawing.Point(140, 0)
+        Me.btnDataAccessBlank.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnDataAccessBlank.Name = "btnDataAccessBlank"
-        Me.btnDataAccessBlank.Size = New System.Drawing.Size(70, 24)
+        Me.btnDataAccessBlank.Size = New System.Drawing.Size(140, 47)
         Me.btnDataAccessBlank.TabIndex = 42
         Me.btnDataAccessBlank.UseVisualStyleBackColor = True
         '
@@ -1430,8 +1486,9 @@ Partial Class frmZaan
         Me.btnDataAccessAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDataAccessAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDataAccessAxis.Location = New System.Drawing.Point(0, 0)
+        Me.btnDataAccessAxis.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnDataAccessAxis.Name = "btnDataAccessAxis"
-        Me.btnDataAccessAxis.Size = New System.Drawing.Size(70, 24)
+        Me.btnDataAccessAxis.Size = New System.Drawing.Size(140, 47)
         Me.btnDataAccessAxis.TabIndex = 34
         Me.btnDataAccessAxis.Text = "+"
         Me.btnDataAccessAxis.UseVisualStyleBackColor = True
@@ -1455,8 +1512,9 @@ Partial Class frmZaan
         Me.pnlSelectorHeaderTop.Controls.Add(Me.btnDataAccess)
         Me.pnlSelectorHeaderTop.Controls.Add(Me.btnDataAccessRoot)
         Me.pnlSelectorHeaderTop.Location = New System.Drawing.Point(0, 0)
+        Me.pnlSelectorHeaderTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorHeaderTop.Name = "pnlSelectorHeaderTop"
-        Me.pnlSelectorHeaderTop.Size = New System.Drawing.Size(751, 24)
+        Me.pnlSelectorHeaderTop.Size = New System.Drawing.Size(1502, 46)
         Me.pnlSelectorHeaderTop.TabIndex = 19
         '
         'btnCubeTube
@@ -1468,9 +1526,10 @@ Partial Class frmZaan
         Me.btnCubeTube.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCubeTube.ForeColor = System.Drawing.Color.MidnightBlue
         Me.btnCubeTube.Image = Global.WindowsApplication1.My.Resources.Resources.view_cube_1
-        Me.btnCubeTube.Location = New System.Drawing.Point(703, 0)
+        Me.btnCubeTube.Location = New System.Drawing.Point(1406, 0)
+        Me.btnCubeTube.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnCubeTube.Name = "btnCubeTube"
-        Me.btnCubeTube.Size = New System.Drawing.Size(24, 24)
+        Me.btnCubeTube.Size = New System.Drawing.Size(48, 46)
         Me.btnCubeTube.TabIndex = 24
         Me.btnCubeTube.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCubeTube.UseVisualStyleBackColor = True
@@ -1483,10 +1542,11 @@ Partial Class frmZaan
         Me.btnPanelImport.FlatAppearance.BorderSize = 0
         Me.btnPanelImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPanelImport.Image = Global.WindowsApplication1.My.Resources.Resources.pnl_import_1
-        Me.btnPanelImport.Location = New System.Drawing.Point(727, 0)
+        Me.btnPanelImport.Location = New System.Drawing.Point(1454, 0)
+        Me.btnPanelImport.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPanelImport.Name = "btnPanelImport"
-        Me.btnPanelImport.Padding = New System.Windows.Forms.Padding(0, 0, 1, 1)
-        Me.btnPanelImport.Size = New System.Drawing.Size(24, 24)
+        Me.btnPanelImport.Padding = New System.Windows.Forms.Padding(0, 0, 2, 2)
+        Me.btnPanelImport.Size = New System.Drawing.Size(48, 46)
         Me.btnPanelImport.TabIndex = 41
         Me.btnPanelImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelImport.UseVisualStyleBackColor = False
@@ -1500,9 +1560,10 @@ Partial Class frmZaan
         Me.btnWho2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWho2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWho2.ImageList = Me.imgFileTypes
-        Me.btnWho2.Location = New System.Drawing.Point(440, 0)
+        Me.btnWho2.Location = New System.Drawing.Point(880, 0)
+        Me.btnWho2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWho2.Name = "btnWho2"
-        Me.btnWho2.Size = New System.Drawing.Size(50, 24)
+        Me.btnWho2.Size = New System.Drawing.Size(100, 46)
         Me.btnWho2.TabIndex = 33
         Me.btnWho2.Text = "Wo2"
         Me.btnWho2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1518,9 +1579,10 @@ Partial Class frmZaan
         Me.btnWho2Root.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWho2Root.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWho2Root.ImageList = Me.imgFileTypes
-        Me.btnWho2Root.Location = New System.Drawing.Point(420, 0)
+        Me.btnWho2Root.Location = New System.Drawing.Point(840, 0)
+        Me.btnWho2Root.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWho2Root.Name = "btnWho2Root"
-        Me.btnWho2Root.Size = New System.Drawing.Size(20, 24)
+        Me.btnWho2Root.Size = New System.Drawing.Size(40, 46)
         Me.btnWho2Root.TabIndex = 40
         Me.btnWho2Root.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWho2Root.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1535,9 +1597,10 @@ Partial Class frmZaan
         Me.btnWhat2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhat2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhat2.ImageList = Me.imgFileTypes
-        Me.btnWhat2.Location = New System.Drawing.Point(370, 0)
+        Me.btnWhat2.Location = New System.Drawing.Point(740, 0)
+        Me.btnWhat2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhat2.Name = "btnWhat2"
-        Me.btnWhat2.Size = New System.Drawing.Size(50, 24)
+        Me.btnWhat2.Size = New System.Drawing.Size(100, 46)
         Me.btnWhat2.TabIndex = 32
         Me.btnWhat2.Text = "Wa2"
         Me.btnWhat2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1553,9 +1616,10 @@ Partial Class frmZaan
         Me.btnWhat2Root.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhat2Root.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhat2Root.ImageList = Me.imgFileTypes
-        Me.btnWhat2Root.Location = New System.Drawing.Point(350, 0)
+        Me.btnWhat2Root.Location = New System.Drawing.Point(700, 0)
+        Me.btnWhat2Root.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhat2Root.Name = "btnWhat2Root"
-        Me.btnWhat2Root.Size = New System.Drawing.Size(20, 24)
+        Me.btnWhat2Root.Size = New System.Drawing.Size(40, 46)
         Me.btnWhat2Root.TabIndex = 39
         Me.btnWhat2Root.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhat2Root.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1570,9 +1634,10 @@ Partial Class frmZaan
         Me.btnWhere.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhere.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhere.ImageList = Me.imgFileTypes
-        Me.btnWhere.Location = New System.Drawing.Point(300, 0)
+        Me.btnWhere.Location = New System.Drawing.Point(600, 0)
+        Me.btnWhere.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhere.Name = "btnWhere"
-        Me.btnWhere.Size = New System.Drawing.Size(50, 24)
+        Me.btnWhere.Size = New System.Drawing.Size(100, 46)
         Me.btnWhere.TabIndex = 31
         Me.btnWhere.Text = "Wr"
         Me.btnWhere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1588,9 +1653,10 @@ Partial Class frmZaan
         Me.btnWhereRoot.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhereRoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhereRoot.ImageList = Me.imgFileTypes
-        Me.btnWhereRoot.Location = New System.Drawing.Point(280, 0)
+        Me.btnWhereRoot.Location = New System.Drawing.Point(560, 0)
+        Me.btnWhereRoot.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhereRoot.Name = "btnWhereRoot"
-        Me.btnWhereRoot.Size = New System.Drawing.Size(20, 24)
+        Me.btnWhereRoot.Size = New System.Drawing.Size(40, 46)
         Me.btnWhereRoot.TabIndex = 38
         Me.btnWhereRoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhereRoot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1605,9 +1671,10 @@ Partial Class frmZaan
         Me.btnWhat.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhat.ImageList = Me.imgFileTypes
-        Me.btnWhat.Location = New System.Drawing.Point(230, 0)
+        Me.btnWhat.Location = New System.Drawing.Point(460, 0)
+        Me.btnWhat.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhat.Name = "btnWhat"
-        Me.btnWhat.Size = New System.Drawing.Size(50, 24)
+        Me.btnWhat.Size = New System.Drawing.Size(100, 46)
         Me.btnWhat.TabIndex = 30
         Me.btnWhat.Text = "Wa"
         Me.btnWhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1623,9 +1690,10 @@ Partial Class frmZaan
         Me.btnWhatRoot.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhatRoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhatRoot.ImageList = Me.imgFileTypes
-        Me.btnWhatRoot.Location = New System.Drawing.Point(210, 0)
+        Me.btnWhatRoot.Location = New System.Drawing.Point(420, 0)
+        Me.btnWhatRoot.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhatRoot.Name = "btnWhatRoot"
-        Me.btnWhatRoot.Size = New System.Drawing.Size(20, 24)
+        Me.btnWhatRoot.Size = New System.Drawing.Size(40, 46)
         Me.btnWhatRoot.TabIndex = 37
         Me.btnWhatRoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhatRoot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1640,9 +1708,10 @@ Partial Class frmZaan
         Me.btnWho.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWho.ImageList = Me.imgFileTypes
-        Me.btnWho.Location = New System.Drawing.Point(160, 0)
+        Me.btnWho.Location = New System.Drawing.Point(320, 0)
+        Me.btnWho.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWho.Name = "btnWho"
-        Me.btnWho.Size = New System.Drawing.Size(50, 24)
+        Me.btnWho.Size = New System.Drawing.Size(100, 46)
         Me.btnWho.TabIndex = 29
         Me.btnWho.Text = "Wo"
         Me.btnWho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1658,9 +1727,10 @@ Partial Class frmZaan
         Me.btnWhoRoot.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhoRoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhoRoot.ImageList = Me.imgFileTypes
-        Me.btnWhoRoot.Location = New System.Drawing.Point(140, 0)
+        Me.btnWhoRoot.Location = New System.Drawing.Point(280, 0)
+        Me.btnWhoRoot.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhoRoot.Name = "btnWhoRoot"
-        Me.btnWhoRoot.Size = New System.Drawing.Size(20, 24)
+        Me.btnWhoRoot.Size = New System.Drawing.Size(40, 46)
         Me.btnWhoRoot.TabIndex = 36
         Me.btnWhoRoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhoRoot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1675,9 +1745,10 @@ Partial Class frmZaan
         Me.btnWhen.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhen.ImageList = Me.imgFileTypes
-        Me.btnWhen.Location = New System.Drawing.Point(90, 0)
+        Me.btnWhen.Location = New System.Drawing.Point(180, 0)
+        Me.btnWhen.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhen.Name = "btnWhen"
-        Me.btnWhen.Size = New System.Drawing.Size(50, 24)
+        Me.btnWhen.Size = New System.Drawing.Size(100, 46)
         Me.btnWhen.TabIndex = 28
         Me.btnWhen.Tag = ""
         Me.btnWhen.Text = "Wn"
@@ -1694,9 +1765,10 @@ Partial Class frmZaan
         Me.btnWhenRoot.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWhenRoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhenRoot.ImageList = Me.imgFileTypes
-        Me.btnWhenRoot.Location = New System.Drawing.Point(70, 0)
+        Me.btnWhenRoot.Location = New System.Drawing.Point(140, 0)
+        Me.btnWhenRoot.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnWhenRoot.Name = "btnWhenRoot"
-        Me.btnWhenRoot.Size = New System.Drawing.Size(20, 24)
+        Me.btnWhenRoot.Size = New System.Drawing.Size(40, 46)
         Me.btnWhenRoot.TabIndex = 35
         Me.btnWhenRoot.Tag = ""
         Me.btnWhenRoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1712,9 +1784,10 @@ Partial Class frmZaan
         Me.btnDataAccess.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDataAccess.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDataAccess.ImageList = Me.imgFileTypes
-        Me.btnDataAccess.Location = New System.Drawing.Point(20, 0)
+        Me.btnDataAccess.Location = New System.Drawing.Point(40, 0)
+        Me.btnDataAccess.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnDataAccess.Name = "btnDataAccess"
-        Me.btnDataAccess.Size = New System.Drawing.Size(50, 24)
+        Me.btnDataAccess.Size = New System.Drawing.Size(100, 46)
         Me.btnDataAccess.TabIndex = 27
         Me.btnDataAccess.Text = "DA"
         Me.btnDataAccess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1731,8 +1804,9 @@ Partial Class frmZaan
         Me.btnDataAccessRoot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDataAccessRoot.ImageList = Me.imgFileTypes
         Me.btnDataAccessRoot.Location = New System.Drawing.Point(0, 0)
+        Me.btnDataAccessRoot.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnDataAccessRoot.Name = "btnDataAccessRoot"
-        Me.btnDataAccessRoot.Size = New System.Drawing.Size(20, 24)
+        Me.btnDataAccessRoot.Size = New System.Drawing.Size(40, 46)
         Me.btnDataAccessRoot.TabIndex = 34
         Me.btnDataAccessRoot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDataAccessRoot.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1751,9 +1825,10 @@ Partial Class frmZaan
         Me.pnlSelectorHeader.Controls.Add(Me.lblWhen)
         Me.pnlSelectorHeader.Controls.Add(Me.lblDataAccess)
         Me.pnlSelectorHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlSelectorHeader.Location = New System.Drawing.Point(0, 24)
+        Me.pnlSelectorHeader.Location = New System.Drawing.Point(0, 46)
+        Me.pnlSelectorHeader.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorHeader.Name = "pnlSelectorHeader"
-        Me.pnlSelectorHeader.Size = New System.Drawing.Size(798, 23)
+        Me.pnlSelectorHeader.Size = New System.Drawing.Size(1596, 44)
         Me.pnlSelectorHeader.TabIndex = 18
         '
         'lblEmpty
@@ -1764,9 +1839,10 @@ Partial Class frmZaan
         Me.lblEmpty.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmpty.ForeColor = System.Drawing.Color.White
         Me.lblEmpty.Image = Global.WindowsApplication1.My.Resources.Resources.grey_empty800
-        Me.lblEmpty.Location = New System.Drawing.Point(490, 0)
+        Me.lblEmpty.Location = New System.Drawing.Point(980, 0)
+        Me.lblEmpty.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblEmpty.Name = "lblEmpty"
-        Me.lblEmpty.Size = New System.Drawing.Size(284, 23)
+        Me.lblEmpty.Size = New System.Drawing.Size(568, 44)
         Me.lblEmpty.TabIndex = 22
         Me.lblEmpty.Tag = ""
         Me.lblEmpty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1779,10 +1855,10 @@ Partial Class frmZaan
         Me.lblAboutZaan.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAboutZaan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblAboutZaan.Image = Global.WindowsApplication1.My.Resources.Resources.question
-        Me.lblAboutZaan.Location = New System.Drawing.Point(774, 0)
+        Me.lblAboutZaan.Location = New System.Drawing.Point(1548, 0)
         Me.lblAboutZaan.Margin = New System.Windows.Forms.Padding(0)
         Me.lblAboutZaan.Name = "lblAboutZaan"
-        Me.lblAboutZaan.Size = New System.Drawing.Size(24, 23)
+        Me.lblAboutZaan.Size = New System.Drawing.Size(48, 44)
         Me.lblAboutZaan.TabIndex = 27
         Me.lblAboutZaan.Tag = ""
         Me.lblAboutZaan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1795,9 +1871,10 @@ Partial Class frmZaan
         Me.lblWho2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWho2.ForeColor = System.Drawing.Color.White
         Me.lblWho2.Image = Global.WindowsApplication1.My.Resources.Resources._c_5w400
-        Me.lblWho2.Location = New System.Drawing.Point(420, 0)
+        Me.lblWho2.Location = New System.Drawing.Point(840, 0)
+        Me.lblWho2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWho2.Name = "lblWho2"
-        Me.lblWho2.Size = New System.Drawing.Size(70, 23)
+        Me.lblWho2.Size = New System.Drawing.Size(140, 44)
         Me.lblWho2.TabIndex = 18
         Me.lblWho2.Tag = ""
         Me.lblWho2.Text = "Wo2"
@@ -1811,9 +1888,10 @@ Partial Class frmZaan
         Me.lblWhat2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWhat2.ForeColor = System.Drawing.Color.White
         Me.lblWhat2.Image = Global.WindowsApplication1.My.Resources.Resources._b_5w400
-        Me.lblWhat2.Location = New System.Drawing.Point(350, 0)
+        Me.lblWhat2.Location = New System.Drawing.Point(700, 0)
+        Me.lblWhat2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWhat2.Name = "lblWhat2"
-        Me.lblWhat2.Size = New System.Drawing.Size(70, 23)
+        Me.lblWhat2.Size = New System.Drawing.Size(140, 44)
         Me.lblWhat2.TabIndex = 15
         Me.lblWhat2.Tag = ""
         Me.lblWhat2.Text = "Wa2"
@@ -1827,9 +1905,10 @@ Partial Class frmZaan
         Me.lblWhere.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWhere.ForeColor = System.Drawing.Color.White
         Me.lblWhere.Image = Global.WindowsApplication1.My.Resources.Resources._e_5w400
-        Me.lblWhere.Location = New System.Drawing.Point(280, 0)
+        Me.lblWhere.Location = New System.Drawing.Point(560, 0)
+        Me.lblWhere.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWhere.Name = "lblWhere"
-        Me.lblWhere.Size = New System.Drawing.Size(70, 23)
+        Me.lblWhere.Size = New System.Drawing.Size(140, 44)
         Me.lblWhere.TabIndex = 16
         Me.lblWhere.Tag = ""
         Me.lblWhere.Text = "Wr"
@@ -1843,9 +1922,10 @@ Partial Class frmZaan
         Me.lblWhat.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWhat.ForeColor = System.Drawing.Color.White
         Me.lblWhat.Image = Global.WindowsApplication1.My.Resources.Resources._a_5w400
-        Me.lblWhat.Location = New System.Drawing.Point(210, 0)
+        Me.lblWhat.Location = New System.Drawing.Point(420, 0)
+        Me.lblWhat.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWhat.Name = "lblWhat"
-        Me.lblWhat.Size = New System.Drawing.Size(70, 23)
+        Me.lblWhat.Size = New System.Drawing.Size(140, 44)
         Me.lblWhat.TabIndex = 14
         Me.lblWhat.Tag = ""
         Me.lblWhat.Text = "Wa"
@@ -1859,9 +1939,10 @@ Partial Class frmZaan
         Me.lblWho.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWho.ForeColor = System.Drawing.Color.White
         Me.lblWho.Image = Global.WindowsApplication1.My.Resources.Resources._o_5w400
-        Me.lblWho.Location = New System.Drawing.Point(140, 0)
+        Me.lblWho.Location = New System.Drawing.Point(280, 0)
+        Me.lblWho.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWho.Name = "lblWho"
-        Me.lblWho.Size = New System.Drawing.Size(70, 23)
+        Me.lblWho.Size = New System.Drawing.Size(140, 44)
         Me.lblWho.TabIndex = 13
         Me.lblWho.Tag = ""
         Me.lblWho.Text = "Wo"
@@ -1875,9 +1956,10 @@ Partial Class frmZaan
         Me.lblWhen.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWhen.ForeColor = System.Drawing.Color.White
         Me.lblWhen.Image = Global.WindowsApplication1.My.Resources.Resources._t_5w400
-        Me.lblWhen.Location = New System.Drawing.Point(70, 0)
+        Me.lblWhen.Location = New System.Drawing.Point(140, 0)
+        Me.lblWhen.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblWhen.Name = "lblWhen"
-        Me.lblWhen.Size = New System.Drawing.Size(70, 23)
+        Me.lblWhen.Size = New System.Drawing.Size(140, 44)
         Me.lblWhen.TabIndex = 19
         Me.lblWhen.Tag = ""
         Me.lblWhen.Text = "Wn"
@@ -1892,8 +1974,9 @@ Partial Class frmZaan
         Me.lblDataAccess.ForeColor = System.Drawing.Color.White
         Me.lblDataAccess.Image = Global.WindowsApplication1.My.Resources.Resources._u_5w400
         Me.lblDataAccess.Location = New System.Drawing.Point(0, 0)
+        Me.lblDataAccess.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblDataAccess.Name = "lblDataAccess"
-        Me.lblDataAccess.Size = New System.Drawing.Size(70, 23)
+        Me.lblDataAccess.Size = New System.Drawing.Size(140, 44)
         Me.lblDataAccess.TabIndex = 20
         Me.lblDataAccess.Tag = ""
         Me.lblDataAccess.Text = "DA"
@@ -1909,9 +1992,10 @@ Partial Class frmZaan
         Me.lvSelector.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvSelector.ForeColor = System.Drawing.Color.MidnightBlue
         Me.lvSelector.Location = New System.Drawing.Point(0, 0)
+        Me.lvSelector.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvSelector.Name = "lvSelector"
         Me.lvSelector.Scrollable = False
-        Me.lvSelector.Size = New System.Drawing.Size(798, 24)
+        Me.lvSelector.Size = New System.Drawing.Size(1596, 46)
         Me.lvSelector.SmallImageList = Me.imgFileTypes
         Me.lvSelector.TabIndex = 12
         Me.lvSelector.UseCompatibleStateImageBehavior = False
@@ -1923,9 +2007,10 @@ Partial Class frmZaan
         Me.pnlSelectorSearch.Controls.Add(Me.pnlSearch)
         Me.pnlSelectorSearch.Controls.Add(Me.pnlSelectorBottom)
         Me.pnlSelectorSearch.Dock = System.Windows.Forms.DockStyle.Left
-        Me.pnlSelectorSearch.Location = New System.Drawing.Point(140, 0)
+        Me.pnlSelectorSearch.Location = New System.Drawing.Point(280, 0)
+        Me.pnlSelectorSearch.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorSearch.Name = "pnlSelectorSearch"
-        Me.pnlSelectorSearch.Size = New System.Drawing.Size(209, 71)
+        Me.pnlSelectorSearch.Size = New System.Drawing.Size(418, 137)
         Me.pnlSelectorSearch.TabIndex = 19
         '
         'pnlSelectorTop
@@ -1934,9 +2019,10 @@ Partial Class frmZaan
         Me.pnlSelectorTop.Controls.Add(Me.btnPrev)
         Me.pnlSelectorTop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlSelectorTop.Location = New System.Drawing.Point(0, 0)
+        Me.pnlSelectorTop.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorTop.Name = "pnlSelectorTop"
-        Me.pnlSelectorTop.Padding = New System.Windows.Forms.Padding(7, 1, 1, 3)
-        Me.pnlSelectorTop.Size = New System.Drawing.Size(209, 24)
+        Me.pnlSelectorTop.Padding = New System.Windows.Forms.Padding(14, 2, 2, 6)
+        Me.pnlSelectorTop.Size = New System.Drawing.Size(418, 47)
         Me.pnlSelectorTop.TabIndex = 20
         '
         'btnNext
@@ -1946,9 +2032,10 @@ Partial Class frmZaan
         Me.btnNext.FlatAppearance.BorderSize = 0
         Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNext.ImageList = Me.imgFileTypes
-        Me.btnNext.Location = New System.Drawing.Point(31, 1)
+        Me.btnNext.Location = New System.Drawing.Point(62, 2)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(24, 20)
+        Me.btnNext.Size = New System.Drawing.Size(48, 39)
         Me.btnNext.TabIndex = 26
         Me.btnNext.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnNext.UseVisualStyleBackColor = True
@@ -1960,9 +2047,10 @@ Partial Class frmZaan
         Me.btnPrev.FlatAppearance.BorderSize = 0
         Me.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrev.ImageList = Me.imgFileTypes
-        Me.btnPrev.Location = New System.Drawing.Point(7, 1)
+        Me.btnPrev.Location = New System.Drawing.Point(14, 2)
+        Me.btnPrev.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPrev.Name = "btnPrev"
-        Me.btnPrev.Size = New System.Drawing.Size(24, 20)
+        Me.btnPrev.Size = New System.Drawing.Size(48, 39)
         Me.btnPrev.TabIndex = 25
         Me.btnPrev.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPrev.UseVisualStyleBackColor = True
@@ -1976,9 +2064,10 @@ Partial Class frmZaan
         Me.pnlSearch.Controls.Add(Me.lblSelectorReset)
         Me.pnlSearch.Controls.Add(Me.lblBookmark)
         Me.pnlSearch.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlSearch.Location = New System.Drawing.Point(0, 24)
+        Me.pnlSearch.Location = New System.Drawing.Point(0, 47)
+        Me.pnlSearch.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSearch.Name = "pnlSearch"
-        Me.pnlSearch.Size = New System.Drawing.Size(209, 23)
+        Me.pnlSearch.Size = New System.Drawing.Size(418, 44)
         Me.pnlSearch.TabIndex = 10
         '
         'tbSearch
@@ -1988,9 +2077,10 @@ Partial Class frmZaan
         Me.tbSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tbSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbSearch.ForeColor = System.Drawing.Color.White
-        Me.tbSearch.Location = New System.Drawing.Point(56, 0)
+        Me.tbSearch.Location = New System.Drawing.Point(112, 0)
+        Me.tbSearch.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tbSearch.Name = "tbSearch"
-        Me.tbSearch.Size = New System.Drawing.Size(104, 24)
+        Me.tbSearch.Size = New System.Drawing.Size(208, 41)
         Me.tbSearch.TabIndex = 23
         Me.tbSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2002,10 +2092,10 @@ Partial Class frmZaan
         Me.lblSearchDoc.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSearchDoc.ForeColor = System.Drawing.Color.White
         Me.lblSearchDoc.Image = Global.WindowsApplication1.My.Resources.Resources.search_down
-        Me.lblSearchDoc.Location = New System.Drawing.Point(32, 0)
+        Me.lblSearchDoc.Location = New System.Drawing.Point(64, 0)
         Me.lblSearchDoc.Margin = New System.Windows.Forms.Padding(0)
         Me.lblSearchDoc.Name = "lblSearchDoc"
-        Me.lblSearchDoc.Size = New System.Drawing.Size(24, 23)
+        Me.lblSearchDoc.Size = New System.Drawing.Size(48, 44)
         Me.lblSearchDoc.TabIndex = 25
         Me.lblSearchDoc.Tag = ""
         Me.lblSearchDoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2018,10 +2108,10 @@ Partial Class frmZaan
         Me.lblSearchFolder.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSearchFolder.ForeColor = System.Drawing.Color.White
         Me.lblSearchFolder.Image = Global.WindowsApplication1.My.Resources.Resources.search_right
-        Me.lblSearchFolder.Location = New System.Drawing.Point(160, 0)
+        Me.lblSearchFolder.Location = New System.Drawing.Point(320, 0)
         Me.lblSearchFolder.Margin = New System.Windows.Forms.Padding(0)
         Me.lblSearchFolder.Name = "lblSearchFolder"
-        Me.lblSearchFolder.Size = New System.Drawing.Size(24, 23)
+        Me.lblSearchFolder.Size = New System.Drawing.Size(48, 44)
         Me.lblSearchFolder.TabIndex = 24
         Me.lblSearchFolder.Tag = ""
         Me.lblSearchFolder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2034,10 +2124,10 @@ Partial Class frmZaan
         Me.lblSelectorReset.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelectorReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblSelectorReset.Image = Global.WindowsApplication1.My.Resources.Resources.reset
-        Me.lblSelectorReset.Location = New System.Drawing.Point(184, 0)
+        Me.lblSelectorReset.Location = New System.Drawing.Point(368, 0)
         Me.lblSelectorReset.Margin = New System.Windows.Forms.Padding(0)
         Me.lblSelectorReset.Name = "lblSelectorReset"
-        Me.lblSelectorReset.Size = New System.Drawing.Size(25, 23)
+        Me.lblSelectorReset.Size = New System.Drawing.Size(50, 44)
         Me.lblSelectorReset.TabIndex = 22
         Me.lblSelectorReset.Tag = ""
         Me.lblSelectorReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2053,7 +2143,7 @@ Partial Class frmZaan
         Me.lblBookmark.Location = New System.Drawing.Point(0, 0)
         Me.lblBookmark.Margin = New System.Windows.Forms.Padding(0)
         Me.lblBookmark.Name = "lblBookmark"
-        Me.lblBookmark.Size = New System.Drawing.Size(32, 23)
+        Me.lblBookmark.Size = New System.Drawing.Size(64, 44)
         Me.lblBookmark.TabIndex = 26
         Me.lblBookmark.Tag = ""
         Me.lblBookmark.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2068,10 +2158,11 @@ Partial Class frmZaan
         Me.pnlSelectorBottom.Controls.Add(Me.btnPanelTree)
         Me.pnlSelectorBottom.Controls.Add(Me.btnMatrix)
         Me.pnlSelectorBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlSelectorBottom.Location = New System.Drawing.Point(0, 47)
+        Me.pnlSelectorBottom.Location = New System.Drawing.Point(0, 91)
+        Me.pnlSelectorBottom.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlSelectorBottom.Name = "pnlSelectorBottom"
-        Me.pnlSelectorBottom.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.pnlSelectorBottom.Size = New System.Drawing.Size(209, 24)
+        Me.pnlSelectorBottom.Padding = New System.Windows.Forms.Padding(16, 4, 4, 4)
+        Me.pnlSelectorBottom.Size = New System.Drawing.Size(418, 46)
         Me.pnlSelectorBottom.TabIndex = 19
         '
         'btnPanelCube
@@ -2081,9 +2172,10 @@ Partial Class frmZaan
         Me.btnPanelCube.FlatAppearance.BorderSize = 0
         Me.btnPanelCube.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPanelCube.Image = Global.WindowsApplication1.My.Resources.Resources.pnl_cube_1
-        Me.btnPanelCube.Location = New System.Drawing.Point(36, 2)
+        Me.btnPanelCube.Location = New System.Drawing.Point(72, 4)
+        Me.btnPanelCube.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPanelCube.Name = "btnPanelCube"
-        Me.btnPanelCube.Size = New System.Drawing.Size(22, 20)
+        Me.btnPanelCube.Size = New System.Drawing.Size(44, 38)
         Me.btnPanelCube.TabIndex = 30
         Me.btnPanelCube.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelCube.UseVisualStyleBackColor = False
@@ -2095,9 +2187,10 @@ Partial Class frmZaan
         Me.lblSelPagePrev.Enabled = False
         Me.lblSelPagePrev.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPagePrev.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPagePrev.Location = New System.Drawing.Point(105, 2)
+        Me.lblSelPagePrev.Location = New System.Drawing.Point(212, 4)
+        Me.lblSelPagePrev.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPagePrev.Name = "lblSelPagePrev"
-        Me.lblSelPagePrev.Size = New System.Drawing.Size(24, 20)
+        Me.lblSelPagePrev.Size = New System.Drawing.Size(48, 38)
         Me.lblSelPagePrev.TabIndex = 20
         Me.lblSelPagePrev.Text = "<"
         Me.lblSelPagePrev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2108,10 +2201,11 @@ Partial Class frmZaan
         Me.lblSelPage.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblSelPage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPage.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPage.Location = New System.Drawing.Point(129, 2)
+        Me.lblSelPage.Location = New System.Drawing.Point(260, 4)
+        Me.lblSelPage.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPage.Name = "lblSelPage"
-        Me.lblSelPage.Padding = New System.Windows.Forms.Padding(0, 2, 0, 0)
-        Me.lblSelPage.Size = New System.Drawing.Size(30, 17)
+        Me.lblSelPage.Padding = New System.Windows.Forms.Padding(0, 4, 0, 0)
+        Me.lblSelPage.Size = New System.Drawing.Size(58, 33)
         Me.lblSelPage.TabIndex = 0
         Me.lblSelPage.Text = "1 / 1"
         Me.lblSelPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2123,9 +2217,10 @@ Partial Class frmZaan
         Me.lblSelPageNext.Enabled = False
         Me.lblSelPageNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPageNext.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPageNext.Location = New System.Drawing.Point(159, 2)
+        Me.lblSelPageNext.Location = New System.Drawing.Point(318, 4)
+        Me.lblSelPageNext.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPageNext.Name = "lblSelPageNext"
-        Me.lblSelPageNext.Size = New System.Drawing.Size(24, 20)
+        Me.lblSelPageNext.Size = New System.Drawing.Size(48, 38)
         Me.lblSelPageNext.TabIndex = 19
         Me.lblSelPageNext.Text = ">"
         Me.lblSelPageNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2137,9 +2232,10 @@ Partial Class frmZaan
         Me.btnPanelEmpty.Enabled = False
         Me.btnPanelEmpty.FlatAppearance.BorderSize = 0
         Me.btnPanelEmpty.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPanelEmpty.Location = New System.Drawing.Point(30, 2)
+        Me.btnPanelEmpty.Location = New System.Drawing.Point(60, 4)
+        Me.btnPanelEmpty.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPanelEmpty.Name = "btnPanelEmpty"
-        Me.btnPanelEmpty.Size = New System.Drawing.Size(6, 20)
+        Me.btnPanelEmpty.Size = New System.Drawing.Size(12, 38)
         Me.btnPanelEmpty.TabIndex = 27
         Me.btnPanelEmpty.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelEmpty.UseVisualStyleBackColor = True
@@ -2151,9 +2247,10 @@ Partial Class frmZaan
         Me.btnPanelTree.FlatAppearance.BorderSize = 0
         Me.btnPanelTree.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPanelTree.Image = Global.WindowsApplication1.My.Resources.Resources.pnl_tree_1
-        Me.btnPanelTree.Location = New System.Drawing.Point(8, 2)
+        Me.btnPanelTree.Location = New System.Drawing.Point(16, 4)
+        Me.btnPanelTree.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnPanelTree.Name = "btnPanelTree"
-        Me.btnPanelTree.Size = New System.Drawing.Size(22, 20)
+        Me.btnPanelTree.Size = New System.Drawing.Size(44, 38)
         Me.btnPanelTree.TabIndex = 26
         Me.btnPanelTree.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelTree.UseVisualStyleBackColor = False
@@ -2167,9 +2264,10 @@ Partial Class frmZaan
         Me.btnMatrix.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMatrix.ForeColor = System.Drawing.Color.MidnightBlue
         Me.btnMatrix.Image = Global.WindowsApplication1.My.Resources.Resources.matrix_1
-        Me.btnMatrix.Location = New System.Drawing.Point(183, 2)
+        Me.btnMatrix.Location = New System.Drawing.Point(366, 4)
+        Me.btnMatrix.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnMatrix.Name = "btnMatrix"
-        Me.btnMatrix.Size = New System.Drawing.Size(24, 20)
+        Me.btnMatrix.Size = New System.Drawing.Size(48, 38)
         Me.btnMatrix.TabIndex = 29
         Me.btnMatrix.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMatrix.UseVisualStyleBackColor = True
@@ -2179,8 +2277,9 @@ Partial Class frmZaan
         Me.pnlDatabase.Controls.Add(Me.pctZaanLogo)
         Me.pnlDatabase.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlDatabase.Location = New System.Drawing.Point(0, 0)
+        Me.pnlDatabase.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlDatabase.Name = "pnlDatabase"
-        Me.pnlDatabase.Size = New System.Drawing.Size(140, 71)
+        Me.pnlDatabase.Size = New System.Drawing.Size(280, 137)
         Me.pnlDatabase.TabIndex = 20
         '
         'pctZaanLogo
@@ -2193,7 +2292,7 @@ Partial Class frmZaan
         Me.pctZaanLogo.Location = New System.Drawing.Point(0, 0)
         Me.pctZaanLogo.Margin = New System.Windows.Forms.Padding(0)
         Me.pctZaanLogo.Name = "pctZaanLogo"
-        Me.pctZaanLogo.Size = New System.Drawing.Size(140, 71)
+        Me.pctZaanLogo.Size = New System.Drawing.Size(280, 137)
         Me.pctZaanLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.pctZaanLogo.TabIndex = 0
         Me.pctZaanLogo.TabStop = False
@@ -2201,98 +2300,99 @@ Partial Class frmZaan
         'cmsSelector
         '
         Me.cmsSelector.BackColor = System.Drawing.SystemColors.Menu
+        Me.cmsSelector.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsSelector.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiSelectorTreeView, Me.tsmiSelectorViewer, Me.tsmiSelectorImport, Me.tssSelector0, Me.tsmiSelectorTreeLock, Me.tssSelector1, Me.tsmiSelectorNightMode, Me.tssSelector2, Me.tsmiSelectorChangeDb, Me.tsmiSelectorChangeDbImage, Me.tssSelector3, Me.tsmiSelectorCheckDb, Me.tssSelector4, Me.tsmiSelectorExportDBwin, Me.tsmiSelectorImportDBwin, Me.tsmiSelectorAutoImport, Me.tssSelector5, Me.tsmiSelectorCloseDb})
         Me.cmsSelector.Name = "cmsSelector"
-        Me.cmsSelector.Size = New System.Drawing.Size(251, 304)
+        Me.cmsSelector.Size = New System.Drawing.Size(466, 496)
         '
         'tsmiSelectorTreeView
         '
         Me.tsmiSelectorTreeView.Name = "tsmiSelectorTreeView"
-        Me.tsmiSelectorTreeView.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorTreeView.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorTreeView.Text = "Tree view panel visible"
         Me.tsmiSelectorTreeView.Visible = False
         '
         'tsmiSelectorViewer
         '
         Me.tsmiSelectorViewer.Name = "tsmiSelectorViewer"
-        Me.tsmiSelectorViewer.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorViewer.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorViewer.Text = "Viewer panel visible"
         Me.tsmiSelectorViewer.Visible = False
         '
         'tsmiSelectorImport
         '
         Me.tsmiSelectorImport.Name = "tsmiSelectorImport"
-        Me.tsmiSelectorImport.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorImport.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorImport.Text = "Import panel visible"
         Me.tsmiSelectorImport.Visible = False
         '
         'tssSelector0
         '
         Me.tssSelector0.Name = "tssSelector0"
-        Me.tssSelector0.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector0.Size = New System.Drawing.Size(462, 6)
         Me.tssSelector0.Visible = False
         '
         'tsmiSelectorTreeLock
         '
         Me.tsmiSelectorTreeLock.Name = "tsmiSelectorTreeLock"
-        Me.tsmiSelectorTreeLock.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorTreeLock.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorTreeLock.Text = "Tree view locked"
         '
         'tssSelector1
         '
         Me.tssSelector1.Name = "tssSelector1"
-        Me.tssSelector1.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector1.Size = New System.Drawing.Size(462, 6)
         '
         'tsmiSelectorNightMode
         '
         Me.tsmiSelectorNightMode.Name = "tsmiSelectorNightMode"
-        Me.tsmiSelectorNightMode.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorNightMode.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorNightMode.Text = "Night mode"
         '
         'tssSelector2
         '
         Me.tssSelector2.Name = "tssSelector2"
-        Me.tssSelector2.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector2.Size = New System.Drawing.Size(462, 6)
         '
         'tsmiSelectorChangeDb
         '
         Me.tsmiSelectorChangeDb.Name = "tsmiSelectorChangeDb"
-        Me.tsmiSelectorChangeDb.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorChangeDb.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorChangeDb.Text = "Change database"
         '
         'tsmiSelectorChangeDbImage
         '
         Me.tsmiSelectorChangeDbImage.Name = "tsmiSelectorChangeDbImage"
-        Me.tsmiSelectorChangeDbImage.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorChangeDbImage.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorChangeDbImage.Text = "Change database image"
         '
         'tssSelector3
         '
         Me.tssSelector3.Name = "tssSelector3"
-        Me.tssSelector3.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector3.Size = New System.Drawing.Size(462, 6)
         '
         'tsmiSelectorCheckDb
         '
         Me.tsmiSelectorCheckDb.Name = "tsmiSelectorCheckDb"
-        Me.tsmiSelectorCheckDb.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorCheckDb.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorCheckDb.Text = "Check database"
         '
         'tssSelector4
         '
         Me.tssSelector4.Name = "tssSelector4"
-        Me.tssSelector4.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector4.Size = New System.Drawing.Size(462, 6)
         '
         'tsmiSelectorExportDBwin
         '
         Me.tsmiSelectorExportDBwin.Name = "tsmiSelectorExportDBwin"
-        Me.tsmiSelectorExportDBwin.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorExportDBwin.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorExportDBwin.Text = "Export database to Windows"
         '
         'tsmiSelectorImportDBwin
         '
         Me.tsmiSelectorImportDBwin.Enabled = False
         Me.tsmiSelectorImportDBwin.Name = "tsmiSelectorImportDBwin"
-        Me.tsmiSelectorImportDBwin.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorImportDBwin.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorImportDBwin.Text = "Import database from Windows..."
         Me.tsmiSelectorImportDBwin.Visible = False
         '
@@ -2300,19 +2400,19 @@ Partial Class frmZaan
         '
         Me.tsmiSelectorAutoImport.Enabled = False
         Me.tsmiSelectorAutoImport.Name = "tsmiSelectorAutoImport"
-        Me.tsmiSelectorAutoImport.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorAutoImport.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorAutoImport.Text = "ZAAN cubes automatic import"
         Me.tsmiSelectorAutoImport.Visible = False
         '
         'tssSelector5
         '
         Me.tssSelector5.Name = "tssSelector5"
-        Me.tssSelector5.Size = New System.Drawing.Size(247, 6)
+        Me.tssSelector5.Size = New System.Drawing.Size(462, 6)
         '
         'tsmiSelectorCloseDb
         '
         Me.tsmiSelectorCloseDb.Name = "tsmiSelectorCloseDb"
-        Me.tsmiSelectorCloseDb.Size = New System.Drawing.Size(250, 22)
+        Me.tsmiSelectorCloseDb.Size = New System.Drawing.Size(465, 38)
         Me.tsmiSelectorCloseDb.Text = "Close database"
         '
         'tcFolders
@@ -2324,19 +2424,21 @@ Partial Class frmZaan
         Me.tcFolders.Font = New System.Drawing.Font("Franklin Gothic Book", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tcFolders.ImageList = Me.imgFileTypes
         Me.tcFolders.Location = New System.Drawing.Point(0, 0)
+        Me.tcFolders.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.tcFolders.Name = "tcFolders"
         Me.tcFolders.SelectedIndex = 0
         Me.tcFolders.ShowToolTips = True
-        Me.tcFolders.Size = New System.Drawing.Size(1166, 141)
+        Me.tcFolders.Size = New System.Drawing.Size(2332, 627)
         Me.tcFolders.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.lvOut)
         Me.TabPage1.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.TabPage1.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage1.Location = New System.Drawing.Point(8, 52)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1158, 108)
+        Me.TabPage1.Size = New System.Drawing.Size(2316, 567)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Import"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -2353,8 +2455,9 @@ Partial Class frmZaan
         Me.lvOut.FullRowSelect = True
         Me.lvOut.LabelEdit = True
         Me.lvOut.Location = New System.Drawing.Point(0, 0)
+        Me.lvOut.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvOut.Name = "lvOut"
-        Me.lvOut.Size = New System.Drawing.Size(1158, 108)
+        Me.lvOut.Size = New System.Drawing.Size(2316, 567)
         Me.lvOut.SmallImageList = Me.imgFileTypes
         Me.lvOut.TabIndex = 7
         Me.lvOut.UseCompatibleStateImageBehavior = False
@@ -2363,40 +2466,41 @@ Partial Class frmZaan
         'cmsLvOut
         '
         Me.cmsLvOut.BackColor = System.Drawing.SystemColors.Menu
+        Me.cmsLvOut.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsLvOut.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvOutChangeFolder, Me.tsmiLvOutFoldersVisible, Me.tssLvOut1, Me.tsmiLvOutRefresh, Me.tsmiLvOutSelAll, Me.tsmiLvOutUndoMove, Me.tssLvOut2, Me.tsmiLvOutCut, Me.tsmiLvOutCopy, Me.tsmiLvOutPaste, Me.tssLvOut3, Me.tsmiLvOutRename, Me.tsmiLvOutDelete, Me.tssLvOut4, Me.tsmiLvOutMoveIn, Me.tsmiLvOutAutoFile, Me.tssLvOut5, Me.tsmiLvOutImport})
         Me.cmsLvOut.Name = "cmsLvOut"
-        Me.cmsLvOut.Size = New System.Drawing.Size(188, 320)
+        Me.cmsLvOut.Size = New System.Drawing.Size(339, 528)
         '
         'tsmiLvOutChangeFolder
         '
         Me.tsmiLvOutChangeFolder.Enabled = False
         Me.tsmiLvOutChangeFolder.Name = "tsmiLvOutChangeFolder"
-        Me.tsmiLvOutChangeFolder.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutChangeFolder.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutChangeFolder.Text = "Change folder"
         '
         'tsmiLvOutFoldersVisible
         '
         Me.tsmiLvOutFoldersVisible.Enabled = False
         Me.tsmiLvOutFoldersVisible.Name = "tsmiLvOutFoldersVisible"
-        Me.tsmiLvOutFoldersVisible.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutFoldersVisible.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutFoldersVisible.Text = "Folders tree visible"
         '
         'tssLvOut1
         '
         Me.tssLvOut1.Name = "tssLvOut1"
-        Me.tssLvOut1.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvOut1.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvOutRefresh
         '
         Me.tsmiLvOutRefresh.Name = "tsmiLvOutRefresh"
-        Me.tsmiLvOutRefresh.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutRefresh.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutRefresh.Text = "Refresh"
         '
         'tsmiLvOutSelAll
         '
         Me.tsmiLvOutSelAll.Name = "tsmiLvOutSelAll"
         Me.tsmiLvOutSelAll.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.tsmiLvOutSelAll.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutSelAll.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutSelAll.Text = "Select all"
         '
         'tsmiLvOutUndoMove
@@ -2404,20 +2508,20 @@ Partial Class frmZaan
         Me.tsmiLvOutUndoMove.Enabled = False
         Me.tsmiLvOutUndoMove.Name = "tsmiLvOutUndoMove"
         Me.tsmiLvOutUndoMove.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.tsmiLvOutUndoMove.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutUndoMove.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutUndoMove.Text = "Undo move"
         '
         'tssLvOut2
         '
         Me.tssLvOut2.Name = "tssLvOut2"
-        Me.tssLvOut2.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvOut2.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvOutCut
         '
         Me.tsmiLvOutCut.Enabled = False
         Me.tsmiLvOutCut.Name = "tsmiLvOutCut"
         Me.tsmiLvOutCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.tsmiLvOutCut.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutCut.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutCut.Text = "Cut"
         '
         'tsmiLvOutCopy
@@ -2425,7 +2529,7 @@ Partial Class frmZaan
         Me.tsmiLvOutCopy.Enabled = False
         Me.tsmiLvOutCopy.Name = "tsmiLvOutCopy"
         Me.tsmiLvOutCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.tsmiLvOutCopy.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutCopy.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutCopy.Text = "Copy"
         '
         'tsmiLvOutPaste
@@ -2433,19 +2537,19 @@ Partial Class frmZaan
         Me.tsmiLvOutPaste.Enabled = False
         Me.tsmiLvOutPaste.Name = "tsmiLvOutPaste"
         Me.tsmiLvOutPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.tsmiLvOutPaste.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutPaste.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutPaste.Text = "Paste"
         '
         'tssLvOut3
         '
         Me.tssLvOut3.Name = "tssLvOut3"
-        Me.tssLvOut3.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvOut3.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvOutRename
         '
         Me.tsmiLvOutRename.Enabled = False
         Me.tsmiLvOutRename.Name = "tsmiLvOutRename"
-        Me.tsmiLvOutRename.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutRename.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutRename.Text = "Rename"
         '
         'tsmiLvOutDelete
@@ -2453,48 +2557,49 @@ Partial Class frmZaan
         Me.tsmiLvOutDelete.Enabled = False
         Me.tsmiLvOutDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiLvOutDelete.Name = "tsmiLvOutDelete"
-        Me.tsmiLvOutDelete.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutDelete.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutDelete.Text = "Delete"
         '
         'tssLvOut4
         '
         Me.tssLvOut4.Name = "tssLvOut4"
-        Me.tssLvOut4.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvOut4.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvOutMoveIn
         '
         Me.tsmiLvOutMoveIn.Enabled = False
         Me.tsmiLvOutMoveIn.Image = Global.WindowsApplication1.My.Resources.Resources.up_lg
         Me.tsmiLvOutMoveIn.Name = "tsmiLvOutMoveIn"
-        Me.tsmiLvOutMoveIn.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutMoveIn.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutMoveIn.Text = "Move in"
         '
         'tsmiLvOutAutoFile
         '
         Me.tsmiLvOutAutoFile.Enabled = False
         Me.tsmiLvOutAutoFile.Name = "tsmiLvOutAutoFile"
-        Me.tsmiLvOutAutoFile.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutAutoFile.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutAutoFile.Text = "File automatically"
         '
         'tssLvOut5
         '
         Me.tssLvOut5.Name = "tssLvOut5"
-        Me.tssLvOut5.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvOut5.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvOutImport
         '
         Me.tsmiLvOutImport.Enabled = False
         Me.tsmiLvOutImport.Name = "tsmiLvOutImport"
-        Me.tsmiLvOutImport.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvOutImport.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvOutImport.Text = "Import ZAAN cube(s)"
         '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.SplitContainer4)
         Me.TabPage2.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.TabPage2.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage2.Location = New System.Drawing.Point(8, 52)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(1158, 108)
+        Me.TabPage2.Size = New System.Drawing.Size(2316, 211)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Scan"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -2504,13 +2609,15 @@ Partial Class frmZaan
         Me.SplitContainer4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer4.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.SplitContainer4.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.SplitContainer4.Name = "SplitContainer4"
         '
         'SplitContainer4.Panel1
         '
         Me.SplitContainer4.Panel1.Controls.Add(Me.trvInput)
-        Me.SplitContainer4.Size = New System.Drawing.Size(1158, 108)
+        Me.SplitContainer4.Size = New System.Drawing.Size(2316, 211)
         Me.SplitContainer4.SplitterDistance = 460
+        Me.SplitContainer4.SplitterWidth = 8
         Me.SplitContainer4.TabIndex = 0
         '
         'trvInput
@@ -2526,38 +2633,40 @@ Partial Class frmZaan
         Me.trvInput.Indent = 16
         Me.trvInput.ItemHeight = 18
         Me.trvInput.Location = New System.Drawing.Point(0, 0)
+        Me.trvInput.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.trvInput.Name = "trvInput"
         Me.trvInput.SelectedImageIndex = 0
-        Me.trvInput.Size = New System.Drawing.Size(460, 108)
+        Me.trvInput.Size = New System.Drawing.Size(460, 211)
         Me.trvInput.TabIndex = 2
         '
         'cmsTrvInput
         '
+        Me.cmsTrvInput.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsTrvInput.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiTrvInputChangeRoot, Me.tssTrvInput0, Me.tsmiTrvInputRefresh, Me.tssTrvInput1, Me.tsmiTrvInputDelete})
         Me.cmsTrvInput.Name = "cmsTrvInput"
-        Me.cmsTrvInput.Size = New System.Drawing.Size(175, 82)
+        Me.cmsTrvInput.Size = New System.Drawing.Size(319, 130)
         '
         'tsmiTrvInputChangeRoot
         '
         Me.tsmiTrvInputChangeRoot.Name = "tsmiTrvInputChangeRoot"
-        Me.tsmiTrvInputChangeRoot.Size = New System.Drawing.Size(174, 22)
+        Me.tsmiTrvInputChangeRoot.Size = New System.Drawing.Size(318, 38)
         Me.tsmiTrvInputChangeRoot.Text = "Change root folder"
         '
         'tssTrvInput0
         '
         Me.tssTrvInput0.Name = "tssTrvInput0"
-        Me.tssTrvInput0.Size = New System.Drawing.Size(171, 6)
+        Me.tssTrvInput0.Size = New System.Drawing.Size(315, 6)
         '
         'tsmiTrvInputRefresh
         '
         Me.tsmiTrvInputRefresh.Name = "tsmiTrvInputRefresh"
-        Me.tsmiTrvInputRefresh.Size = New System.Drawing.Size(174, 22)
+        Me.tsmiTrvInputRefresh.Size = New System.Drawing.Size(318, 38)
         Me.tsmiTrvInputRefresh.Text = "Refresh"
         '
         'tssTrvInput1
         '
         Me.tssTrvInput1.Name = "tssTrvInput1"
-        Me.tssTrvInput1.Size = New System.Drawing.Size(171, 6)
+        Me.tssTrvInput1.Size = New System.Drawing.Size(315, 6)
         '
         'tsmiTrvInputDelete
         '
@@ -2565,16 +2674,17 @@ Partial Class frmZaan
         Me.tsmiTrvInputDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiTrvInputDelete.Name = "tsmiTrvInputDelete"
         Me.tsmiTrvInputDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete
-        Me.tsmiTrvInputDelete.Size = New System.Drawing.Size(174, 22)
+        Me.tsmiTrvInputDelete.Size = New System.Drawing.Size(318, 38)
         Me.tsmiTrvInputDelete.Text = "Delete"
         '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.lvTemp)
         Me.TabPage3.ForeColor = System.Drawing.Color.ForestGreen
-        Me.TabPage3.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage3.Location = New System.Drawing.Point(8, 52)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1158, 108)
+        Me.TabPage3.Size = New System.Drawing.Size(2316, 211)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Copy"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -2591,8 +2701,9 @@ Partial Class frmZaan
         Me.lvTemp.FullRowSelect = True
         Me.lvTemp.LabelEdit = True
         Me.lvTemp.Location = New System.Drawing.Point(0, 0)
+        Me.lvTemp.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.lvTemp.Name = "lvTemp"
-        Me.lvTemp.Size = New System.Drawing.Size(1158, 108)
+        Me.lvTemp.Size = New System.Drawing.Size(2316, 211)
         Me.lvTemp.SmallImageList = Me.imgFileTypes
         Me.lvTemp.TabIndex = 0
         Me.lvTemp.UseCompatibleStateImageBehavior = False
@@ -2601,21 +2712,22 @@ Partial Class frmZaan
         'cmsLvTemp
         '
         Me.cmsLvTemp.BackColor = System.Drawing.SystemColors.Menu
+        Me.cmsLvTemp.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsLvTemp.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvTempRefresh, Me.tsmiLvTempSelAll, Me.tsmiLvTempUndoMove, Me.tssLvTemp1, Me.tsmiLvTempCut, Me.tsmiLvTempCopy, Me.tsmiLvTempPaste, Me.tssLvTemp2, Me.tsmiLvTempResizePicture, Me.tstLvTempResizePercentage, Me.tssLvTemp3, Me.tsmiLvTempRename, Me.tsmiLvTempDelete, Me.tssLvTemp4, Me.tsmiLvTempSend, Me.tssLvTemp5, Me.tsmiLvTempImport})
         Me.cmsLvTemp.Name = "cmsLvTemp"
-        Me.cmsLvTemp.Size = New System.Drawing.Size(188, 301)
+        Me.cmsLvTemp.Size = New System.Drawing.Size(339, 493)
         '
         'tsmiLvTempRefresh
         '
         Me.tsmiLvTempRefresh.Name = "tsmiLvTempRefresh"
-        Me.tsmiLvTempRefresh.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempRefresh.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempRefresh.Text = "Refresh"
         '
         'tsmiLvTempSelAll
         '
         Me.tsmiLvTempSelAll.Name = "tsmiLvTempSelAll"
         Me.tsmiLvTempSelAll.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.tsmiLvTempSelAll.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempSelAll.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempSelAll.Text = "Select all"
         '
         'tsmiLvTempUndoMove
@@ -2623,20 +2735,20 @@ Partial Class frmZaan
         Me.tsmiLvTempUndoMove.Enabled = False
         Me.tsmiLvTempUndoMove.Name = "tsmiLvTempUndoMove"
         Me.tsmiLvTempUndoMove.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.tsmiLvTempUndoMove.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempUndoMove.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempUndoMove.Text = "Undo move"
         '
         'tssLvTemp1
         '
         Me.tssLvTemp1.Name = "tssLvTemp1"
-        Me.tssLvTemp1.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvTemp1.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvTempCut
         '
         Me.tsmiLvTempCut.Enabled = False
         Me.tsmiLvTempCut.Name = "tsmiLvTempCut"
         Me.tsmiLvTempCut.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.tsmiLvTempCut.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempCut.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempCut.Text = "Cut"
         '
         'tsmiLvTempCopy
@@ -2644,7 +2756,7 @@ Partial Class frmZaan
         Me.tsmiLvTempCopy.Enabled = False
         Me.tsmiLvTempCopy.Name = "tsmiLvTempCopy"
         Me.tsmiLvTempCopy.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.tsmiLvTempCopy.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempCopy.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempCopy.Text = "Copy"
         '
         'tsmiLvTempPaste
@@ -2652,38 +2764,38 @@ Partial Class frmZaan
         Me.tsmiLvTempPaste.Enabled = False
         Me.tsmiLvTempPaste.Name = "tsmiLvTempPaste"
         Me.tsmiLvTempPaste.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.tsmiLvTempPaste.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempPaste.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempPaste.Text = "Paste"
         '
         'tssLvTemp2
         '
         Me.tssLvTemp2.Name = "tssLvTemp2"
-        Me.tssLvTemp2.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvTemp2.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvTempResizePicture
         '
         Me.tsmiLvTempResizePicture.Enabled = False
         Me.tsmiLvTempResizePicture.Name = "tsmiLvTempResizePicture"
-        Me.tsmiLvTempResizePicture.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempResizePicture.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempResizePicture.Text = "Resize pictures (%)"
         '
         'tstLvTempResizePercentage
         '
         Me.tstLvTempResizePercentage.Name = "tstLvTempResizePercentage"
-        Me.tstLvTempResizePercentage.Size = New System.Drawing.Size(100, 23)
+        Me.tstLvTempResizePercentage.Size = New System.Drawing.Size(100, 39)
         Me.tstLvTempResizePercentage.Text = "20"
         Me.tstLvTempResizePercentage.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tssLvTemp3
         '
         Me.tssLvTemp3.Name = "tssLvTemp3"
-        Me.tssLvTemp3.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvTemp3.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvTempRename
         '
         Me.tsmiLvTempRename.Enabled = False
         Me.tsmiLvTempRename.Name = "tsmiLvTempRename"
-        Me.tsmiLvTempRename.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempRename.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempRename.Text = "Rename"
         '
         'tsmiLvTempDelete
@@ -2691,32 +2803,32 @@ Partial Class frmZaan
         Me.tsmiLvTempDelete.Enabled = False
         Me.tsmiLvTempDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiLvTempDelete.Name = "tsmiLvTempDelete"
-        Me.tsmiLvTempDelete.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempDelete.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempDelete.Text = "Delete"
         '
         'tssLvTemp4
         '
         Me.tssLvTemp4.Name = "tssLvTemp4"
-        Me.tssLvTemp4.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvTemp4.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvTempSend
         '
         Me.tsmiLvTempSend.Enabled = False
         Me.tsmiLvTempSend.Image = Global.WindowsApplication1.My.Resources.Resources.mail_lg
         Me.tsmiLvTempSend.Name = "tsmiLvTempSend"
-        Me.tsmiLvTempSend.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempSend.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempSend.Text = "Open mail"
         '
         'tssLvTemp5
         '
         Me.tssLvTemp5.Name = "tssLvTemp5"
-        Me.tssLvTemp5.Size = New System.Drawing.Size(184, 6)
+        Me.tssLvTemp5.Size = New System.Drawing.Size(335, 6)
         '
         'tsmiLvTempImport
         '
         Me.tsmiLvTempImport.Enabled = False
         Me.tsmiLvTempImport.Name = "tsmiLvTempImport"
-        Me.tsmiLvTempImport.Size = New System.Drawing.Size(187, 22)
+        Me.tsmiLvTempImport.Size = New System.Drawing.Size(338, 38)
         Me.tsmiLvTempImport.Text = "Import ZAAN cube(s)"
         '
         'imgPanels
@@ -2787,26 +2899,27 @@ Partial Class frmZaan
         '
         'cmsLvInWhos
         '
+        Me.cmsLvInWhos.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsLvInWhos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiLvInWhosMultiple, Me.tssLvInWhos0, Me.tsmiLvInWhosDelete, Me.tscbLvInWhosList})
         Me.cmsLvInWhos.Name = "cmsLvInWhos"
-        Me.cmsLvInWhos.Size = New System.Drawing.Size(182, 81)
+        Me.cmsLvInWhos.Size = New System.Drawing.Size(286, 130)
         '
         'tsmiLvInWhosMultiple
         '
         Me.tsmiLvInWhosMultiple.Name = "tsmiLvInWhosMultiple"
-        Me.tsmiLvInWhosMultiple.Size = New System.Drawing.Size(181, 22)
+        Me.tsmiLvInWhosMultiple.Size = New System.Drawing.Size(285, 38)
         Me.tsmiLvInWhosMultiple.Text = "Multiple Who(s)"
         '
         'tssLvInWhos0
         '
         Me.tssLvInWhos0.Name = "tssLvInWhos0"
-        Me.tssLvInWhos0.Size = New System.Drawing.Size(178, 6)
+        Me.tssLvInWhos0.Size = New System.Drawing.Size(282, 6)
         '
         'tsmiLvInWhosDelete
         '
         Me.tsmiLvInWhosDelete.Enabled = False
         Me.tsmiLvInWhosDelete.Name = "tsmiLvInWhosDelete"
-        Me.tsmiLvInWhosDelete.Size = New System.Drawing.Size(181, 22)
+        Me.tsmiLvInWhosDelete.Size = New System.Drawing.Size(285, 38)
         Me.tsmiLvInWhosDelete.Text = "Delete Who :"
         '
         'tscbLvInWhosList
@@ -2814,7 +2927,7 @@ Partial Class frmZaan
         Me.tscbLvInWhosList.Enabled = False
         Me.tscbLvInWhosList.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.tscbLvInWhosList.Name = "tscbLvInWhosList"
-        Me.tscbLvInWhosList.Size = New System.Drawing.Size(121, 23)
+        Me.tscbLvInWhosList.Size = New System.Drawing.Size(121, 40)
         '
         'tmrSelectorList
         '
@@ -2828,6 +2941,7 @@ Partial Class frmZaan
         '
         Me.cmsSelChildren.AutoSize = False
         Me.cmsSelChildren.BackColor = System.Drawing.SystemColors.Control
+        Me.cmsSelChildren.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsSelChildren.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
         Me.cmsSelChildren.Name = "cmsSelChildren"
         Me.cmsSelChildren.Size = New System.Drawing.Size(153, 92)
@@ -2835,32 +2949,32 @@ Partial Class frmZaan
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(111, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(190, 38)
         Me.ToolStripMenuItem1.Text = "Child 1"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(111, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(190, 38)
         Me.ToolStripMenuItem2.Text = "Child 2"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Child31ToolStripMenuItem, Me.Child32ToolStripMenuItem})
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(111, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(190, 38)
         Me.ToolStripMenuItem3.Text = "Child 3"
         '
         'Child31ToolStripMenuItem
         '
         Me.Child31ToolStripMenuItem.Name = "Child31ToolStripMenuItem"
-        Me.Child31ToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.Child31ToolStripMenuItem.Size = New System.Drawing.Size(203, 38)
         Me.Child31ToolStripMenuItem.Text = "Child 31"
         '
         'Child32ToolStripMenuItem
         '
         Me.Child32ToolStripMenuItem.Name = "Child32ToolStripMenuItem"
-        Me.Child32ToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.Child32ToolStripMenuItem.Size = New System.Drawing.Size(203, 38)
         Me.Child32ToolStripMenuItem.Text = "Child 32"
         '
         'tmrSelChildren
@@ -2870,8 +2984,9 @@ Partial Class frmZaan
         'cmsSelBookmarks
         '
         Me.cmsSelBookmarks.BackColor = System.Drawing.SystemColors.Control
+        Me.cmsSelBookmarks.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsSelBookmarks.Name = "cmsSelBookmarks"
-        Me.cmsSelBookmarks.Size = New System.Drawing.Size(61, 4)
+        Me.cmsSelBookmarks.Size = New System.Drawing.Size(86, 4)
         '
         'tmrDbExport
         '
@@ -2879,15 +2994,16 @@ Partial Class frmZaan
         '
         'frmZaan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1176, 542)
+        Me.ClientSize = New System.Drawing.Size(2352, 1042)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(350, 250)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.MinimumSize = New System.Drawing.Size(674, 415)
         Me.Name = "frmZaan"
-        Me.Padding = New System.Windows.Forms.Padding(5)
+        Me.Padding = New System.Windows.Forms.Padding(10, 10, 10, 10)
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Zaan"

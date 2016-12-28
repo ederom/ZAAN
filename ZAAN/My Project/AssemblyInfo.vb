@@ -13,14 +13,14 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("ZAAN")> 
 <Assembly: AssemblyDescription("Multidimensional document management")> 
 <Assembly: AssemblyCompany("info@zaan.com")> 
-<Assembly: AssemblyProduct("ZAAN")> 
-<Assembly: AssemblyCopyright("© 2015 Emmanuel DEROME")> 
+<Assembly: AssemblyProduct("ZAAN")>
+<Assembly: AssemblyCopyright("© 2015-2016 Emmanuel DEROME")>
 <Assembly: AssemblyTrademark("ZAAN")> 
 
 <Assembly: ComVisible(True)> 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("84c680ca-882c-4dc2-b3e4-3fa631a1cac9")> 
+<Assembly: Guid("84c680ca-882c-4dc2-b3e4-3fa631a1cac9")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("3.7.364.0")> 
-<Assembly: AssemblyFileVersion("3.7.364.0")> 
+<Assembly: AssemblyVersion("3.7.364.2")>
+<Assembly: AssemblyFileVersion("3.7.364.2")>
 
 <Assembly: NeutralResourcesLanguageAttribute("")> 

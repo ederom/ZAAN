@@ -84,3 +84,21 @@ C:\ZAAN development\ZAAN\ZAAN\obj\Debug\ZAAN.vbproj.GenerateResource.Cache
 C:\ZAAN development\ZAAN\ZAAN\obj\Debug\ZAAN.TrustInfo.xml
 C:\ZAAN development\ZAAN\ZAAN\obj\Debug\ZAAN.exe.manifest
 C:\ZAAN development\ZAAN\ZAAN\obj\Debug\ZAAN.application
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.exe.config
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.exe
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.xml
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.pdb
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.vbprojResolveAssemblyReference.cache
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\WindowsApplication1.frmAboutBox.resources
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\WindowsApplication1.frmExport.resources
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\WindowsApplication1.frmZaan.resources
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\WindowsApplication1.Resources.resources
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.vbproj.GenerateResource.Cache
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.exe.manifest
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.application
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.exe
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.pdb
+C:\ZAAN_development\ZAAN\ZAAN\bin\Debug\ZAAN.xml
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.TrustInfo.xml
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.exe.manifest
+C:\ZAAN_development\ZAAN\ZAAN\obj\Debug\ZAAN.application

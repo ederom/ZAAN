@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\ZAAN development\ZAAN\ZAAN\Publish v1\|C:\ZAAN development\ZAAN\ZAAN\Publish v0\|C:\ZAAN development\ZAAN\ZAAN\Publish\|C:\ZAAN development\ZaanNav\ZaanNav\Publish\|C:\Users\Emmanuel\Desktop\ED perso\Zaan development\ZaanNav\ZaanNav\Publish\</PublishUrlHistory>
-    <InstallUrlHistory>http://www.zaan.com/download/|http://www.zaan.com/download2/|http://www.zaan.com/dowload/|\\HPPAVILIONSLIM\Users\ederome\Desktop\hp-pav-temp\zaan\</InstallUrlHistory>
+    <PublishUrlHistory>C:\ZAAN_development\ZAAN\ZAAN\Publish v3\|C:\ZAAN_development\ZAAN\ZAAN\Publish v2\|C:\ZAAN development\ZAAN\ZAAN\Publish v2\|C:\ZAAN development\ZAAN\ZAAN\Publish v1\|C:\ZAAN development\ZAAN\ZAAN\Publish v0\</PublishUrlHistory>
+    <InstallUrlHistory>http://www.zaan.fr/download/|http://www.zaan.com/download/|http://www.zaan.com/download2/|http://www.zaan.com/dowload/|\\HPPAVILIONSLIM\Users\ederome\Desktop\hp-pav-temp\zaan\</InstallUrlHistory>
     <SupportUrlHistory>http://www.zaan.com</SupportUrlHistory>
     <UpdateUrlHistory>http://www.zaan.com/download/</UpdateUrlHistory>
     <BootstrapperUrlHistory>

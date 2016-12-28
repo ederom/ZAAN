@@ -3,8 +3,8 @@
 2	Who	Qui
 3	What	Quoi
 4	Where	Où
-5	Status	Etat
-6	Action for	Action pour
+5	Why	Pourquoi
+6	How	Comment
 7	Access control	Accès contrôlé
 8	found in : 	trouvés en : 
 9	Select in tree view	Sélectionner dans l'arborescence

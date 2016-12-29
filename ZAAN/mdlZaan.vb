@@ -999,7 +999,7 @@ Module mdlZaan
             Dim formatetc As New FORMATETC()
             'formatetc.cfFormat = CShort(DataFormats.GetFormat(format).Id)
 
-            Dim myFormatID As Integer = DataFormats.GetFormat(format).Id
+            Dim myFormatID As Integer = Forms.DataFormats.GetFormat(format).Id
             If myFormatID > 32767 Then                                         'WARNING : CORRECTS OVERFLOW ISSUE IN VB (DOES NOT HAPPEN IN C# !!!)
                 myFormatID = myFormatID - 65536
             End If
@@ -1087,7 +1087,7 @@ Module mdlZaan
                 Case TYMED.TYMED_HGLOBAL
                     'to handle a HGlobal the exisitng "GetDataFromHGLOBLAL" method is invoked via reflection
 
-                    Return DirectCast(Me.getDataFromHGLOBLALMethod.Invoke(Me.oleUnderlyingDataObject, New Object() {DataFormats.GetFormat(CShort(formatetc.cfFormat)).Name, medium.unionmember}), MemoryStream)
+                    Return DirectCast(Me.getDataFromHGLOBLALMethod.Invoke(Me.oleUnderlyingDataObject, New Object() {Forms.DataFormats.GetFormat(CShort(formatetc.cfFormat)).Name, medium.unionmember}), MemoryStream)
             End Select
 
             Return Nothing

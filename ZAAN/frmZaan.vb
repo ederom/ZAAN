@@ -30,17 +30,17 @@ Public Class frmZaan
     Private mCopyEffectData As Byte() = New Byte(3) {5, 0, 0, 0}     'used for file(s) copying in Copy/paste operations with Clipboard
     Private mStreamCopy As Stream = New MemoryStream(4)              'will be set in InitFileMoveCopyStreams() with mCopyEffectData() value
 
-    Private DatabaseFontRegular As New System.Drawing.Font("Arial Rounded MT Bold", 14, FontStyle.Regular)
-    Private DatabaseFontUnderline As New System.Drawing.Font("Arial Rounded MT Bold", 14, FontStyle.Underline)
-    Private SelectorFontRegular As New System.Drawing.Font("Arial Rounded MT Bold", 12, FontStyle.Regular)
-    Private SelectorFontUnderline As New System.Drawing.Font("Arial Rounded MT Bold", 12, FontStyle.Underline)
+    Private DatabaseFontRegular As New System.Drawing.Font("Arial Rounded MT Bold", 14, Drawing.FontStyle.Regular)
+    Private DatabaseFontUnderline As New System.Drawing.Font("Arial Rounded MT Bold", 14, Drawing.FontStyle.Underline)
+    Private SelectorFontRegular As New System.Drawing.Font("Arial Rounded MT Bold", 12, Drawing.FontStyle.Regular)
+    Private SelectorFontUnderline As New System.Drawing.Font("Arial Rounded MT Bold", 12, Drawing.FontStyle.Underline)
 
     Private SelectionFontDetail As New System.Drawing.Font("Microsoft Sans Serif", 10)
     Private SelectionFontImage As New System.Drawing.Font("Microsoft Sans Serif", 9)
-    Private FileFontRegular As New System.Drawing.Font("Microsoft Sans Serif", 10, FontStyle.Regular)
-    Private FileFontUnderline As New System.Drawing.Font("Microsoft Sans Serif", 10, FontStyle.Underline)
-    Private DirFontRegular As New System.Drawing.Font("Microsoft Sans Serif", 9, FontStyle.Regular)
-    Private DirFontUnderline As New System.Drawing.Font("Microsoft Sans Serif", 9, FontStyle.Underline)
+    Private FileFontRegular As New System.Drawing.Font("Microsoft Sans Serif", 10, Drawing.FontStyle.Regular)
+    Private FileFontUnderline As New System.Drawing.Font("Microsoft Sans Serif", 10, Drawing.FontStyle.Underline)
+    Private DirFontRegular As New System.Drawing.Font("Microsoft Sans Serif", 9, Drawing.FontStyle.Regular)
+    Private DirFontUnderline As New System.Drawing.Font("Microsoft Sans Serif", 9, Drawing.FontStyle.Underline)
 
     Private mAxisTreeCodeH As String = ""                  'resets Horizontal axis code of matrix
     Private mAxisTreeCodeV As String = ""                  'resets Horizontal axis code of matrix
@@ -81,7 +81,7 @@ Public Class frmZaan
         lvMatrix.Columns.Clear()
         TotDocCount = 0
 
-        item = lvMatrix.Columns.Add(TotDocCount & " " & mMessage(82), 200, HorizontalAlignment.Left)
+        item = lvMatrix.Columns.Add(TotDocCount & " " & mMessage(82), 200, Forms.HorizontalAlignment.Left)
         'item = lvMatrix.Columns.Add(KeyH, TotDocCount & " " & mMessage(82), 175, HorizontalAlignment.Right, "_x_" & mImageStyle)
 
         mMatrixFileFilterIni = mFileFilter                           'saves initial value of mFileFilter
@@ -95,7 +95,7 @@ Public Class frmZaan
             j = 0
             For Each ChildNode In NodeX(0).Nodes                     'scans related child nodes
                 j = j + 1
-                item = lvMatrix.Columns.Add(KeyH, ChildNode.Text, 135, HorizontalAlignment.Left, KeyH & mImageStyle)      'adds related matrix column
+                item = lvMatrix.Columns.Add(KeyH, ChildNode.Text, 135, Forms.HorizontalAlignment.Left, KeyH & mImageStyle)      'adds related matrix column
                 item.tag = GetTreeNodeKey(ChildNode)                 'gets node key of given tree node (empty if tree root node)
             Next
             jmax = j                                                 'stores column count
@@ -3086,7 +3086,7 @@ Public Class frmZaan
         'Debug.Print("InitLvBookmark...")    'TEST/DEBUG
         lvBookmark.Items.Clear()
         lvBookmark.Columns.Clear()
-        lvBookmark.Columns.Add("add", "", 500, HorizontalAlignment.Left, "add")          'sets column header with "add" icon
+        lvBookmark.Columns.Add("add", "", 500, Forms.HorizontalAlignment.Left, "add")          'sets column header with "add" icon
     End Sub
 
     Private Sub InitlvSelector()
@@ -3097,22 +3097,22 @@ Public Class frmZaan
         lvSelector.Columns.Clear()
 
         If mLicTypeCode >= 30 Then                         'case of ZAAN-Pro license (access control)
-            lvSelector.Columns.Add("_u_", mMessage(7), w, HorizontalAlignment.Left, "_uh" & mImageStyle)     'Access control
+            lvSelector.Columns.Add("_u_", mMessage(7), w, Forms.HorizontalAlignment.Left, "_uh" & mImageStyle)     'Access control
         Else
-            lvSelector.Columns.Add("_u_", mMessage(7), 0, HorizontalAlignment.Left, "_uh" & mImageStyle)     'Access control hidden in ZAAN-Basic and ZAAN-First mode
+            lvSelector.Columns.Add("_u_", mMessage(7), 0, Forms.HorizontalAlignment.Left, "_uh" & mImageStyle)     'Access control hidden in ZAAN-Basic and ZAAN-First mode
         End If
 
-        lvSelector.Columns.Add("_t_", mMessage(1), w, HorizontalAlignment.Left, "_th" & mImageStyle)     'When
-        lvSelector.Columns.Add("_o_", mMessage(2), w, HorizontalAlignment.Left, "_oh" & mImageStyle)     'Who
-        lvSelector.Columns.Add("_a_", mMessage(3), w, HorizontalAlignment.Left, "_ah" & mImageStyle)     'What
-        lvSelector.Columns.Add("_e_", mMessage(4), w, HorizontalAlignment.Left, "_eh" & mImageStyle)     'Where
+        lvSelector.Columns.Add("_t_", mMessage(1), w, Forms.HorizontalAlignment.Left, "_th" & mImageStyle)     'When
+        lvSelector.Columns.Add("_o_", mMessage(2), w, Forms.HorizontalAlignment.Left, "_oh" & mImageStyle)     'Who
+        lvSelector.Columns.Add("_a_", mMessage(3), w, Forms.HorizontalAlignment.Left, "_ah" & mImageStyle)     'What
+        lvSelector.Columns.Add("_e_", mMessage(4), w, Forms.HorizontalAlignment.Left, "_eh" & mImageStyle)     'Where
 
         If mLicTypeCode >= 30 Then                         'case of ZAAN-Pro license (6 dimensions)
-            lvSelector.Columns.Add("_b_", mMessage(5), w, HorizontalAlignment.Left, "_bh" & mImageStyle)     'What else
-            lvSelector.Columns.Add("_c_", mMessage(6), w, HorizontalAlignment.Left, "_ch" & mImageStyle)     'Other
+            lvSelector.Columns.Add("_b_", mMessage(5), w, Forms.HorizontalAlignment.Left, "_bh" & mImageStyle)     'What else
+            lvSelector.Columns.Add("_c_", mMessage(6), w, Forms.HorizontalAlignment.Left, "_ch" & mImageStyle)     'Other
         Else                                               'case of ZAAN-First and ZAAN-Basic licenses (4 dimensions)
-            lvSelector.Columns.Add("_b_", mMessage(5), 0, HorizontalAlignment.Left, "_bh" & mImageStyle)     'What else (hidden in ZAAN-Basic mode)
-            lvSelector.Columns.Add("_c_", mMessage(6), 0, HorizontalAlignment.Left, "_ch" & mImageStyle)     'Other (hidden in ZAAN-Basic mode)
+            lvSelector.Columns.Add("_b_", mMessage(5), 0, Forms.HorizontalAlignment.Left, "_bh" & mImageStyle)     'What else (hidden in ZAAN-Basic mode)
+            lvSelector.Columns.Add("_c_", mMessage(6), 0, Forms.HorizontalAlignment.Left, "_ch" & mImageStyle)     'Other (hidden in ZAAN-Basic mode)
         End If
 
         btnDataAccessRoot.ImageKey = "_uh" & mImageStyle
@@ -3132,7 +3132,7 @@ Public Class frmZaan
 
         SelList.Items.Clear()
         SelList.Columns.Clear()
-        SelList.Columns.Add("", 60, HorizontalAlignment.Left)
+        SelList.Columns.Add("", 60, Forms.HorizontalAlignment.Left)
     End Sub
 
     Private Sub SetAxesVisibility()
@@ -3189,30 +3189,30 @@ Public Class frmZaan
         lvIn.Items.Clear()
         lvIn.Columns.Clear()
 
-        lvIn.Columns.Add(mMessage(44), 300, HorizontalAlignment.Left)                                   'Document (name)
+        lvIn.Columns.Add(mMessage(44), 300, Forms.HorizontalAlignment.Left)                                   'Document (name)
 
         If mLicTypeCode >= 30 Then                         'case of ZAAN-Pro license (access control)
-            lvIn.Columns.Add("_u_", mMessage(7), 100, HorizontalAlignment.Left, "_u_" & mImageStyle)    'Access control
+            lvIn.Columns.Add("_u_", mMessage(7), 100, Forms.HorizontalAlignment.Left, "_u_" & mImageStyle)    'Access control
         Else
-            lvIn.Columns.Add("_u_", mMessage(7), 0, HorizontalAlignment.Left, "_u_" & mImageStyle)      'Access control hidden in ZAAN-Basic and ZAAN-First mode
+            lvIn.Columns.Add("_u_", mMessage(7), 0, Forms.HorizontalAlignment.Left, "_u_" & mImageStyle)      'Access control hidden in ZAAN-Basic and ZAAN-First mode
         End If
 
-        lvIn.Columns.Add("_t_", mMessage(1), 100, HorizontalAlignment.Left, "_t_" & mImageStyle)        'When
-        lvIn.Columns.Add("_o_", mMessage(2), 135, HorizontalAlignment.Left, "_o_" & mImageStyle)        'Who
-        lvIn.Columns.Add("_a_", mMessage(3), 135, HorizontalAlignment.Left, "_a_" & mImageStyle)        'What
-        lvIn.Columns.Add("_e_", mMessage(4), 125, HorizontalAlignment.Left, "_e_" & mImageStyle)        'Where
+        lvIn.Columns.Add("_t_", mMessage(1), 100, Forms.HorizontalAlignment.Left, "_t_" & mImageStyle)        'When
+        lvIn.Columns.Add("_o_", mMessage(2), 135, Forms.HorizontalAlignment.Left, "_o_" & mImageStyle)        'Who
+        lvIn.Columns.Add("_a_", mMessage(3), 135, Forms.HorizontalAlignment.Left, "_a_" & mImageStyle)        'What
+        lvIn.Columns.Add("_e_", mMessage(4), 125, Forms.HorizontalAlignment.Left, "_e_" & mImageStyle)        'Where
 
         If mLicTypeCode >= 30 Then                         'case of ZAAN-Pro license (6 dimensions)
-            lvIn.Columns.Add("_b_", mMessage(5), 100, HorizontalAlignment.Left, "_b_" & mImageStyle)    'What else
-            lvIn.Columns.Add("_c_", mMessage(6), 100, HorizontalAlignment.Left, "_c_" & mImageStyle)    'Other
+            lvIn.Columns.Add("_b_", mMessage(5), 100, Forms.HorizontalAlignment.Left, "_b_" & mImageStyle)    'What else
+            lvIn.Columns.Add("_c_", mMessage(6), 100, Forms.HorizontalAlignment.Left, "_c_" & mImageStyle)    'Other
         Else                                               'case of ZAAN-First and ZAAN-Basic licenses (4 dimensions)
-            lvIn.Columns.Add("_b_", mMessage(5), 0, HorizontalAlignment.Left, "_b_" & mImageStyle)      'What else (hidden in ZAAN-Basic mode)
-            lvIn.Columns.Add("_c_", mMessage(6), 0, HorizontalAlignment.Left, "_c_" & mImageStyle)      'Other (hidden in ZAAN-Basic mode)
+            lvIn.Columns.Add("_b_", mMessage(5), 0, Forms.HorizontalAlignment.Left, "_b_" & mImageStyle)      'What else (hidden in ZAAN-Basic mode)
+            lvIn.Columns.Add("_c_", mMessage(6), 0, Forms.HorizontalAlignment.Left, "_c_" & mImageStyle)      'Other (hidden in ZAAN-Basic mode)
         End If
 
-        lvIn.Columns.Add(mMessage(50), 45, HorizontalAlignment.Left)                     'Type
-        lvIn.Columns.Add(mMessage(45), 75, HorizontalAlignment.Right)                    'Size (Kb)
-        lvIn.Columns.Add(mMessage(46), 140, HorizontalAlignment.Right)                   'Modification date
+        lvIn.Columns.Add(mMessage(50), 45, Forms.HorizontalAlignment.Left)                     'Type
+        lvIn.Columns.Add(mMessage(45), 75, Forms.HorizontalAlignment.Right)                    'Size (Kb)
+        lvIn.Columns.Add(mMessage(46), 140, Forms.HorizontalAlignment.Right)                   'Modification date
     End Sub
 
     Private Sub ShowHideExtraInCol()
@@ -3235,10 +3235,10 @@ Public Class frmZaan
 
         lvOut.Items.Clear()
         lvOut.Columns.Clear()
-        lvOut.Columns.Add(mMessage(82), 300, HorizontalAlignment.Left)                   'documents
-        lvOut.Columns.Add(mMessage(50), 45, HorizontalAlignment.Left)                    'Type
-        lvOut.Columns.Add(mMessage(45), 75, HorizontalAlignment.Right)                   'Size (Kb)
-        lvOut.Columns.Add(mMessage(46), 140, HorizontalAlignment.Right)                  'Modification date
+        lvOut.Columns.Add(mMessage(82), 300, Forms.HorizontalAlignment.Left)                   'documents
+        lvOut.Columns.Add(mMessage(50), 45, Forms.HorizontalAlignment.Left)                    'Type
+        lvOut.Columns.Add(mMessage(45), 75, Forms.HorizontalAlignment.Right)                   'Size (Kb)
+        lvOut.Columns.Add(mMessage(46), 140, Forms.HorizontalAlignment.Right)                  'Modification date
 
         'lvOut.View = View.Details
         mlvOutOrder(0) = 1                                 '1st column flag set in ascending order
@@ -3252,10 +3252,10 @@ Public Class frmZaan
 
         lvTemp.Items.Clear()
         lvTemp.Columns.Clear()
-        lvTemp.Columns.Add(mMessage(82), 300, HorizontalAlignment.Left)                  'documents
-        lvTemp.Columns.Add(mMessage(50), 45, HorizontalAlignment.Left)                   'Type
-        lvTemp.Columns.Add(mMessage(45), 75, HorizontalAlignment.Right)                  'Size (Kb)
-        lvTemp.Columns.Add(mMessage(46), 140, HorizontalAlignment.Right)                 'Modification Date
+        lvTemp.Columns.Add(mMessage(82), 300, Forms.HorizontalAlignment.Left)                  'documents
+        lvTemp.Columns.Add(mMessage(50), 45, Forms.HorizontalAlignment.Left)                   'Type
+        lvTemp.Columns.Add(mMessage(45), 75, Forms.HorizontalAlignment.Right)                  'Size (Kb)
+        lvTemp.Columns.Add(mMessage(46), 140, Forms.HorizontalAlignment.Right)                 'Modification Date
 
         'lvTemp.View = View.Details
         mlvTempOrder(0) = 1                                '1st column flag set in ascending order
@@ -5333,15 +5333,15 @@ Public Class frmZaan
         End Try
     End Sub
 
-    Private Sub DropSelectedFile(ByVal SourceFilePathName As String, ByVal DestFilePathName As String, ByVal DropEffect As DragDropEffects, Optional ByVal UndoEnabled As Boolean = True)
+    Private Sub DropSelectedFile(ByVal SourceFilePathName As String, ByVal DestFilePathName As String, ByVal DropEffect As Windows.DragDropEffects, Optional ByVal UndoEnabled As Boolean = True)
         'Drops given source file to destination depending on copy/move drop effect, else on disk units (equal => move, else copy)
 
         'Debug.Print("DropSelectedFile : " & SourceFilePathName & " ON " & DestFilePathName & "  DropEffect = " & DropEffect.ToString)   'TEST/DEBUG
         If SourceFilePathName = DestFilePathName Then Exit Sub 'copy of a file on itself is not possible !
 
-        If DropEffect = DragDropEffects.Copy Then
+        If DropEffect = Windows.DragDropEffects.Copy Then
             Call CopySelectedFile(SourceFilePathName, "", DestFilePathName)              'copies file to current selection
-        ElseIf DropEffect = DragDropEffects.Move Then
+        ElseIf DropEffect = Windows.DragDropEffects.Move Then
             Call MoveSelectedFile(SourceFilePathName, "", DestFilePathName, False, UndoEnabled)       'moves file to current selection
         Else
             If Mid(SourceFilePathName, 1, 2) = Mid(DestFilePathName, 1, 2) Then          'case of same disk unit => move file
@@ -8794,7 +8794,7 @@ Public Class frmZaan
 
     Private Sub UpdateCutCopyPasteMenusItems()
         'Updates the enabling status of cut/copy/paste items of lists context menus
-        If Clipboard.ContainsFileDropList Then             'clipboard contains a file drop list
+        If Forms.Clipboard.ContainsFileDropList Then             'clipboard contains a file drop list
             tsmiLvInPaste.Enabled = True
             tsmiLvOutPaste.Enabled = True
             tsmiLvTempPaste.Enabled = True
@@ -8850,7 +8850,7 @@ Public Class frmZaan
         Dim MyItem As ListViewItem
         Dim MyFiles(lvIn.SelectedItems.Count - 1) As String
         Dim i As Integer = 0
-        Dim ClipData As New DataObject()
+        Dim ClipData As New Forms.DataObject()
 
         For Each MyItem In lvIn.SelectedItems
             'DirPathName = mZaanDbPath & "data\" & MyItem.Tag      'get dir name of selected file
@@ -8860,14 +8860,14 @@ Public Class frmZaan
             MyFiles(i) = DirPathName & "\" & FileName           'adds the file to file list
             i = i + 1
         Next
-        Clipboard.Clear()                                       'removes all data from Clipboard
+        Forms.Clipboard.Clear()                                       'removes all data from Clipboard
         ClipData.SetData("FileDrop", True, MyFiles)
         If IsCut Then
             ClipData.SetData("Preferred DropEffect", mStreamMove)   'sets drop effect to Move (compatible with Windows File Explorer)
         Else
             ClipData.SetData("Preferred DropEffect", mStreamCopy)   'sets drop effect to Copy (compatible with Windows File Explorer)
         End If
-        Clipboard.SetDataObject(ClipData)                       'writes the special ClipData object in Clipboard
+        Forms.Clipboard.SetDataObject(ClipData)                       'writes the special ClipData object in Clipboard
     End Sub
 
     Private Sub CutCopyListViewSelection(ByVal IsCut As Boolean, ByVal IsOutList As Boolean)
@@ -8876,7 +8876,7 @@ Public Class frmZaan
         Dim MyItem As ListViewItem
         Dim MyFiles() As String
         Dim i As Integer = 0
-        Dim ClipData As New DataObject()
+        Dim ClipData As New Forms.DataObject()
 
         If IsOutList Then                                       'case of (import/export) "out" list
             ReDim MyFiles(lvOut.SelectedItems.Count - 1)
@@ -8894,20 +8894,20 @@ Public Class frmZaan
             Next
         End If
 
-        Clipboard.Clear()                                       'removes all data from Clipboard
+        Forms.Clipboard.Clear()                                       'removes all data from Clipboard
         ClipData.SetData("FileDrop", True, MyFiles)
         If IsCut Then
             ClipData.SetData("Preferred DropEffect", mStreamMove)   'sets drop effect to Move (compatible with Windows File Explorer)
         Else
             ClipData.SetData("Preferred DropEffect", mStreamCopy)   'sets drop effect to Copy (compatible with Windows File Explorer)
         End If
-        Clipboard.SetDataObject(ClipData)                       'writes the special ClipData object in Clipboard
+        Forms.Clipboard.SetDataObject(ClipData)                       'writes the special ClipData object in Clipboard
     End Sub
 
     Private Function IsMoveEffect() As Boolean
         'Returns true if first byte of "Preferred DropEffect" data in Clipboard is set to move effect value
 
-        Dim ClipData As DataObject = Clipboard.GetDataObject()
+        Dim ClipData As Forms.DataObject = Forms.Clipboard.GetDataObject()
         Dim CurStream As Stream = ClipData.GetData("Preferred DropEffect")
         Dim DropEffectData(3) As Byte
         Dim isMove As Boolean = False
@@ -8929,11 +8929,11 @@ Public Class frmZaan
 
         If Not CheckMoveInLimitIsOk() Then Exit Sub 'case of ZAAN Basic licence with the limit of 1000 documents stored in current ZAAN database reached
 
-        If Clipboard.ContainsFileDropList Then
-            Dim ClipData As DataObject = Clipboard.GetDataObject()
+        If Forms.Clipboard.ContainsFileDropList Then
+            Dim ClipData As Forms.DataObject = Forms.Clipboard.GetDataObject()
 
-            If Clipboard.ContainsData(DataFormats.FileDrop) Then
-                Dim MyFiles() As String = ClipData.GetData(DataFormats.FileDrop)
+            If Forms.Clipboard.ContainsData(Forms.DataFormats.FileDrop) Then
+                Dim MyFiles() As String = ClipData.GetData(Forms.DataFormats.FileDrop)
                 Dim isMove As Boolean = IsMoveEffect()                       'true if first byte of "Preferred DropEffect" data in Clipboard is set to move effect value
 
                 If Not MyFiles Is Nothing Then
@@ -8950,11 +8950,11 @@ Public Class frmZaan
                     Next
                 End If
 
-            ElseIf Clipboard.ContainsData("FileGroupDescriptor") Then              'case of an Outlook message to be dropped
+            ElseIf Windows.Clipboard.ContainsData("FileGroupDescriptor") Then              'case of an Outlook message to be dropped
                 Call DropOutlookFiles(ClipData, FilePath, lvIn)     'drops given Outlook files contained OutlookDataObject eData at destination directory
             End If
         End If
-        Clipboard.Clear()                                            'removes all data from Clipboard
+        Forms.Clipboard.Clear()                                            'removes all data from Clipboard
     End Sub
 
     Private Sub OpenZaanDataDirectory(ByVal ZaanDataDirPathName As String)
@@ -9358,7 +9358,7 @@ Public Class frmZaan
 
         trvW.HideSelection = True                                              'disable tree node selection highlight even if tree has not the focus
 
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Then                    'case of file(s) to be dropped
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Then                    'case of file(s) to be dropped
             If mStartDragLvInItem Then                                         'item drag started from lvIn => cancels drop operation
                 mStartDragLvInItem = False
                 'clears clipboard TBD...
@@ -9371,7 +9371,7 @@ Public Class frmZaan
             Call ResetFileMovePile()                                           'resets file move pile (used for "Undo move") and disables related local menu control
             SelectedDirPath = GetSelectedDirPathName()                         'get current data directory pathname corresponding to current mFileFilter
 
-            Dim MyFiles() As String = e.Data.GetData(DataFormats.FileDrop)
+            Dim MyFiles() As String = e.Data.GetData(Forms.DataFormats.FileDrop)
             For i = 0 To MyFiles.Length - 1
                 FileName = System.IO.Path.GetFileName(MyFiles(i))
                 DestFilePathName = ""
@@ -9406,10 +9406,10 @@ Public Class frmZaan
     Private Sub lvIn_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lvIn.DragEnter
         'Debug.Print("lvIn_DragEnter...")              'TEST/DEBUG
         'If e.Data.GetDataPresent(DataFormats.FileDrop) Or e.Data.GetDataPresent(GetType(TreeNode)) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
-            e.Effect = DragDropEffects.All
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
+            e.Effect = Forms.DragDropEffects.All
         Else
-            e.Effect = DragDropEffects.None
+            e.Effect = Forms.DragDropEffects.None
         End If
     End Sub
 
@@ -9434,7 +9434,7 @@ Public Class frmZaan
             i = i + 1
         Next
         'sender.DoDragDrop(New DataObject(DataFormats.FileDrop, MyFiles), DragDropEffects.All)      'creates a DataObject containg the array of ListViewItems
-        sender.DoDragDrop(New DataObject(DataFormats.FileDrop, MyFiles), DragDropEffects.Copy)      'creates a DataObject containg the array of ListViewItems
+        sender.DoDragDrop(New Forms.DataObject(Forms.DataFormats.FileDrop, MyFiles), Forms.DragDropEffects.Copy)      'creates a DataObject containg the array of ListViewItems
     End Sub
 
     Private Sub lvIn_ItemSelectionChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.ListViewItemSelectionChangedEventArgs) Handles lvIn.ItemSelectionChanged
@@ -9557,7 +9557,7 @@ Public Class frmZaan
         Dim NodeKey, ParentKey, NodeTreeCode, FileName, DirPathName, DestDirPathName, DestFilePathName As String
         'Dim TargetDirPath As String
         Dim SceHierarchicalKey, DestHierarchicalKey As String
-        Dim MyFiles() As String = e.Data.GetData(DataFormats.FileDrop)
+        Dim MyFiles() As String = e.Data.GetData(Forms.DataFormats.FileDrop)
         Dim i As Integer
         Dim draggedNode As TreeNode = CType(e.Data.GetData(GetType(TreeNode)), TreeNode)
         Dim Response As MsgBoxResult
@@ -9569,7 +9569,7 @@ Public Class frmZaan
 
         trvW.HideSelection = True                                              'disable tree node selection highlight even if tree has not the focus
 
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Then                    'case of file(s) to be dropped
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Then                    'case of file(s) to be dropped
             mStartDragLvInItem = False                                         'makes sure that lvIn item drag flag is reset
 
             Me.Cursor = Cursors.WaitCursor                                     'sets wait cursor
@@ -9629,10 +9629,10 @@ Public Class frmZaan
 
     Private Sub trvW_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles trvW.DragEnter
         'Debug.Print("trvW_DragEnter :  mTreeClicked = " & mTreeClicked)         'TEST/DEBUG
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Or (e.Data.GetDataPresent(GetType(TreeNode)) And (Not mTreeViewLocked)) Then
-            e.Effect = DragDropEffects.All
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Or (e.Data.GetDataPresent(GetType(TreeNode)) And (Not mTreeViewLocked)) Then
+            e.Effect = Forms.DragDropEffects.All
         Else
-            e.Effect = DragDropEffects.None
+            e.Effect = Forms.DragDropEffects.None
         End If
     End Sub
 
@@ -9649,7 +9649,7 @@ Public Class frmZaan
 
     Private Sub trvW_ItemDrag(ByVal sender As Object, ByVal e As System.Windows.Forms.ItemDragEventArgs) Handles trvW.ItemDrag
         'Starts to drag selected tree node for moving it, if possible
-        DoDragDrop(e.Item, DragDropEffects.Move)
+        DoDragDrop(e.Item, Forms.DragDropEffects.Move)
     End Sub
 
     Private Sub lvTemp_AfterLabelEdit(ByVal sender As Object, ByVal e As System.Windows.Forms.LabelEditEventArgs) Handles lvTemp.AfterLabelEdit
@@ -9713,13 +9713,13 @@ Public Class frmZaan
 
     Private Sub lvTemp_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lvTemp.DragDrop
         'Terminates drag-drop operation of "in" files to be copied in "copy" directory
-        Dim MyFiles() As String = e.Data.GetData(DataFormats.FileDrop)
+        Dim MyFiles() As String = e.Data.GetData(Forms.DataFormats.FileDrop)
         Dim i As Integer
         Dim FileName As String
 
         'Debug.Print("lvTemp_DragDrop : ")   'TEST/DEBUG
         trvW.HideSelection = True                                    'disable tree node selection highlight even if tree has not the focus
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Then
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Then
             Me.Cursor = Cursors.WaitCursor                           'sets wait cursor
             fswZaan.EnableRaisingEvents = False                      'locks fswZaan (import and copy) related events
             For i = 0 To MyFiles.Length - 1
@@ -9737,10 +9737,10 @@ Public Class frmZaan
     End Sub
 
     Private Sub lvTemp_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lvTemp.DragEnter
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
-            e.Effect = DragDropEffects.All
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
+            e.Effect = Forms.DragDropEffects.All
         Else
-            e.Effect = DragDropEffects.None
+            e.Effect = Forms.DragDropEffects.None
         End If
     End Sub
 
@@ -9760,7 +9760,7 @@ Public Class frmZaan
             MyFiles(i) = mZaanCopyPath & FileName               'adds the ListViewItem to the array of ListViewItems
             i = i + 1
         Next
-        sender.DoDragDrop(New DataObject(DataFormats.FileDrop, MyFiles), DragDropEffects.All)      'creates a DataObject containg the array of ListViewItems
+        sender.DoDragDrop(New Forms.DataObject(Forms.DataFormats.FileDrop, MyFiles), Forms.DragDropEffects.All)      'creates a DataObject containg the array of ListViewItems
     End Sub
 
     Private Sub lvTemp_ItemSelectionChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.ListViewItemSelectionChangedEventArgs) Handles lvTemp.ItemSelectionChanged
@@ -9781,22 +9781,22 @@ Public Class frmZaan
 
     Private Sub lvOut_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lvOut.DragEnter
         'Debug.Print("lvOut_DragEnter...")         'TEST/DEBUG
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
-            e.Effect = DragDropEffects.All
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Or e.Data.GetDataPresent("FileGroupDescriptor") Then
+            e.Effect = Forms.DragDropEffects.All
         Else
-            e.Effect = DragDropEffects.None
+            e.Effect = Forms.DragDropEffects.None
         End If
     End Sub
 
     Private Sub lvOut_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles lvOut.DragDrop
         'Terminates drag-drop operation of files to be moved in "out" directory
-        Dim MyFiles() As String = e.Data.GetData(DataFormats.FileDrop)
+        Dim MyFiles() As String = e.Data.GetData(Forms.DataFormats.FileDrop)
         Dim i As Integer
         Dim FileName, DestFilePathName As String
 
         'Debug.Print("lvOut_DragDrop : ")   'TEST/DEBUG
         trvW.HideSelection = True                                              'disable tree node selection highlight even if tree has not the focus
-        If e.Data.GetDataPresent(DataFormats.FileDrop) Then                    'case of file(s) to be dropped
+        If e.Data.GetDataPresent(Forms.DataFormats.FileDrop) Then                    'case of file(s) to be dropped
             Call LocksFswDataInputZaan()                                       'sets wait cursor and locks fswData, fswInput and fswZaan (import and copy) related events
             Call ResetFileMovePile()                                           'resets file move pile (used for "Undo move") and disables related local menu control
             For i = 0 To MyFiles.Length - 1
@@ -9828,7 +9828,7 @@ Public Class frmZaan
             MyFiles(i) = mZaanImportPath & FileName             'adds the ListViewItem to the array of ListViewItems
             i = i + 1
         Next
-        sender.DoDragDrop(New DataObject(DataFormats.FileDrop, MyFiles), DragDropEffects.Move)     'creates a DataObject containg the array of ListViewItems and flags move effect
+        sender.DoDragDrop(New Forms.DataObject(Forms.DataFormats.FileDrop, MyFiles), Forms.DragDropEffects.Move)     'creates a DataObject containg the array of ListViewItems and flags move effect
     End Sub
 
     Private Sub tmrLicenseCheck_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles tmrLicenseCheck.Tick
@@ -11139,8 +11139,8 @@ Public Class frmZaan
             DirPathName = lvIn.SelectedItems(0).Tag                            'get dir name of first selected file
             FileName = lvIn.SelectedItems(0).Text & lvIn.SelectedItems(0).SubItems(8).Text
             FullPath = DirPathName & "\" & FileName                            'build full path to be copied
-            Clipboard.Clear()                                                  'removes all data from Clipboard
-            Clipboard.SetDataObject(FullPath)                                  'writes the special ClipData object in Clipboard
+            Forms.Clipboard.Clear()                                            'removes all data from Clipboard
+            Forms.Clipboard.SetDataObject(FullPath)                            'writes the special ClipData object in Clipboard
         End If
     End Sub
 

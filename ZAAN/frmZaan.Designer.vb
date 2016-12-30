@@ -92,7 +92,6 @@ Partial Class frmZaan
         Me.tsmiLvInExpNameTable = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiLvInExpRefTable = New System.Windows.Forms.ToolStripMenuItem()
         Me.imgLargeIcons = New System.Windows.Forms.ImageList(Me.components)
-        Me.lvMatrix = New System.Windows.Forms.ListView()
         Me.lblDocName = New System.Windows.Forms.Label()
         Me.lstPage = New System.Windows.Forms.ListBox()
         Me.lstInDir = New System.Windows.Forms.ListBox()
@@ -126,16 +125,9 @@ Partial Class frmZaan
         Me.pnlListTop = New System.Windows.Forms.Panel()
         Me.pnlSelectorNav = New System.Windows.Forms.Panel()
         Me.pnlSelectorHeaderBottom = New System.Windows.Forms.Panel()
-        Me.btnWho2Axis = New System.Windows.Forms.Button()
-        Me.btnWhat2Axis = New System.Windows.Forms.Button()
-        Me.btnWhereAxis = New System.Windows.Forms.Button()
-        Me.btnWhatAxis = New System.Windows.Forms.Button()
         Me.btnPanelView = New System.Windows.Forms.Button()
-        Me.btnWhoAxis = New System.Windows.Forms.Button()
-        Me.btnWhenAxis = New System.Windows.Forms.Button()
         Me.btnToday = New System.Windows.Forms.Button()
         Me.btnDataAccessBlank = New System.Windows.Forms.Button()
-        Me.btnDataAccessAxis = New System.Windows.Forms.Button()
         Me.pnlSelectorHeaderTop = New System.Windows.Forms.Panel()
         Me.btnCubeTube = New System.Windows.Forms.Button()
         Me.btnPanelImport = New System.Windows.Forms.Button()
@@ -181,7 +173,6 @@ Partial Class frmZaan
         Me.lblSelPageNext = New System.Windows.Forms.Label()
         Me.btnPanelEmpty = New System.Windows.Forms.Button()
         Me.btnPanelTree = New System.Windows.Forms.Button()
-        Me.btnMatrix = New System.Windows.Forms.Button()
         Me.pnlDatabase = New System.Windows.Forms.Panel()
         Me.pctZaanLogo = New System.Windows.Forms.PictureBox()
         Me.cmsSelector = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -364,7 +355,7 @@ Partial Class frmZaan
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.tcFolders)
         Me.SplitContainer1.Size = New System.Drawing.Size(2332, 1022)
-        Me.SplitContainer1.SplitterDistance = 387
+        Me.SplitContainer1.SplitterDistance = 692
         Me.SplitContainer1.SplitterWidth = 8
         Me.SplitContainer1.TabIndex = 0
         '
@@ -379,7 +370,7 @@ Partial Class frmZaan
         Me.tcCubes.Name = "tcCubes"
         Me.tcCubes.SelectedIndex = 0
         Me.tcCubes.ShowToolTips = True
-        Me.tcCubes.Size = New System.Drawing.Size(2332, 387)
+        Me.tcCubes.Size = New System.Drawing.Size(2332, 692)
         Me.tcCubes.TabIndex = 19
         '
         'TabPage4
@@ -389,7 +380,7 @@ Partial Class frmZaan
         Me.TabPage4.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(6)
-        Me.TabPage4.Size = New System.Drawing.Size(2316, 327)
+        Me.TabPage4.Size = New System.Drawing.Size(2316, 632)
         Me.TabPage4.TabIndex = 0
         Me.TabPage4.Text = "..."
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -402,7 +393,7 @@ Partial Class frmZaan
         Me.pnlCube.Location = New System.Drawing.Point(6, 6)
         Me.pnlCube.Margin = New System.Windows.Forms.Padding(6)
         Me.pnlCube.Name = "pnlCube"
-        Me.pnlCube.Size = New System.Drawing.Size(2304, 315)
+        Me.pnlCube.Size = New System.Drawing.Size(2304, 620)
         Me.pnlCube.TabIndex = 20
         '
         'SplitContainer2
@@ -421,7 +412,7 @@ Partial Class frmZaan
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.SplitContainer3)
-        Me.SplitContainer2.Size = New System.Drawing.Size(2304, 178)
+        Me.SplitContainer2.Size = New System.Drawing.Size(2304, 483)
         Me.SplitContainer2.SplitterDistance = 274
         Me.SplitContainer2.SplitterWidth = 8
         Me.SplitContainer2.TabIndex = 1
@@ -446,7 +437,7 @@ Partial Class frmZaan
         Me.trvW.Name = "trvW"
         Me.trvW.SelectedImageIndex = 0
         Me.trvW.ShowNodeToolTips = True
-        Me.trvW.Size = New System.Drawing.Size(274, 178)
+        Me.trvW.Size = New System.Drawing.Size(274, 483)
         Me.trvW.TabIndex = 6
         '
         'cmsTrvW
@@ -455,42 +446,42 @@ Partial Class frmZaan
         Me.cmsTrvW.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.cmsTrvW.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiTrvWAdd, Me.tsmiTrvWAddExternal, Me.tssTrvW1, Me.tsmiTrvWRefresh, Me.tssTrvW2, Me.tsmiTrvWRename, Me.tsmiTrvWDelete, Me.tssTrvW3, Me.tsmiTrvWImport, Me.tsmiTrvWExport})
         Me.cmsTrvW.Name = "cmsTrvW"
-        Me.cmsTrvW.Size = New System.Drawing.Size(341, 288)
+        Me.cmsTrvW.Size = New System.Drawing.Size(350, 288)
         '
         'tsmiTrvWAdd
         '
         Me.tsmiTrvWAdd.Image = Global.WindowsApplication1.My.Resources.Resources.add_lg
         Me.tsmiTrvWAdd.Name = "tsmiTrvWAdd"
-        Me.tsmiTrvWAdd.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWAdd.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWAdd.Text = "Add"
         '
         'tsmiTrvWAddExternal
         '
         Me.tsmiTrvWAddExternal.Image = Global.WindowsApplication1.My.Resources.Resources.add_lg
         Me.tsmiTrvWAddExternal.Name = "tsmiTrvWAddExternal"
-        Me.tsmiTrvWAddExternal.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWAddExternal.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWAddExternal.Text = "Add as external folder"
         '
         'tssTrvW1
         '
         Me.tssTrvW1.Name = "tssTrvW1"
-        Me.tssTrvW1.Size = New System.Drawing.Size(337, 6)
+        Me.tssTrvW1.Size = New System.Drawing.Size(346, 6)
         '
         'tsmiTrvWRefresh
         '
         Me.tsmiTrvWRefresh.Name = "tsmiTrvWRefresh"
-        Me.tsmiTrvWRefresh.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWRefresh.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWRefresh.Text = "Refresh"
         '
         'tssTrvW2
         '
         Me.tssTrvW2.Name = "tssTrvW2"
-        Me.tssTrvW2.Size = New System.Drawing.Size(337, 6)
+        Me.tssTrvW2.Size = New System.Drawing.Size(346, 6)
         '
         'tsmiTrvWRename
         '
         Me.tsmiTrvWRename.Name = "tsmiTrvWRename"
-        Me.tsmiTrvWRename.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWRename.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWRename.Text = "Rename"
         '
         'tsmiTrvWDelete
@@ -498,24 +489,24 @@ Partial Class frmZaan
         Me.tsmiTrvWDelete.Enabled = False
         Me.tsmiTrvWDelete.Image = Global.WindowsApplication1.My.Resources.Resources.delete_lg
         Me.tsmiTrvWDelete.Name = "tsmiTrvWDelete"
-        Me.tsmiTrvWDelete.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWDelete.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWDelete.Text = "Delete"
         '
         'tssTrvW3
         '
         Me.tssTrvW3.Name = "tssTrvW3"
-        Me.tssTrvW3.Size = New System.Drawing.Size(337, 6)
+        Me.tssTrvW3.Size = New System.Drawing.Size(346, 6)
         '
         'tsmiTrvWImport
         '
         Me.tsmiTrvWImport.Name = "tsmiTrvWImport"
-        Me.tsmiTrvWImport.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWImport.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWImport.Text = "Import tree view..."
         '
         'tsmiTrvWExport
         '
         Me.tsmiTrvWExport.Name = "tsmiTrvWExport"
-        Me.tsmiTrvWExport.Size = New System.Drawing.Size(340, 38)
+        Me.tsmiTrvWExport.Size = New System.Drawing.Size(349, 38)
         Me.tsmiTrvWExport.Text = "Export tree view"
         '
         'imgFileTypes
@@ -538,7 +529,7 @@ Partial Class frmZaan
         Me.lvBookmark.MultiSelect = False
         Me.lvBookmark.Name = "lvBookmark"
         Me.lvBookmark.Scrollable = False
-        Me.lvBookmark.Size = New System.Drawing.Size(274, 178)
+        Me.lvBookmark.Size = New System.Drawing.Size(274, 483)
         Me.lvBookmark.SmallImageList = Me.imgFileTypes
         Me.lvBookmark.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.lvBookmark.TabIndex = 0
@@ -607,7 +598,7 @@ Partial Class frmZaan
         Me.SplitContainer3.Panel2.Controls.Add(Me.pnlZoomVideo)
         Me.SplitContainer3.Panel2.Controls.Add(Me.wbDoc)
         Me.SplitContainer3.Panel2.Controls.Add(Me.pnlZoom)
-        Me.SplitContainer3.Size = New System.Drawing.Size(2022, 178)
+        Me.SplitContainer3.Size = New System.Drawing.Size(2022, 483)
         Me.SplitContainer3.SplitterDistance = 265
         Me.SplitContainer3.SplitterWidth = 8
         Me.SplitContainer3.TabIndex = 0
@@ -616,12 +607,11 @@ Partial Class frmZaan
         '
         Me.pnlList.Controls.Add(Me.pgbZaan)
         Me.pnlList.Controls.Add(Me.lvIn)
-        Me.pnlList.Controls.Add(Me.lvMatrix)
         Me.pnlList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlList.Location = New System.Drawing.Point(0, 0)
         Me.pnlList.Margin = New System.Windows.Forms.Padding(6)
         Me.pnlList.Name = "pnlList"
-        Me.pnlList.Size = New System.Drawing.Size(265, 178)
+        Me.pnlList.Size = New System.Drawing.Size(265, 483)
         Me.pnlList.TabIndex = 1
         '
         'pgbZaan
@@ -649,7 +639,7 @@ Partial Class frmZaan
         Me.lvIn.Location = New System.Drawing.Point(0, 0)
         Me.lvIn.Margin = New System.Windows.Forms.Padding(6)
         Me.lvIn.Name = "lvIn"
-        Me.lvIn.Size = New System.Drawing.Size(265, 178)
+        Me.lvIn.Size = New System.Drawing.Size(265, 483)
         Me.lvIn.SmallImageList = Me.imgFileTypes
         Me.lvIn.TabIndex = 8
         Me.lvIn.UseCompatibleStateImageBehavior = False
@@ -910,22 +900,6 @@ Partial Class frmZaan
         Me.imgLargeIcons.ImageSize = New System.Drawing.Size(90, 90)
         Me.imgLargeIcons.TransparentColor = System.Drawing.Color.Transparent
         '
-        'lvMatrix
-        '
-        Me.lvMatrix.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lvMatrix.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lvMatrix.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lvMatrix.GridLines = True
-        Me.lvMatrix.Location = New System.Drawing.Point(0, 0)
-        Me.lvMatrix.Margin = New System.Windows.Forms.Padding(6)
-        Me.lvMatrix.Name = "lvMatrix"
-        Me.lvMatrix.Size = New System.Drawing.Size(265, 178)
-        Me.lvMatrix.SmallImageList = Me.imgFileTypes
-        Me.lvMatrix.TabIndex = 12
-        Me.lvMatrix.UseCompatibleStateImageBehavior = False
-        Me.lvMatrix.View = System.Windows.Forms.View.Details
-        Me.lvMatrix.Visible = False
-        '
         'lblDocName
         '
         Me.lblDocName.BackColor = System.Drawing.SystemColors.Control
@@ -1072,7 +1046,7 @@ Partial Class frmZaan
         Me.wbDoc.Margin = New System.Windows.Forms.Padding(6)
         Me.wbDoc.MinimumSize = New System.Drawing.Size(40, 38)
         Me.wbDoc.Name = "wbDoc"
-        Me.wbDoc.Size = New System.Drawing.Size(108, 178)
+        Me.wbDoc.Size = New System.Drawing.Size(108, 483)
         Me.wbDoc.TabIndex = 8
         Me.wbDoc.Visible = False
         '
@@ -1316,16 +1290,9 @@ Partial Class frmZaan
         '
         'pnlSelectorHeaderBottom
         '
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWho2Axis)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWhat2Axis)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWhereAxis)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWhatAxis)
         Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnPanelView)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWhoAxis)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnWhenAxis)
         Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnToday)
         Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnDataAccessBlank)
-        Me.pnlSelectorHeaderBottom.Controls.Add(Me.btnDataAccessAxis)
         Me.pnlSelectorHeaderBottom.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlSelectorHeaderBottom.Location = New System.Drawing.Point(0, 90)
         Me.pnlSelectorHeaderBottom.Margin = New System.Windows.Forms.Padding(6)
@@ -1333,70 +1300,6 @@ Partial Class frmZaan
         Me.pnlSelectorHeaderBottom.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
         Me.pnlSelectorHeaderBottom.Size = New System.Drawing.Size(1596, 47)
         Me.pnlSelectorHeaderBottom.TabIndex = 20
-        '
-        'btnWho2Axis
-        '
-        Me.btnWho2Axis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWho2Axis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWho2Axis.FlatAppearance.BorderSize = 0
-        Me.btnWho2Axis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWho2Axis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWho2Axis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWho2Axis.Location = New System.Drawing.Point(1120, 0)
-        Me.btnWho2Axis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWho2Axis.Name = "btnWho2Axis"
-        Me.btnWho2Axis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWho2Axis.TabIndex = 40
-        Me.btnWho2Axis.Text = "+"
-        Me.btnWho2Axis.UseVisualStyleBackColor = True
-        '
-        'btnWhat2Axis
-        '
-        Me.btnWhat2Axis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWhat2Axis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWhat2Axis.FlatAppearance.BorderSize = 0
-        Me.btnWhat2Axis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWhat2Axis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWhat2Axis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhat2Axis.Location = New System.Drawing.Point(980, 0)
-        Me.btnWhat2Axis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWhat2Axis.Name = "btnWhat2Axis"
-        Me.btnWhat2Axis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWhat2Axis.TabIndex = 39
-        Me.btnWhat2Axis.Text = "+"
-        Me.btnWhat2Axis.UseVisualStyleBackColor = True
-        '
-        'btnWhereAxis
-        '
-        Me.btnWhereAxis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWhereAxis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWhereAxis.FlatAppearance.BorderSize = 0
-        Me.btnWhereAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWhereAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWhereAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhereAxis.Location = New System.Drawing.Point(840, 0)
-        Me.btnWhereAxis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWhereAxis.Name = "btnWhereAxis"
-        Me.btnWhereAxis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWhereAxis.TabIndex = 38
-        Me.btnWhereAxis.Text = "+"
-        Me.btnWhereAxis.UseVisualStyleBackColor = True
-        '
-        'btnWhatAxis
-        '
-        Me.btnWhatAxis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWhatAxis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWhatAxis.FlatAppearance.BorderSize = 0
-        Me.btnWhatAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWhatAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWhatAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhatAxis.Location = New System.Drawing.Point(700, 0)
-        Me.btnWhatAxis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWhatAxis.Name = "btnWhatAxis"
-        Me.btnWhatAxis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWhatAxis.TabIndex = 37
-        Me.btnWhatAxis.Text = "+"
-        Me.btnWhatAxis.UseVisualStyleBackColor = True
         '
         'btnPanelView
         '
@@ -1414,38 +1317,6 @@ Partial Class frmZaan
         Me.btnPanelView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelView.UseVisualStyleBackColor = False
         '
-        'btnWhoAxis
-        '
-        Me.btnWhoAxis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWhoAxis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWhoAxis.FlatAppearance.BorderSize = 0
-        Me.btnWhoAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWhoAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWhoAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhoAxis.Location = New System.Drawing.Point(560, 0)
-        Me.btnWhoAxis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWhoAxis.Name = "btnWhoAxis"
-        Me.btnWhoAxis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWhoAxis.TabIndex = 36
-        Me.btnWhoAxis.Text = "+"
-        Me.btnWhoAxis.UseVisualStyleBackColor = True
-        '
-        'btnWhenAxis
-        '
-        Me.btnWhenAxis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWhenAxis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnWhenAxis.FlatAppearance.BorderSize = 0
-        Me.btnWhenAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWhenAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWhenAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWhenAxis.Location = New System.Drawing.Point(420, 0)
-        Me.btnWhenAxis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnWhenAxis.Name = "btnWhenAxis"
-        Me.btnWhenAxis.Size = New System.Drawing.Size(140, 47)
-        Me.btnWhenAxis.TabIndex = 35
-        Me.btnWhenAxis.Text = "+"
-        Me.btnWhenAxis.UseVisualStyleBackColor = True
-        '
         'btnToday
         '
         Me.btnToday.Cursor = System.Windows.Forms.Cursors.Hand
@@ -1454,7 +1325,7 @@ Partial Class frmZaan
         Me.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnToday.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnToday.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnToday.Location = New System.Drawing.Point(280, 0)
+        Me.btnToday.Location = New System.Drawing.Point(140, 0)
         Me.btnToday.Margin = New System.Windows.Forms.Padding(6)
         Me.btnToday.Name = "btnToday"
         Me.btnToday.Size = New System.Drawing.Size(140, 47)
@@ -1470,28 +1341,12 @@ Partial Class frmZaan
         Me.btnDataAccessBlank.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDataAccessBlank.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDataAccessBlank.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDataAccessBlank.Location = New System.Drawing.Point(140, 0)
+        Me.btnDataAccessBlank.Location = New System.Drawing.Point(0, 0)
         Me.btnDataAccessBlank.Margin = New System.Windows.Forms.Padding(6)
         Me.btnDataAccessBlank.Name = "btnDataAccessBlank"
         Me.btnDataAccessBlank.Size = New System.Drawing.Size(140, 47)
         Me.btnDataAccessBlank.TabIndex = 42
         Me.btnDataAccessBlank.UseVisualStyleBackColor = True
-        '
-        'btnDataAccessAxis
-        '
-        Me.btnDataAccessAxis.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDataAccessAxis.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnDataAccessAxis.FlatAppearance.BorderSize = 0
-        Me.btnDataAccessAxis.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDataAccessAxis.Font = New System.Drawing.Font("Lucida Console", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDataAccessAxis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDataAccessAxis.Location = New System.Drawing.Point(0, 0)
-        Me.btnDataAccessAxis.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnDataAccessAxis.Name = "btnDataAccessAxis"
-        Me.btnDataAccessAxis.Size = New System.Drawing.Size(140, 47)
-        Me.btnDataAccessAxis.TabIndex = 34
-        Me.btnDataAccessAxis.Text = "+"
-        Me.btnDataAccessAxis.UseVisualStyleBackColor = True
         '
         'pnlSelectorHeaderTop
         '
@@ -2156,7 +2011,6 @@ Partial Class frmZaan
         Me.pnlSelectorBottom.Controls.Add(Me.lblSelPageNext)
         Me.pnlSelectorBottom.Controls.Add(Me.btnPanelEmpty)
         Me.pnlSelectorBottom.Controls.Add(Me.btnPanelTree)
-        Me.pnlSelectorBottom.Controls.Add(Me.btnMatrix)
         Me.pnlSelectorBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.pnlSelectorBottom.Location = New System.Drawing.Point(0, 91)
         Me.pnlSelectorBottom.Margin = New System.Windows.Forms.Padding(6)
@@ -2187,7 +2041,7 @@ Partial Class frmZaan
         Me.lblSelPagePrev.Enabled = False
         Me.lblSelPagePrev.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPagePrev.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPagePrev.Location = New System.Drawing.Point(212, 4)
+        Me.lblSelPagePrev.Location = New System.Drawing.Point(260, 4)
         Me.lblSelPagePrev.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPagePrev.Name = "lblSelPagePrev"
         Me.lblSelPagePrev.Size = New System.Drawing.Size(48, 38)
@@ -2201,7 +2055,7 @@ Partial Class frmZaan
         Me.lblSelPage.Dock = System.Windows.Forms.DockStyle.Right
         Me.lblSelPage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPage.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPage.Location = New System.Drawing.Point(260, 4)
+        Me.lblSelPage.Location = New System.Drawing.Point(308, 4)
         Me.lblSelPage.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPage.Name = "lblSelPage"
         Me.lblSelPage.Padding = New System.Windows.Forms.Padding(0, 4, 0, 0)
@@ -2217,7 +2071,7 @@ Partial Class frmZaan
         Me.lblSelPageNext.Enabled = False
         Me.lblSelPageNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelPageNext.ForeColor = System.Drawing.Color.Black
-        Me.lblSelPageNext.Location = New System.Drawing.Point(318, 4)
+        Me.lblSelPageNext.Location = New System.Drawing.Point(366, 4)
         Me.lblSelPageNext.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblSelPageNext.Name = "lblSelPageNext"
         Me.lblSelPageNext.Size = New System.Drawing.Size(48, 38)
@@ -2254,23 +2108,6 @@ Partial Class frmZaan
         Me.btnPanelTree.TabIndex = 26
         Me.btnPanelTree.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnPanelTree.UseVisualStyleBackColor = False
-        '
-        'btnMatrix
-        '
-        Me.btnMatrix.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMatrix.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnMatrix.FlatAppearance.BorderSize = 0
-        Me.btnMatrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMatrix.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMatrix.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.btnMatrix.Image = Global.WindowsApplication1.My.Resources.Resources.matrix_1
-        Me.btnMatrix.Location = New System.Drawing.Point(366, 4)
-        Me.btnMatrix.Margin = New System.Windows.Forms.Padding(6)
-        Me.btnMatrix.Name = "btnMatrix"
-        Me.btnMatrix.Size = New System.Drawing.Size(48, 38)
-        Me.btnMatrix.TabIndex = 29
-        Me.btnMatrix.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnMatrix.UseVisualStyleBackColor = True
         '
         'pnlDatabase
         '
@@ -2428,7 +2265,7 @@ Partial Class frmZaan
         Me.tcFolders.Name = "tcFolders"
         Me.tcFolders.SelectedIndex = 0
         Me.tcFolders.ShowToolTips = True
-        Me.tcFolders.Size = New System.Drawing.Size(2332, 627)
+        Me.tcFolders.Size = New System.Drawing.Size(2332, 322)
         Me.tcFolders.TabIndex = 0
         '
         'TabPage1
@@ -2438,7 +2275,7 @@ Partial Class frmZaan
         Me.TabPage1.Location = New System.Drawing.Point(8, 52)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(2316, 567)
+        Me.TabPage1.Size = New System.Drawing.Size(2316, 262)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Import"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -2457,7 +2294,7 @@ Partial Class frmZaan
         Me.lvOut.Location = New System.Drawing.Point(0, 0)
         Me.lvOut.Margin = New System.Windows.Forms.Padding(6)
         Me.lvOut.Name = "lvOut"
-        Me.lvOut.Size = New System.Drawing.Size(2316, 567)
+        Me.lvOut.Size = New System.Drawing.Size(2316, 262)
         Me.lvOut.SmallImageList = Me.imgFileTypes
         Me.lvOut.TabIndex = 7
         Me.lvOut.UseCompatibleStateImageBehavior = False
@@ -2599,7 +2436,7 @@ Partial Class frmZaan
         Me.TabPage2.Location = New System.Drawing.Point(8, 52)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(2316, 567)
+        Me.TabPage2.Size = New System.Drawing.Size(2316, 262)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Scan"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -2615,7 +2452,7 @@ Partial Class frmZaan
         'SplitContainer4.Panel1
         '
         Me.SplitContainer4.Panel1.Controls.Add(Me.trvInput)
-        Me.SplitContainer4.Size = New System.Drawing.Size(2316, 567)
+        Me.SplitContainer4.Size = New System.Drawing.Size(2316, 262)
         Me.SplitContainer4.SplitterDistance = 460
         Me.SplitContainer4.SplitterWidth = 8
         Me.SplitContainer4.TabIndex = 0
@@ -2636,7 +2473,7 @@ Partial Class frmZaan
         Me.trvInput.Margin = New System.Windows.Forms.Padding(6)
         Me.trvInput.Name = "trvInput"
         Me.trvInput.SelectedImageIndex = 0
-        Me.trvInput.Size = New System.Drawing.Size(460, 567)
+        Me.trvInput.Size = New System.Drawing.Size(460, 262)
         Me.trvInput.TabIndex = 2
         '
         'cmsTrvInput
@@ -2684,7 +2521,7 @@ Partial Class frmZaan
         Me.TabPage3.Location = New System.Drawing.Point(8, 52)
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(6)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(2316, 567)
+        Me.TabPage3.Size = New System.Drawing.Size(2316, 262)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Copy"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -2703,7 +2540,7 @@ Partial Class frmZaan
         Me.lvTemp.Location = New System.Drawing.Point(0, 0)
         Me.lvTemp.Margin = New System.Windows.Forms.Padding(6)
         Me.lvTemp.Name = "lvTemp"
-        Me.lvTemp.Size = New System.Drawing.Size(2316, 567)
+        Me.lvTemp.Size = New System.Drawing.Size(2316, 262)
         Me.lvTemp.SmallImageList = Me.imgFileTypes
         Me.lvTemp.TabIndex = 0
         Me.lvTemp.UseCompatibleStateImageBehavior = False
@@ -3308,15 +3145,6 @@ Partial Class frmZaan
     Friend WithEvents btnWhenRoot As System.Windows.Forms.Button
     Friend WithEvents btnDataAccessRoot As System.Windows.Forms.Button
     Friend WithEvents pnlSelectorHeaderBottom As System.Windows.Forms.Panel
-    Friend WithEvents lvMatrix As System.Windows.Forms.ListView
-    Friend WithEvents btnWho2Axis As System.Windows.Forms.Button
-    Friend WithEvents btnWhat2Axis As System.Windows.Forms.Button
-    Friend WithEvents btnWhereAxis As System.Windows.Forms.Button
-    Friend WithEvents btnWhatAxis As System.Windows.Forms.Button
-    Friend WithEvents btnWhoAxis As System.Windows.Forms.Button
-    Friend WithEvents btnWhenAxis As System.Windows.Forms.Button
-    Friend WithEvents btnDataAccessAxis As System.Windows.Forms.Button
-    Friend WithEvents btnMatrix As System.Windows.Forms.Button
     Friend WithEvents tsmiLvInNew As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsmiLvInNewNote As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsmiLvInNewText As System.Windows.Forms.ToolStripMenuItem

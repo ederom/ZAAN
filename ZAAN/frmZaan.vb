@@ -42,176 +42,6 @@ Public Class frmZaan
     Private DirFontRegular As New System.Drawing.Font("Microsoft Sans Serif", 9, Drawing.FontStyle.Regular)
     Private DirFontUnderline As New System.Drawing.Font("Microsoft Sans Serif", 9, Drawing.FontStyle.Underline)
 
-    Private mAxisTreeCodeH As String = ""                  'resets Horizontal axis code of matrix
-    Private mAxisTreeCodeV As String = ""                  'resets Horizontal axis code of matrix
-    Private mAxisButtonTagH As String = ""
-    Private mAxisButtonTagV As String = ""
-    Private mMatrixFileFilter, mMatrixFileFilterIni As String
-
-    Private Function GetMatrixParentTag(ByVal TreeCode As String, ByVal ButtonTag As String) As String
-        'Returns matrix parent tag with root key set if given selector code corresponds to selected X/Y axis
-        Dim ParentTag As String = ButtonTag
-
-        If (TreeCode = mAxisTreeCodeH) Or (TreeCode = mAxisTreeCodeV) Then
-            If TreeCode <> "u" Then                                  'case of a root selector position
-                ParentTag = "*_" & TreeCode & mTreeRootKey           'resets button tag with non empty root key
-            End If
-        End If
-        GetMatrixParentTag = ParentTag
-    End Function
-
-    Private Sub DisplayMatrix()
-        'Displays matrix view corresponding to current selector X/Y axes selection
-        Dim NodeKeyH As String = GetNodeKeyFromButtonTag(mAxisTreeCodeH, mAxisButtonTagH)
-        Dim NodeKeyV As String = GetNodeKeyFromButtonTag(mAxisTreeCodeV, mAxisButtonTagV)
-        Dim NodeX(), ChildNode As TreeNode
-        Dim i, j, jmax, TotDocCount, DocCount As Integer
-        Dim item
-        Dim itmX As ListViewItem
-        Dim KeyH As String = "_" & mAxisTreeCodeH & "_"
-        Dim KeyV As String = "_" & mAxisTreeCodeV & "_"
-        Dim RowFileFilter, FileFilter As String
-
-        'Debug.Print("DisplayMatrix :  TreeCodeH = " & mAxisTreeCodeH & "  ButtonTagH = " & mAxisButtonTagH & "  X  TreeCodeV = " & mAxisTreeCodeV & "  ButtonTagV = " & mAxisButtonTagV)     'TEST/DEBUG
-
-        Me.Cursor = Cursors.WaitCursor                               'sets wait cursor
-        fswData.EnableRaisingEvents = False                          'locks fswData related events (that eventual thumbnail image files creation would trigger)
-
-        lvMatrix.Items.Clear()
-        lvMatrix.Columns.Clear()
-        TotDocCount = 0
-
-        item = lvMatrix.Columns.Add(TotDocCount & " " & mMessage(82), 200, Forms.HorizontalAlignment.Left)
-        'item = lvMatrix.Columns.Add(KeyH, TotDocCount & " " & mMessage(82), 175, HorizontalAlignment.Right, "_x_" & mImageStyle)
-
-        mMatrixFileFilterIni = mFileFilter                           'saves initial value of mFileFilter
-        mMatrixFileFilter = lblDataAccess.Tag & GetMatrixParentTag("t", lblWhen.Tag) & GetMatrixParentTag("o", lblWho.Tag) & GetMatrixParentTag("a", lblWhat.Tag) _
-             & GetMatrixParentTag("e", lblWhere.Tag) & GetMatrixParentTag("b", lblWhat2.Tag) & GetMatrixParentTag("c", lblWho2.Tag)
-        'Debug.Print("  DisplayMatrix :  mFileFilter = " & mFileFilter & "  mMatrixFileFilter = " & mMatrixFileFilter)   'TEST/DEBUG
-
-        NodeX = trvW.Nodes.Find(NodeKeyH, True)
-        jmax = 0
-        If NodeX.Length > 0 Then                                     'case of node found
-            j = 0
-            For Each ChildNode In NodeX(0).Nodes                     'scans related child nodes
-                j = j + 1
-                item = lvMatrix.Columns.Add(KeyH, ChildNode.Text, 135, Forms.HorizontalAlignment.Left, KeyH & mImageStyle)      'adds related matrix column
-                item.tag = GetTreeNodeKey(ChildNode)                 'gets node key of given tree node (empty if tree root node)
-            Next
-            jmax = j                                                 'stores column count
-        End If
-
-        NodeX = trvW.Nodes.Find(NodeKeyV, True)
-        If NodeX.Length > 0 Then                                     'case of node found
-            i = 0
-            For Each ChildNode In NodeX(0).Nodes                     'scans related child nodes
-                i = i + 1
-                itmX = lvMatrix.Items.Add(" " & ChildNode.Text)      'adds related matrix row
-                itmX.Tag = GetTreeNodeKey(ChildNode)                 'gets node key of given tree node (empty if tree root node)
-                itmX.ImageKey = KeyV & mImageStyle
-                If mAxisTreeCodeH <> "" Then
-                    RowFileFilter = Replace(mMatrixFileFilter, mAxisTreeCodeV & mTreeRootKey, itmX.Tag)                 'replaces row parent key by related child key
-                    'Debug.Print("  =>  RowFileFilter = " & RowFileFilter)   'TEST/DEBUG
-
-                    For j = 1 To jmax
-                        'itmX.SubItems.Add(i & " / " & j)                                 'TEST/DEBUG
-                        'itmX.SubItems.Add(itmX.Tag & " / " & lvMatrix.Columns(j).Tag)    'TEST/DEBUG
-
-                        FileFilter = Replace(RowFileFilter, mAxisTreeCodeH & mTreeRootKey, lvMatrix.Columns(j).Tag)    'replaces column parent key by related child key
-                        'itmX.SubItems.Add(FileFilter)                                    'TEST/DEBUG
-
-                        DocCount = CountOfSelectedFiles(FileFilter)  'get count of selected files matching with given FileFilter
-                        TotDocCount = TotDocCount + DocCount
-                        If DocCount = 0 Then
-                            itmX.SubItems.Add("")                    'sets a blank cell is count = 0
-                        Else
-                            itmX.SubItems.Add(DocCount)              'sets a cell with count > 0
-                        End If
-                    Next
-                End If
-            Next
-        End If
-        lvMatrix.Columns(0).Text = TotDocCount & " " & mMessage(82)  'displays total document count
-
-        fswData.EnableRaisingEvents = True                           'unlocks fswData related events
-        Me.Cursor = Cursors.Default                                  'resets default cursor
-    End Sub
-
-    Private Sub ClearMatrixAxis(ByVal Switch As String)
-        'Clears matrix axis which selector button matches with given Switch (like "║" or "══")
-
-        If btnDataAccessAxis.Text = Switch Then btnDataAccessAxis.Text = "+"
-        If btnWhenAxis.Text = Switch Then btnWhenAxis.Text = "+"
-        If btnWhoAxis.Text = Switch Then btnWhoAxis.Text = "+"
-        If btnWhatAxis.Text = Switch Then btnWhatAxis.Text = "+"
-        If btnWhereAxis.Text = Switch Then btnWhereAxis.Text = "+"
-        If btnWhat2Axis.Text = Switch Then btnWhat2Axis.Text = "+"
-        If btnWho2Axis.Text = Switch Then btnWho2Axis.Text = "+"
-    End Sub
-
-    Private Sub CheckMatrixVisibility()
-        'Checks matrix visibility depending on selection of one X/Y axis at least and eventually updates its display
-
-        If (btnDataAccessAxis.Text = "+") And (btnWhenAxis.Text = "+") And (btnWhoAxis.Text = "+") _
-            And (btnWhatAxis.Text = "+") And (btnWhereAxis.Text = "+") And (btnWho2Axis.Text = "+") And (btnWhat2Axis.Text = "+") Then
-            lvMatrix.Visible = False
-        Else
-            lvMatrix.Visible = True
-            Call DisplayMatrix()                           'displays matrix view corresponding to current selector X/Y axes selection
-        End If
-        lvIn.Visible = Not lvMatrix.Visible
-        Call SetAxesVisibility()                           'sets axes buttons visibility depending on lvMatrix visibility
-    End Sub
-
-    Private Sub ToggleMatrixAxis(ByVal TreeCode As String, ByVal ButtonTag As String)
-        'Toggles matrix axis at given dimension index and resets other dimension axis
-        Dim Switch As String
-
-        'Debug.Print("ToggleMatrixAxis :  TreeCode = " & TreeCode & "  ButtonTag = " & ButtonTag)    'TEST/DEBUG
-
-        If mAxisTreeCodeH = TreeCode Then
-            mAxisTreeCodeH = ""
-            mAxisButtonTagH = ""
-            mAxisTreeCodeV = TreeCode
-            mAxisButtonTagV = ButtonTag
-            Switch = "│"                                   'sets Vertical axis switch
-            ClearMatrixAxis(Switch)                        'clears matrix axis which selector button matches with given char
-        ElseIf mAxisTreeCodeV = TreeCode Then
-            mAxisTreeCodeV = ""
-            mAxisButtonTagV = ""
-            Switch = "+"                                   'resets axis switch
-        ElseIf mAxisTreeCodeH <> "" Then
-            mAxisTreeCodeV = TreeCode
-            mAxisButtonTagV = ButtonTag
-            Switch = "│"                                   'sets Vertical axis switch
-            ClearMatrixAxis(Switch)                        'clears matrix axis which selector button matches with given char
-        Else
-            mAxisTreeCodeH = TreeCode
-            mAxisButtonTagH = ButtonTag
-            Switch = "─"                                   'sets Horizontal axis switch
-            ClearMatrixAxis(Switch)                        'clears matrix axis which selector button matches with given char
-        End If
-
-        Select Case TreeCode
-            Case "u"
-                btnDataAccessAxis.Text = Switch
-            Case "t"
-                btnWhenAxis.Text = Switch
-            Case "o"
-                btnWhoAxis.Text = Switch
-            Case "a"
-                btnWhatAxis.Text = Switch
-            Case "e"
-                btnWhereAxis.Text = Switch
-            Case "b"
-                btnWhat2Axis.Text = Switch
-            Case "c"
-                btnWho2Axis.Text = Switch
-        End Select
-
-        Call CheckMatrixVisibility()                       'checks matrix visibility depending on selection of one X/Y axis at least and eventually updates its display
-    End Sub
-
     Private Sub SetCubeTubeButton()
         'Sets cube/tube button image depending on current lvIn display and ZAAN image style
 
@@ -344,8 +174,6 @@ Public Class frmZaan
             lvIn.BackColor = mBackColorContent
             lvIn.ForeColor = fColorIn
         End If
-        lvMatrix.BackColor = mBackColorContent
-        lvMatrix.ForeColor = fColorIn
 
         lvOut.BackColor = mBackColorContent
         lvOut.ForeColor = fColorImport
@@ -380,14 +208,6 @@ Public Class frmZaan
         lblWhat2.ForeColor = Color.White
         lblWho2.ForeColor = Color.White
 
-        btnDataAccessAxis.ForeColor = fColorIn
-        btnWhenAxis.ForeColor = fColorIn
-        btnWhoAxis.ForeColor = fColorIn
-        btnWhatAxis.ForeColor = fColorIn
-        btnWhereAxis.ForeColor = fColorIn
-        btnWhat2Axis.ForeColor = fColorIn
-        btnWho2Axis.ForeColor = fColorIn
-
         lblDataAccess.TextAlign = ContentAlignment.MiddleCenter
         lblWhen.TextAlign = ContentAlignment.MiddleCenter
         lblWho.TextAlign = ContentAlignment.MiddleCenter
@@ -408,7 +228,6 @@ Public Class frmZaan
             btnPanelCube.Image = My.Resources.Resources.pnl_cube_1
             btnPanelView.Image = My.Resources.Resources.pnl_view_1
             btnPanelImport.Image = My.Resources.Resources.pnl_import_1
-            btnMatrix.Image = My.Resources.Resources.matrix_1
         Else                                                     'case of a dark blue background
             tsmiSelectorNightMode.Checked = True
             'btnPrev.Image = My.Resources.Resources.prev_0
@@ -418,7 +237,6 @@ Public Class frmZaan
             btnPanelCube.Image = My.Resources.Resources.pnl_cube_0
             btnPanelView.Image = My.Resources.Resources.pnl_view_0
             btnPanelImport.Image = My.Resources.Resources.pnl_import_0
-            btnMatrix.Image = My.Resources.Resources.matrix_0
         End If
 
         Call SetLeftPanelButton()                                    'sets left panel button image depending on splitter and background color
@@ -1822,7 +1640,6 @@ Public Class frmZaan
 
         mFileFilter = ""
         Call InitLvBookmark()                                             'initializes bookmark list
-        Call InitlvMatrix()                                               'initializes matrix display and hides it to let lvIn visible
 
         'tsmiSelectorBookmarkVisible.CheckState = CheckState.Unchecked
         mColDisplayIndexes = ""
@@ -2729,7 +2546,6 @@ Public Class frmZaan
 
             'Debug.Print("> DisplaySelector/end : mFileFilter = " & mFileFilter)   'TEST/DEBUG
         End If
-        Call SetAxesVisibility()                                               'sets axes buttons visibility depending on lvMatrix visibility
     End Sub
 
     Private Sub UpdatesInDocPerPageMenu(ByVal DocNb As Integer, Optional ByVal InitDisplay As Boolean = True)
@@ -2878,7 +2694,6 @@ Public Class frmZaan
         tlTip.SetToolTip(btnPanelTree, mMessage(85))       ' Show/hide tree view
         tlTip.SetToolTip(btnPanelView, mMessage(209))      ' Show/hide viewer panel
         tlTip.SetToolTip(btnPanelImport, mMessage(210))    ' Show/hide import panel
-        tlTip.SetToolTip(btnMatrix, mMessage(84))          ' Show/hide matrix
 
         tlTip.SetToolTip(lblDataAccess, mMessage(9))       ' Select in tree view
         tlTip.SetToolTip(lblWhen, mMessage(9))             ' Select in tree view
@@ -2905,14 +2720,6 @@ Public Class frmZaan
         tlTip.SetToolTip(btnWhere, mMessage(163))          ' Extend selection
         tlTip.SetToolTip(btnWhat2, mMessage(163))          ' Extend selection
         tlTip.SetToolTip(btnWho2, mMessage(163))           ' Extend selection
-
-        tlTip.SetToolTip(btnDataAccessAxis, mMessage(182)) ' Set matrix X/Y axis
-        tlTip.SetToolTip(btnWhenAxis, mMessage(182))       ' Extend selection
-        tlTip.SetToolTip(btnWhoAxis, mMessage(182))        ' Extend selection
-        tlTip.SetToolTip(btnWhatAxis, mMessage(182))       ' Extend selectione
-        tlTip.SetToolTip(btnWhereAxis, mMessage(182))      ' Extend selectionee
-        tlTip.SetToolTip(btnWhat2Axis, mMessage(182))      ' Extend selectione
-        tlTip.SetToolTip(btnWho2Axis, mMessage(182))       ' Extend selectione
 
         'tlTip.SetToolTip(btnLeftPanel, mMessage(24))       ' Open/close tree view panel
         'tlTip.SetToolTip(btnRightPanel, mMessage(31))      ' Open/close viewer panel
@@ -3015,39 +2822,32 @@ Public Class frmZaan
                                 lblDataAccess.Width = w
                                 btnDataAccessRoot.Width = w1
                                 btnDataAccess.Width = w2
-                                btnDataAccessAxis.Width = w
                                 btnDataAccessBlank.Width = w
                             Case 2
                                 lblWhen.Width = w
                                 btnWhenRoot.Width = w1
                                 btnWhen.Width = w2
-                                btnWhenAxis.Width = w
                                 btnToday.Width = w
                             Case 3
                                 lblWho.Width = w
                                 btnWhoRoot.Width = w1
                                 btnWho.Width = w2
-                                btnWhoAxis.Width = w
                             Case 4
                                 lblWhat.Width = w
                                 btnWhatRoot.Width = w1
                                 btnWhat.Width = w2
-                                btnWhatAxis.Width = w
                             Case 5
                                 lblWhere.Width = w
                                 btnWhereRoot.Width = w1
                                 btnWhere.Width = w2
-                                btnWhereAxis.Width = w
                             Case 6
                                 lblWhat2.Width = w
                                 btnWhat2Root.Width = w1
                                 btnWhat2.Width = w2
-                                btnWhat2Axis.Width = w
                             Case 7
                                 lblWho2.Width = w
                                 btnWho2Root.Width = w1
                                 btnWho2.Width = w2
-                                btnWho2Axis.Width = w
                         End Select
                     End If
                 Next
@@ -3133,51 +2933,6 @@ Public Class frmZaan
         SelList.Items.Clear()
         SelList.Columns.Clear()
         SelList.Columns.Add("", 60, Forms.HorizontalAlignment.Left)
-    End Sub
-
-    Private Sub SetAxesVisibility()
-        'Sets axes buttons visibility depending on lvMatrix visibility
-
-        btnDataAccessAxis.Visible = lvMatrix.Visible                'shows/hides axis buttons depending on lvMatrix visibility
-        btnDataAccessBlank.Visible = Not btnDataAccessAxis.Visible
-
-        btnWhenAxis.Visible = lvMatrix.Visible
-        btnToday.Visible = Not btnWhenAxis.Visible
-
-        btnWhoAxis.Visible = lvMatrix.Visible
-        btnWhatAxis.Visible = lvMatrix.Visible
-        btnWhereAxis.Visible = lvMatrix.Visible
-        btnWhat2Axis.Visible = lvMatrix.Visible
-        btnWho2Axis.Visible = lvMatrix.Visible
-    End Sub
-
-    Private Sub InitlvMatrix()
-        'Initializes matrix display and hides it to let lvIn visible
-
-        'Debug.Print("InitlvMatrix...")   'TEST/DEBUG
-
-        lvMatrix.Visible = False                           'hides matrix display
-        lvIn.Visible = True                                'shows selected files display
-
-        lvMatrix.Items.Clear()
-        lvMatrix.Columns.Clear()
-
-        mAxisTreeCodeH = ""                                'resets Horizontal axis code of matrix
-        mAxisTreeCodeV = ""                                'resets Horizontal axis code of matrix
-        mAxisButtonTagH = ""
-        mAxisButtonTagV = ""
-
-        mMatrixFileFilter = ""
-
-        btnDataAccessAxis.Text = "+"                       'resets all axis selection
-        btnWhenAxis.Text = "+"
-        btnWhoAxis.Text = "+"
-        btnWhatAxis.Text = "+"
-        btnWhereAxis.Text = "+"
-        btnWhat2Axis.Text = "+"
-        btnWho2Axis.Text = "+"
-
-        Call SetAxesVisibility()                           'sets axes buttons visibility depending on lvMatrix visibility
     End Sub
 
     Private Sub InitlvIn()
@@ -4102,7 +3857,6 @@ Public Class frmZaan
         mInDocPageMax = 1
         Call UpdatePagePileButtons()                       'updates page pile (lstPage) if mFileFilter is new in pile and enables/desables accordingly Prev/Next navigation buttons
 
-        lvMatrix.Visible = False                           'hides matrix display
         lvIn.Visible = True                                'shows selected files display
         Call DisplaySelectedFiles()                        'refreshes display of "in" files selected with current filter
     End Sub
@@ -4210,7 +3964,6 @@ Public Class frmZaan
         Me.Cursor = Cursors.Default                                  'resets default cursor
 
         Call LoadSelectorParentList()                                'loads Selector parent list with possible parent node selections of current selector positions
-        Call SetAxesVisibility()                                     'sets axes buttons visibility depending on lvMatrix visibility
     End Sub
 
     Private Sub ReplaceSimpleKey4ByHierarchicalKey4(ByVal TreeCode As String, ByRef HierarchicalKey4 As String)
@@ -7110,39 +6863,32 @@ Public Class frmZaan
                 lblDataAccess.Width = w
                 btnDataAccessRoot.Width = w1
                 btnDataAccess.Width = w2
-                btnDataAccessAxis.Width = w
                 btnDataAccessBlank.Width = w
             Case 2
                 lblWhen.Width = w
                 btnWhenRoot.Width = w1
                 btnWhen.Width = w2
-                btnWhenAxis.Width = w
                 btnToday.Width = w
             Case 3
                 lblWho.Width = w
                 btnWhoRoot.Width = w1
                 btnWho.Width = w2
-                btnWhoAxis.Width = w
             Case 4
                 lblWhat.Width = w
                 btnWhatRoot.Width = w1
                 btnWhat.Width = w2
-                btnWhatAxis.Width = w
             Case 5
                 lblWhere.Width = w
                 btnWhereRoot.Width = w1
                 btnWhere.Width = w2
-                btnWhereAxis.Width = w
             Case 6
                 lblWhat2.Width = w
                 btnWhat2Root.Width = w1
                 btnWhat2.Width = w2
-                btnWhat2Axis.Width = w
             Case 7
                 lblWho2.Width = w
                 btnWho2Root.Width = w1
                 btnWho2.Width = w2
-                btnWho2Axis.Width = w
         End Select
         If (ColIndex > 0) And (ColIndex < 8) Then
             lvSelector.Columns(ColIndex - 1).Width = w
@@ -7865,9 +7611,6 @@ Public Class frmZaan
                 lblWho2.Tag = Key
                 lvSelector.Columns(6).Tag = Key
         End Select
-
-        If mAxisTreeCodeH = TreeCode Then mAxisButtonTagH = Key 'updates Horizontal axis button tag used in matrix display
-        If mAxisTreeCodeV = TreeCode Then mAxisButtonTagV = Key 'updates Vertical axis button tag used in matrix display
     End Sub
 
     Private Sub UpdateBookmarkListHeader()
@@ -7966,7 +7709,6 @@ Public Class frmZaan
                 lvBookmark.SelectedItems(0).Selected = False         'desactivates bookmark selection
             End If
             Call InitDisplaySelectedFiles()                          'initializes display of all selected files, starting at first page
-            Call DisplayMatrix()                                     'displays matrix view corresponding to current selector X/Y axes selection
             Call UpdateBookmarkListHeader()                          'if bookmark list is visible, updates its header with current selector position and shows it if new
         End If
     End Sub
@@ -11429,76 +11171,6 @@ Public Class frmZaan
 
     Private Sub btnWho2Root_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWho2Root.Click
         Call ResetSelectorDim(6)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnDataAccessAxis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDataAccessAxis.Click
-        Call ToggleMatrixAxis("u", lblDataAccess.Tag)                'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWhenAxis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhenAxis.Click
-        Call ToggleMatrixAxis("t", lblWhen.Tag)                      'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWhoAxis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhoAxis.Click
-        Call ToggleMatrixAxis("o", lblWho.Tag)                       'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWhatAxis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhatAxis.Click
-        Call ToggleMatrixAxis("a", lblWhat.Tag)                      'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWhereAxis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhereAxis.Click
-        Call ToggleMatrixAxis("e", lblWhere.Tag)                     'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWhat2Axis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhat2Axis.Click
-        Call ToggleMatrixAxis("b", lblWhat2.Tag)                     'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub btnWho2Axis_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWho2Axis.Click
-        Call ToggleMatrixAxis("c", lblWho2.Tag)                      'toggles matrix axis at given dimension index and resets other dimension axis
-    End Sub
-
-    Private Sub lvMatrix_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lvMatrix.MouseDown
-        Dim info As ListViewHitTestInfo = lvMatrix.HitTest(e.X, e.Y)      'get item at mouse pointer
-        Dim subItem As ListViewItem.ListViewSubItem = Nothing
-        Dim ColIndex As Integer = -1
-        Dim RowFileFilter As String
-
-        If info Is Nothing Then Exit Sub
-
-        If (info.Item IsNot Nothing) Then
-            subItem = info.Item.GetSubItemAt(e.X, e.Y)               'get subitem at mouse pointer, if any
-            If (subItem IsNot Nothing) Then
-                ColIndex = info.Item.SubItems.IndexOf(subItem)       'get related column index pointed
-                'Debug.Print("lvMatrix_MouseDown :  ColIndex = " & ColIndex)   'TEST/DEBUG
-            End If
-        End If
-        If e.Button = Forms.MouseButtons.Left Then                   'left button has been used
-            If ColIndex > 0 Then
-                'Debug.Print("lvMatrix_MouseDown :  ColIndex = " & ColIndex & "  subItem = " & subItem.Text & " : " & lvMatrix.Columns(ColIndex).Tag & "/ " & info.Item.Tag)   'TEST/DEBUG
-                RowFileFilter = Replace(mMatrixFileFilter, mAxisTreeCodeV & mTreeRootKey, info.Item.Tag)               'replaces row parent key by related child key
-                mFileFilter = Replace(RowFileFilter, mAxisTreeCodeH & mTreeRootKey, lvMatrix.Columns(ColIndex).Tag)    'replaces column parent key by related child key
-                'Debug.Print("lvMatrix_MouseDown :  mFileFilter = " & mFileFilter)   'TEST/DEBUG
-
-                Call DisplaySelector()                               'displays selector buttons using mFileFilter selections
-                Call InitDisplaySelectedFiles()                      'initializes display of all selected files, starting at first page
-            End If
-        End If
-    End Sub
-
-    Private Sub btnMatrix_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMatrix.Click
-        If (btnDataAccessAxis.Text = "+") And (btnWhenAxis.Text = "+") And (btnWhoAxis.Text = "+") _
-            And (btnWhatAxis.Text = "+") And (btnWhereAxis.Text = "+") And (btnWho2Axis.Text = "+") And (btnWhat2Axis.Text = "+") Then
-            Call InitlvMatrix()                                      '(re)initializes matrix display
-            Call ToggleMatrixAxis("a", lblWhat.Tag)                  'toggles matrix axis at given dimension index and resets other dimension axis
-            Call ToggleMatrixAxis("o", lblWho.Tag)                   'toggles matrix axis at given dimension index and resets other dimension axis
-        Else
-            lvMatrix.Visible = Not lvMatrix.Visible                  'toggles matrix visibility
-            lvIn.Visible = Not lvMatrix.Visible
-            mFileFilter = mMatrixFileFilterIni                       'restores initial value of mFileFilter
-            Call DisplaySelector()                                   'displays selector buttons using mFileFilter selections
-        End If
     End Sub
 
     Private Sub tsmiLvInNewNote_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsmiLvInNewNote.Click

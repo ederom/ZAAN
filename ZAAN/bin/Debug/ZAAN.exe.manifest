@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZAAN.exe" size="2701248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZAAN.exe" size="2699200">
       <assemblyIdentity name="ZAAN" version="4.0.366.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EF+XgoSSZk4ZU0pj8L+4Ykndfq1xg1mDTOq37iiNkSM=</dsig:DigestValue>
+        <dsig:DigestValue>sgBcHUVdmrE0ig14UCjObwVWFehj3oa9wmcqFDN2O2I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

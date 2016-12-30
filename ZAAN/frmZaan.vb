@@ -265,14 +265,6 @@ Public Class frmZaan
         If Style > 0 Then
             mImageStyle = Style                                      'stores selected style in mImageStyle
 
-            btnDataAccessRoot.ImageKey = "_uh" & mImageStyle
-            btnWhenRoot.ImageKey = "_th" & mImageStyle
-            btnWhoRoot.ImageKey = "_oh" & mImageStyle
-            btnWhatRoot.ImageKey = "_ah" & mImageStyle
-            btnWhereRoot.ImageKey = "_eh" & mImageStyle
-            btnWhat2Root.ImageKey = "_bh" & mImageStyle
-            btnWho2Root.ImageKey = "_ch" & mImageStyle
-
             btnNext.ImageKey = "next_f" & mImageStyle
             btnPrev.ImageKey = "prev_f" & mImageStyle
 
@@ -2705,14 +2697,6 @@ Public Class frmZaan
 
         'tlTip.SetToolTip(lvSelector, mMessage(163))        ' Extend selection
 
-        tlTip.SetToolTip(btnDataAccessRoot, mMessage(178)) ' Cancel selection
-        tlTip.SetToolTip(btnWhenRoot, mMessage(178))       ' Cancel selection
-        tlTip.SetToolTip(btnWhoRoot, mMessage(178))        ' Cancel selection
-        tlTip.SetToolTip(btnWhatRoot, mMessage(178))       ' Cancel selection
-        tlTip.SetToolTip(btnWhereRoot, mMessage(178))      ' Cancel selection
-        tlTip.SetToolTip(btnWhat2Root, mMessage(178))      ' Cancel selection
-        tlTip.SetToolTip(btnWho2Root, mMessage(178))       ' Cancel selection
-
         tlTip.SetToolTip(btnDataAccess, mMessage(163))     ' Extend selection
         tlTip.SetToolTip(btnWhen, mMessage(163))           ' Extend selection
         tlTip.SetToolTip(btnWho, mMessage(163))            ' Extend selection
@@ -2820,33 +2804,26 @@ Public Class frmZaan
                         Select Case i
                             Case 1
                                 lblDataAccess.Width = w
-                                btnDataAccessRoot.Width = w1
                                 btnDataAccess.Width = w2
                                 btnDataAccessBlank.Width = w
                             Case 2
                                 lblWhen.Width = w
-                                btnWhenRoot.Width = w1
                                 btnWhen.Width = w2
                                 btnToday.Width = w
                             Case 3
                                 lblWho.Width = w
-                                btnWhoRoot.Width = w1
                                 btnWho.Width = w2
                             Case 4
                                 lblWhat.Width = w
-                                btnWhatRoot.Width = w1
                                 btnWhat.Width = w2
                             Case 5
                                 lblWhere.Width = w
-                                btnWhereRoot.Width = w1
                                 btnWhere.Width = w2
                             Case 6
                                 lblWhat2.Width = w
-                                btnWhat2Root.Width = w1
                                 btnWhat2.Width = w2
                             Case 7
                                 lblWho2.Width = w
-                                btnWho2Root.Width = w1
                                 btnWho2.Width = w2
                         End Select
                     End If
@@ -2914,14 +2891,6 @@ Public Class frmZaan
             lvSelector.Columns.Add("_b_", mMessage(5), 0, Forms.HorizontalAlignment.Left, "_bh" & mImageStyle)     'What else (hidden in ZAAN-Basic mode)
             lvSelector.Columns.Add("_c_", mMessage(6), 0, Forms.HorizontalAlignment.Left, "_ch" & mImageStyle)     'Other (hidden in ZAAN-Basic mode)
         End If
-
-        btnDataAccessRoot.ImageKey = "_uh" & mImageStyle
-        btnWhenRoot.ImageKey = "_th" & mImageStyle
-        btnWhoRoot.ImageKey = "_oh" & mImageStyle
-        btnWhatRoot.ImageKey = "_ah" & mImageStyle
-        btnWhereRoot.ImageKey = "_eh" & mImageStyle
-        btnWhat2Root.ImageKey = "_bh" & mImageStyle
-        btnWho2Root.ImageKey = "_ch" & mImageStyle
 
         btnNext.ImageKey = "next_f" & mImageStyle
         btnPrev.ImageKey = "prev_f" & mImageStyle
@@ -6708,37 +6677,30 @@ Public Class frmZaan
                 btnDataAccess.Text = Title
                 btnDataAccess.Tag = Key
                 btnDataAccess.Enabled = Not (NodeKey = "")           'disables related parent button if selected node is a root node
-                btnDataAccessRoot.Enabled = btnDataAccess.Enabled
             Case 1
                 btnWhen.Text = Title
                 btnWhen.Tag = Key
                 btnWhen.Enabled = Not (NodeKey = "")                 'disables related parent button if selected node is a root node
-                btnWhenRoot.Enabled = btnWhen.Enabled
             Case 2
                 btnWho.Text = Title
                 btnWho.Tag = Key
                 btnWho.Enabled = Not (NodeKey = "")                  'disables related parent button if selected node is a root node
-                btnWhoRoot.Enabled = btnWho.Enabled
             Case 3
                 btnWhat.Text = Title
                 btnWhat.Tag = Key
                 btnWhat.Enabled = Not (NodeKey = "")                 'disables related parent button if selected node is a root node
-                btnWhatRoot.Enabled = btnWhat.Enabled
             Case 4
                 btnWhere.Text = Title
                 btnWhere.Tag = Key
                 btnWhere.Enabled = Not (NodeKey = "")                'disables related parent button if selected node is a root node
-                btnWhereRoot.Enabled = btnWhere.Enabled
             Case 5
                 btnWhat2.Text = Title
                 btnWhat2.Tag = Key
                 btnWhat2.Enabled = Not (NodeKey = "")                'disables related parent button if selected node is a root node
-                btnWhat2Root.Enabled = btnWhat2.Enabled
             Case 6
                 btnWho2.Text = Title
                 btnWho2.Tag = Key
                 btnWho2.Enabled = Not (NodeKey = "")                 'disables related parent button if selected node is a root node
-                btnWho2Root.Enabled = btnWho2.Enabled
         End Select
     End Sub
 
@@ -6861,33 +6823,26 @@ Public Class frmZaan
                 pnlSelectorSearch.Width = w - pnlDatabase.Width
             Case 1
                 lblDataAccess.Width = w
-                btnDataAccessRoot.Width = w1
                 btnDataAccess.Width = w2
                 btnDataAccessBlank.Width = w
             Case 2
                 lblWhen.Width = w
-                btnWhenRoot.Width = w1
                 btnWhen.Width = w2
                 btnToday.Width = w
             Case 3
                 lblWho.Width = w
-                btnWhoRoot.Width = w1
                 btnWho.Width = w2
             Case 4
                 lblWhat.Width = w
-                btnWhatRoot.Width = w1
                 btnWhat.Width = w2
             Case 5
                 lblWhere.Width = w
-                btnWhereRoot.Width = w1
                 btnWhere.Width = w2
             Case 6
                 lblWhat2.Width = w
-                btnWhat2Root.Width = w1
                 btnWhat2.Width = w2
             Case 7
                 lblWho2.Width = w
-                btnWho2Root.Width = w1
                 btnWho2.Width = w2
         End Select
         If (ColIndex > 0) And (ColIndex < 8) Then
@@ -11143,34 +11098,6 @@ Public Class frmZaan
         lvBookmark.Visible = False
         Call SetLeftPanelButton()                                    'sets left panel button display depending on splitter and background color
         lvIn.Focus()
-    End Sub
-
-    Private Sub btnDataAccessRoot_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDataAccessRoot.Click
-        Call ResetSelectorDim(0)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWhenRoot_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhenRoot.Click
-        Call ResetSelectorDim(1)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWhoRoot_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhoRoot.Click
-        Call ResetSelectorDim(2)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWhatRoot_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhatRoot.Click
-        Call ResetSelectorDim(3)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWhereRoot_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhereRoot.Click
-        Call ResetSelectorDim(4)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWhat2Root_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWhat2Root.Click
-        Call ResetSelectorDim(5)                                     'resets given dimension of selector
-    End Sub
-
-    Private Sub btnWho2Root_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnWho2Root.Click
-        Call ResetSelectorDim(6)                                     'resets given dimension of selector
     End Sub
 
     Private Sub tsmiLvInNewNote_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tsmiLvInNewNote.Click
